@@ -3,7 +3,7 @@ title: Daryl Shaw
 url: http://darylshaw.siteleaf.net
 timezone: UTC
 collections:
-  posts:
+  blog:
     title: Posts
     output: true
   uploads:
