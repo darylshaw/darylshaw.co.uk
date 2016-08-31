@@ -1,0 +1,22 @@
+{% capture 'content' %}
+  {% if meta.feature %}
+    <section class="article">
+      <div class="overlay{% unless meta.dark %} overlay-lighter{% endunless %}"></div>
+      <div class="featured-image" style="background-image: url({{ meta.feature }})"></div>
+  {% else %}
+    <section class="article pad-top">
+  {% endif %}
+      <article class="wrap post">
+        <header class="post-header">
+          <hgroup>
+            <h1>{{ title }}</h1>
+            {% if meta.description %}<p class="intro">{{ meta.description }}</p>{% endif %}
+          </hgroup>
+        </header>
+
+        {{ content }}
+
+      </article>
+    </section>
+  </div>
+{% endcapture %}

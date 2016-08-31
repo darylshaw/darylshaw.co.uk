@@ -1,11 +1,33 @@
 ---
 title: Daryl Shaw
-url: http://darylshaw.siteleaf.net
+url: http://darylshaw.co.uk
 timezone: UTC
+permalink: pretty
+google_analytics: UA-54371675-1
+name: Daryl Shaw
+email: daryl@darylshaw.co.uk
+twitter: daryl_shaw
 collections:
-  posts:
-    title: Posts
-    output: true
   uploads:
     title: Uploads
     output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    permalink: "/blog/:title/"
+markdown: kramdown
+redcarpet:
+  extensions:
+  - autolink
+  - fenced_code_blocks
+  - lax_spacing
+  - strikethrough
+  - superscript
+  - tables
+  - footnotes
+  - highlight
+sass:
+    sass_dir: _sass
+    style: compressed

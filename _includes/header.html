@@ -1,0 +1,23 @@
+<header class="site-header{% if meta.feature and meta.dark %} site-header-lighter{% endif %}">
+	<div class="site-header-main">
+		<!-- <div class="wrap"> -->
+	  	<hgroup>
+	    	<h1 class="site-title"><a href="/">{{ site.title }}</a></h1>
+	    </hgroup>
+	    <nav role="navigation">
+	    	<ul>
+	    		{% for page in site.pages %}
+	    		{% unless page.meta.hide_from_nav %}
+	    		<li>
+	    			<a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a>
+	    		</li>
+	    		{% endunless %}
+	    		{% endfor %}
+					<li>
+	    			<a href="/about#contact" title="Contact">Contact</a>
+	    		</li>
+	    	</ul>
+	    </nav>
+	  <!-- </div> -->
+	</div>
+</header>
