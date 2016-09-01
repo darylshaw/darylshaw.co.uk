@@ -1,7 +1,7 @@
 ---
-layout: page
 title: About
 date: 2015-08-13 22:29:00 Z
+layout: page
 ---
 
 Hi, I'm Daryl. I work in marketing and study business. Hopefully I will have something more meaningful to post here soon.

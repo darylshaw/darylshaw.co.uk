@@ -1,13 +1,10 @@
 ---
 title: Daryl Shaw
-url: http://darylshaw.co.uk
 timezone: UTC
-permalink: pretty
-google_analytics: UA-54371675-1
-name: Daryl Shaw
-email: daryl@darylshaw.co.uk
-twitter: daryl_shaw
 collections:
+  posts:
+    title: Posts
+    output: true
   uploads:
     title: Uploads
     output: true
@@ -17,6 +14,12 @@ defaults:
     type: posts
   values:
     permalink: "/blog/:title/"
+url: http://darylshaw.co.uk
+permalink: pretty
+google_analytics: UA-54371675-1
+name: Daryl Shaw
+email: daryl@darylshaw.co.uk
+twitter: daryl_shaw
 markdown: kramdown
 redcarpet:
   extensions:
@@ -29,5 +32,5 @@ redcarpet:
   - footnotes
   - highlight
 sass:
-    sass_dir: _sass
-    style: compressed
+  sass_dir: _sass
+  style: compressed

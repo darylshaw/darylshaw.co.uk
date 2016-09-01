@@ -1,4 +1,5 @@
 ---
-layout: posts
 title: Blog
+layout: posts
 ---
+

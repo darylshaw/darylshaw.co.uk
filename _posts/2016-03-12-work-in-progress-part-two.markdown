@@ -1,7 +1,7 @@
 ---
-layout: post
 title: 'Work in Progress: Part Two'
 date: 2016-03-12 20:34:00 Z
+layout: post
 description: I wrote a post back in November titled <a href="/blog/work-in-progress">Work
   in Progress</a> which was mainly so that there was something on this blog that I
   had just set up. I wrote about how I was finally getting my head around the whole

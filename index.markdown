@@ -1,7 +1,7 @@
 ---
-layout: posts
 title: Home
 date: 2015-11-11 00:21:00 Z
+layout: posts
 hide_from_nav: 'true'
 ---
 
