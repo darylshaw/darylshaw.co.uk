@@ -15,7 +15,7 @@ hide_from_nav: 'true'
           <div class="deets" itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
             <p class="date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></p>
             <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-            {% if post.meta.description %}<p class="post-intro">{{ post.meta.description }}</p>{% endif %}
+            {{ post.excerpt }}
           </div>
         </li>
         {% endfor %}
