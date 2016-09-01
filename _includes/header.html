@@ -6,13 +6,12 @@
 	    </hgroup>
 	    <nav role="navigation">
 	    	<ul>
-	    		{% for page in site.pages %}
-	    		{% unless page.hide_from_nav %}
-	    		<li>
-	    			<a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a>
+					<li>
+						<a href="/blog">Blog</a>
+					</li>
+					<li>
+	    			<a href="/about">About</a>
 	    		</li>
-	    		{% endunless %}
-	    		{% endfor %}
 					<li>
 	    			<a href="/about#contact" title="Contact">Contact</a>
 	    		</li>
