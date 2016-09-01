@@ -7,7 +7,7 @@
 	    <nav role="navigation">
 	    	<ul>
 	    		{% for page in site.pages %}
-	    		{% unless page.meta.hide_from_nav %}
+	    		{% unless page.hide_from_nav %}
 	    		<li>
 	    			<a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a>
 	    		</li>

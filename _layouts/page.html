@@ -35,10 +35,10 @@
   <body>
     <div class="page">
       {% include header.html %}
-      {% if meta.feature %}
+      {% if page.feature %}
       <section class="article">
-        <div class="overlay{% unless meta.dark %} overlay-lighter{% endunless %}"></div>
-        <div class="featured-image" style="background-image: url({{ meta.feature }})"></div>
+        <div class="overlay{% unless page.dark %} overlay-lighter{% endunless %}"></div>
+        <div class="featured-image" style="background-image: url({{ page.feature }})"></div>
         {% else %}
         <section class="article pad-top">
           {% endif %}
@@ -46,7 +46,7 @@
             <header class="post-header">
               <hgroup>
                 <h1>{{ page.title }}</h1>
-                {% if meta.description %}<p class="intro">{{ meta.description }}</p>{% endif %}
+                {% if page.description %}<p class="intro">{{ page.description }}</p>{% endif %}
               </hgroup>
             </header>
 
@@ -65,7 +65,7 @@
       <script src="/assets/js/retina.min.js"></script>
 
       <!-- symbolset icons -->
-      <script src="//cdn.symbolset.com/{{ site.meta.symbolset }}/symbolset.js"></script>
+      <script src="//cdn.symbolset.com/{{ site.symbolset }}/symbolset.js"></script>
 
       <!-- Custom JS -->
       <script src="/assets/js/scripts.js"></script>

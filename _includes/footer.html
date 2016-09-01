@@ -3,10 +3,10 @@
     <aside class="wrap">
       <div class="social">
         <ul>
-          <li>&copy; {{ site.time | date: '%Y' }} {{ site.meta.name }}</li>
-          <li><a id="mail" href="mailto:{{ site.meta.email }}"><span class="foot-link">Contact</span></a></li>
-          {% if site.meta.twitter %}
-          <li><a id="twit" href="http://twitter.com/{{ site.meta.twitter }}" target="_blank"><span class="foot-link">@{{ site.meta.twitter }}</span></a></li>
+          <li>&copy; {{ site.time | date: '%Y' }} {{ site.name }}</li>
+          <li><a id="mail" href="mailto:{{ site.email }}"><span class="foot-link">Contact</span></a></li>
+          {% if site.twitter %}
+          <li><a id="twit" href="http://twitter.com/{{ site.twitter }}" target="_blank"><span class="foot-link">@{{ site.twitter }}</span></a></li>
           {% endif %}
           <li>Powered by <a href="http://siteleaf.com">Siteleaf</a> using the <a href="https://github.com/destroytoday/Balzac-for-Siteleaf">Balzac</a> theme</li>
         </ul>
