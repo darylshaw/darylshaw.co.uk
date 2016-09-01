@@ -46,7 +46,7 @@
           <article class="wrap post">
             <header class="post-header">
               <hgroup>
-                <span>{{date | date: "%B %d, %Y"}}</span>
+                <span>{{post.date | date: "%B %d, %Y"}}</span>
                 <h1>{{ page.title }}</h1>
                 {% if page.description %}<p class="intro">{{ page.description }}</p>{% endif %}
               </hgroup>
