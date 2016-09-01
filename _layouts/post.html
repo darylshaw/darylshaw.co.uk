@@ -1,25 +1,78 @@
-{% capture 'content' %}
-  {% if meta.feature %}
-    <section class="article">
-      <div class="overlay{% unless meta.dark %} overlay-lighter{% endunless %}"></div>
-      <div class="featured-image" style="background-image: url({{ meta.feature }})"></div>
-  {% else %}
-    <section class="article pad-top">
-  {% endif %}
-      <article class="wrap post">
-        <header class="post-header">
-          <hgroup>
-            <span>{{date | date: "%B %d, %Y"}}</span>
-            <h1>{{ title }}</h1>
-            {% if meta.description %}<p class="intro">{{ meta.description }}</p>{% endif %}
-          </hgroup>
-        </header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  {% include meta-mobile.html %}
+  {% include meta-siteleaf.html %}
+  {% include meta-open-graph.html %}
 
-        {{ content }}
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
 
-      </article>
-    </section>
-  </div>
-{% endcapture %}
+  <!-- Type -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
 
-{% include 'layouts/default' %}
+  <!-- For all browsers -->
+  <link rel="stylesheet" href="/assets/css/i.css">
+
+  <!-- Fresh Squeezed jQuery -->
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+  <meta http-equiv="cleartype" content="on">
+
+  <!-- Load Modernizr -->
+  <script src="/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+  <!-- Icons -->
+  <!-- 16x16 -->
+  <link rel='icon' type='image/png' href='/assets/favicon.png'>
+  <link rel='shortcut icon' type='image/png' href='/assets/favicon.png'>
+  {% include js-google-analytics.html %}
+</head>
+  <body>
+    <div class="page">
+      {% include header.html %}
+
+      {% if meta.feature %}
+        <section class="article">
+          <div class="overlay{% unless meta.dark %} overlay-lighter{% endunless %}"></div>
+          <div class="featured-image" style="background-image: url({{ meta.feature }})"></div>
+      {% else %}
+        <section class="article pad-top">
+      {% endif %}
+          <article class="wrap post">
+            <header class="post-header">
+              <hgroup>
+                <span>{{date | date: "%B %d, %Y"}}</span>
+                <h1>{{ page.title }}</h1>
+                {% if meta.description %}<p class="intro">{{ meta.description }}</p>{% endif %}
+              </hgroup>
+            </header>
+
+            {{ content }}
+
+          </article>
+        </section>
+      </div>
+
+      <!-- <div class="push"></div> -->
+      {% include footer.html %}
+
+
+      <!-- If they're out, get some from the cellar -->
+      <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+      <script src="/assets/js/retina.min.js"></script>
+
+      <!-- symbolset icons -->
+      <script src="//cdn.symbolset.com/{{ site.meta.symbolset }}/symbolset.js"></script>
+
+      <!-- Custom JS -->
+      <script src="/assets/js/scripts.js"></script>
+
+      <!-- PTN253454darylshaw.co.uk75792633 -->
+    </div>
+  </body>
+</html>

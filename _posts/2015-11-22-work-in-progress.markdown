@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 'Work in Progress: Part One'
 date: 2015-11-22 03:48:00 Z
 description:
