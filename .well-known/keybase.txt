@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/darylshaw
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://darylshaw.co.uk
+  * I am darylshaw (https://keybase.io/darylshaw) on keybase.
+  * I have a public key with fingerprint 459F 5C11 D6D7 DE81 FA71  3574 2E10 3C66 2E92 0BC9
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101ea1a1cfdf0aa11e71c09741d2beb0f642daab1e8f1436ded8bc6d4c4dbd7a51a0a",
+            "fingerprint": "459f5c11d6d7de81fa7135742e103c662e920bc9",
+            "host": "keybase.io",
+            "key_id": "2e103c662e920bc9",
+            "kid": "0101ea1a1cfdf0aa11e71c09741d2beb0f642daab1e8f1436ded8bc6d4c4dbd7a51a0a",
+            "uid": "34626fb2bbe2264b6471f0dff29fd519",
+            "username": "darylshaw"
+        },
+        "service": {
+            "hostname": "darylshaw.co.uk",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1468264485,
+    "expire_in": 157680000,
+    "prev": "768ecb7bacc05837ad1e07f06f69ae8e5676192025d9650b4553a3d42a64df13",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.53
+Comment: https://keybase.io/crypto
+
+yMInAnicrVJbSBVRFL1qZSn5KImIShwriczmzJw5M/d+ZEkvKig10kq9nTPnjE73
+duc2M1czX1SIEhmhH0YQRtDLCII++iiobkZvowLBHn9BD5KKQovi2hmpn+iz83PY
+e6+19tqbPTA9xZeWFJ/aNhpqv1KS9ODm8Ziv4uCnhU0CsWijEGgSQmziY2HKHDcY
+MqkQEEQgAoYBBrpBDRFjAJgKdNGvQkAlwohoIChRjAlgmgGgjCijGtERhTqkhKpY
+AVjEQqFgmJFaZkdtM+JyWaj4DUUHgCKqUqYBA6tAVlQoMSDKOkIS80si0f2cWGc5
+HoObI9hhRabFczwITtj7B/4/+45NyMkQScggEiFMkhAkCKrAEKlhSH6DKsDrG3OY
+HcG7GUdTbDeGnTrcILQUCjxdb+rM26w3yt+QIt0qioU4P2pbrqVbYV6sc91owOO6
+jVEP3MBI8LdMkJgRylfJCfXMdkwrIgQAR+qu6ekCiDTuD2pKocD2Rk2bBU0PoahI
+E/nz2rB6LsljphOVYF0XFU1WMQVMVA0RGciPmcYUpCLAdyop1I8UkUBFkbFMoYQR
+pAaQBW+wPRFLCEBuE9dyScesjWA3ZjOhJX6japIvKc03ZXKyd2K+tGlZfw6vYHnq
++Nre6q+Jtrbna3qSF5WoqwtmPX6bvnD00+72qJazhLhO7ozvt9yevPnY/yE7+9ap
+srNj/TQ75ceSJxnG0vNj4qHcJ+f6X31niRPXXla+KK0ayTxS8f5R1rroqm2nj8Wa
+U9a/vn3VeVBevDWcd/fOloGyzx1zd5YUzw4Nmp+H5arr7w8kBrvvkWjr4of5z1BM
+6zrjO/nxUvqVebsSNUe3gc2ZndtfJDaUNvedXvBuSLZ/DrdemFm9srzmzvE599/W
+VB8OvtF3jFefar/WFv5WnJo22HejHuY8cyt7lwXyL4/02vuepsaT+uIDQ5v2N8sj
+XxJCZ8aKbrfi4tDAjpSOro1DU2f9AjtYRHw=
+=n7cR
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/darylshaw
+
+==================================================================
