@@ -20,6 +20,7 @@ google_analytics: UA-54371675-1
 name: Daryl Shaw
 email: daryl@darylshaw.co.uk
 twitter: daryl_shaw
+include: [".well-known"]
 markdown: kramdown
 redcarpet:
   extensions:
@@ -34,4 +35,3 @@ redcarpet:
 sass:
   sass_dir: _sass
   style: compressed
-include: [".well-known"]
