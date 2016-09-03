@@ -34,4 +34,3 @@ redcarpet:
 sass:
   sass_dir: _sass
   style: compressed
-include: ['.well-known']
