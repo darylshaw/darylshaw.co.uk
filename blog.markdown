@@ -1,7 +1,5 @@
 ---
 title: Blog
 position: 1
-layout: default
+layout: posts
 ---
-
-{% include posts.html %}

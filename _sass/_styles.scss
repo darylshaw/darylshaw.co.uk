@@ -147,11 +147,6 @@ input {
 
 /************ Layout *************/
 
-#bump {
-  min-height: 100%;
-  height: auto;
-  margin: 0 auto -$footerHeight;
-}
 
 .wrap {
   max-width: 60em; /* 960px / 16px */
@@ -186,9 +181,7 @@ header.site-header {
   }
 
   .site-header-main {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 2.5em;
+    padding: 5em;
   }
 
   a {
@@ -266,6 +259,9 @@ header.site-header-lighter {
 
 /* Article Stuff */
 
+.hed-title {
+  margin: 1em 0;
+}
 
 .article {
   position: relative;
@@ -337,12 +333,34 @@ header.site-header-lighter {
 
 // Archive Page
 
+.page-content {
+  margin: 5em;
+}
+
 .archive {
   @include column(10);
   display: block;
   margin: 0 auto;
   float: none;
   // min-height: 500px;
+}
+
+.hed-archive-year {
+  margin: 4em 0 1.5em;
+}
+
+.archive-month {
+  display: flex;
+  margin-bottom: 2em;
+  border-bottom: 1px solid #EEE;
+}
+
+.hed-archive-month {
+  width: 30%;
+}
+
+.archive-posts {
+  margin-bottom: 1.5em;
 }
 
 .archive-wrap {
@@ -352,7 +370,6 @@ header.site-header-lighter {
   margin: 0 auto;
   float: none;
   // padding-top: 140px;
-  padding: 0 2.5em;
 
   // Post Listing
   .post-list {
