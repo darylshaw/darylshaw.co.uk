@@ -33,8 +33,15 @@
   {% include js-google-analytics.html %}
 </head>
   <body>
+    {% include header.html %}
+
     <div class="page">
-      {% include header.html %}
+      <div class="page-content">
+
+        <h1 class="title">{{ page.title }}</h1>
+        <span>{{page.date | date: "%B %d, %Y"}}</span>
+
+        {{ content }}
 
       {% if meta.feature %}
         <section class="article">
@@ -58,7 +65,7 @@
         </section>
       </div>
 
-      <!-- <div class="push"></div> -->
+
       {% include footer.html %}
 
 
