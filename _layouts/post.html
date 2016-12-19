@@ -1,70 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  {% include meta-mobile.html %}
-  {% include meta-siteleaf.html %}
-  {% include meta-open-graph.html %}
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-
-  <!-- Type -->
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
-
-  <!-- For all browsers -->
-  <link rel="stylesheet" href="/assets/css/i.css">
-
-  <!-- Fresh Squeezed jQuery -->
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-
-  <meta http-equiv="cleartype" content="on">
-
-  <!-- Load Modernizr -->
-  <script src="/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
-
-  <!-- Icons -->
-  <!-- 16x16 -->
-  <link rel='icon' type='image/png' href='/assets/favicon.png'>
-  <link rel='shortcut icon' type='image/png' href='/assets/favicon.png'>
-  {% include js-google-analytics.html %}
-</head>
+{% include head.html %}
   <body>
     {% include header.html %}
 
     <div class="page">
       <div class="page-content">
-
-        <h1 class="title">{{ page.title }}</h1>
-        <span>{{page.date | date: "%B %d, %Y"}}</span>
-
-        {{ content }}
-
-      {% if meta.feature %}
-        <section class="article">
-          <div class="overlay{% unless page.dark %} overlay-lighter{% endunless %}"></div>
-          <div class="featured-image" style="background-image: url({{ page.feature }})"></div>
-      {% else %}
-        <section class="article pad-top">
-      {% endif %}
-          <article class="wrap post">
-            <header class="post-header">
-              <hgroup>
-                <span>{{page.date | date: "%B %d, %Y"}}</span>
+          <article>
+            <header>
                 <h1>{{ page.title }}</h1>
-                {% if page.description %}<p class="intro">{{ page.description }}</p>{% endif %}
-              </hgroup>
+                <p>{{page.date | date: "%B %d, %Y"}}</p>
             </header>
-
-            {{ content }}
-
+            <div class="content-main">
+              {{ content }}
+            </div>
+            <footer>
+              {% include share.html %}
+            </footer>
           </article>
-        </section>
+        </div>
       </div>
-
 
       {% include footer.html %}
 

@@ -1,15 +1,17 @@
-<section class="article archive">
-    <article class="archive-wrap">
-      <ol class="post-list">
-        <lh><h2><span class="bb">2016</span></h2></lh>
-        {% for post in site.posts %}
+<ul>
+  <li class="archive-year">
+    <h2 class="archive-year-header"><span class="bb">2016</span></h2>
+  </li>
+  {% for post in site.posts %}
+  <ol>
+    <li class="archive-month">
+      <h3 class="archive-month-header"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B" }}</time></h3>
+      <ul class="archive-posts">
         <li>
-          <div class="deets" itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
-            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-            <p class="date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d" }}</time></p>
-          </div>
+          <a href="{{ post.url }}">{{ post.title }}</a>
         </li>
-        {% endfor %}
-      </ol>
-    </article>
-  </section>
+      </ul>
+    </li>
+  </ol>
+  {% endfor %}
+</ul>

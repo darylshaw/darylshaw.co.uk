@@ -2,12 +2,10 @@
 title: 'Work in Progress: Part Two'
 date: 2016-03-12 20:34:00 Z
 layout: post
-description: I wrote a post back in November titled <a href="/blog/work-in-progress">Work
-  in Progress</a> which was mainly so that there was something on this blog that I
-  had just set up. I wrote about how I was finally getting my head around the whole
-  set up. The post was only brief which is part of the reason why I am revisiting
-  it, it was never my plan for it to be a two parter.
+description:
 ---
+
+I wrote a post back in November titled <a href="/blog/work-in-progress">Work in Progress</a> which was mainly so that there was something on this blog that I had just set up. I wrote about how I was finally getting my head around the whole set up. The post was only brief which is part of the reason why I am revisiting it, it was never my plan for it to be a two parter.
 
 I'll come back to the set up later in another post as this post is more about how this site will always be work in progress. I've had the domain (amongst many others) for a while now but never really did anything with it. I've hosted it in a few different places with different messages (which still exist in places in the current incarnation of this site) about how there will be more coming soon and always had the best intentions to blog and do more with the site but never really got round to it.
 
