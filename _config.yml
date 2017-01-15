@@ -36,3 +36,5 @@ sass:
   style: compressed
 gems:
   - jekyll-seo-tag
+  - jekyll-github-metadata
+repository: daryl-shaw/darylshaw.co.uk
