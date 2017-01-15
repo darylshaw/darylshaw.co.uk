@@ -37,4 +37,5 @@ sass:
 gems:
   - jekyll-seo-tag
   - jekyll-github-metadata
+  - jekyll-sitemap
 repository: daryl-shaw/darylshaw.co.uk
