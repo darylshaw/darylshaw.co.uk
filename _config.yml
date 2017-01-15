@@ -34,3 +34,5 @@ redcarpet:
 sass:
   sass_dir: _sass
   style: compressed
+gems:
+  - jekyll-seo-tag
