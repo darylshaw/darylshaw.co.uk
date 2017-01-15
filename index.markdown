@@ -6,4 +6,18 @@ layout: default
 description: I'm Daryl. I work in marketing. Welcome to my site.
 ---
 
-{% include posts.html %}
+# Hi, I'm Daryl.
+
+I work in marketing and sometimes post stuff here.
+
+
+<div class="latest-posts">
+  <h2>Latest Posts</h2>
+  <ul class="archive-posts">
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a> - <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d" }}</time>
+    </li>
+  {% endfor %}
+  </ul>
+</div>

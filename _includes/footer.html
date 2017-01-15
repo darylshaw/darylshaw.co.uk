@@ -1,16 +1,12 @@
 <footer class="site-footer">
   <div class="site-footer-main">
-    <aside class="wrap">
-      <div class="social">
-        <ul>
-          <li>&copy; {{ site.time | date: '%Y' }} {{ site.name }}</li>
-          <li><a id="mail" href="mailto:{{ site.email }}"><span class="foot-link">Contact</span></a></li>
-          {% if site.twitter %}
-          <li><a id="twit" href="http://twitter.com/{{ site.twitter.username }}" target="_blank"><span class="foot-link">@{{ site.twitter.username }}</span></a></li>
-          {% endif %}
-          <li>Powered by <a href="http://siteleaf.com">Siteleaf</a> using the <a href="https://github.com/destroytoday/Balzac-for-Siteleaf">Balzac</a> theme</li>
-        </ul>
-      </div>
-    </aside>
+    <ul>
+      <li>&copy; {{ site.time | date: '%Y' }} {{ site.name }}</li>
+      <li><a id="mail" href="mailto:{{ site.email }}"><span class="foot-link">Contact</span></a></li>
+      {% if site.twitter %}
+      <li><a id="twit" href="http://twitter.com/{{ site.twitter.username }}" target="_blank"><span class="foot-link">@{{ site.twitter.username }}</span></a></li>
+      {% endif %}
+      <li>Powered by <a href="http://siteleaf.com">Siteleaf</a></li>
+    </ul>
   </div>
 </footer>
