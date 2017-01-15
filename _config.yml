@@ -40,4 +40,5 @@ gems:
   - jekyll-seo-tag
   - jekyll-github-metadata
   - jekyll-sitemap
+  - jekyll-feed
 repository: daryl-shaw/darylshaw.co.uk
