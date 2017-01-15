@@ -1,5 +1,6 @@
 ---
 title: Daryl Shaw
+description:
 timezone: UTC
 collections:
   posts:
@@ -19,7 +20,8 @@ permalink: pretty
 google_analytics: UA-54371675-1
 name: Daryl Shaw
 email: daryl@darylshaw.co.uk
-twitter: daryl_shaw
+twitter:
+  username: daryl_shaw
 markdown: kramdown
 redcarpet:
   extensions:
