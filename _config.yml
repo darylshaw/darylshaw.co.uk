@@ -14,7 +14,7 @@ defaults:
     type: posts
   values:
     permalink: "/blog/:title/"
-url: http://darylshaw.co.uk
+url: https://darylshaw.co.uk
 permalink: pretty
 google_analytics: UA-54371675-1
 name: Daryl Shaw
