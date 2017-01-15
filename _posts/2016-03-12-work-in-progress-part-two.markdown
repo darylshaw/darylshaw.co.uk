@@ -2,7 +2,7 @@
 title: 'Work in Progress: Part Two'
 date: 2016-03-12 20:34:00 Z
 layout: post
-description:
+description: 
 ---
 
 I wrote a post back in November titled [Work in Progress](/blog/work-in-progress/) which was mainly so that there was something on this blog that I had just set up. I wrote about how I was finally getting my head around the whole set up. The post was only brief which is part of the reason why I am revisiting it, it was never my plan for it to be a two parter.
