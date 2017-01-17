@@ -130,10 +130,6 @@ input {
 
 /* Header */
 
-.site-header {
-  background: #000;
-}
-
 .site-header-main {
   padding: 1.5em 3em;
 
@@ -142,12 +138,14 @@ input {
 
     h1 {
       font-size: 1.25em; /* 20px / 16px = 1.25em */
+      font-weight: 400;
 
       a {
-        color: #fff;
+        color: #000;
 
         &:hover {
           text-decoration: none;
+          opacity: .6;
         }
       }
     }
@@ -163,7 +161,12 @@ input {
     }
 
     a {
-      color: #fff;
+      color: #000;
+
+      &:hover {
+        text-decoration: none;
+        opacity: .6;
+      }
     }
   }
 }
