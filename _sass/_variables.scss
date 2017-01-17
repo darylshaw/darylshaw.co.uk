@@ -5,9 +5,7 @@
 /* Colors
    ========================================================================== */
 
-/* Don't use black */
-
-$black:  #3b3b3b;
+$black:  #000;
 $white: #fff;
 
 /* Gray scale */
@@ -20,7 +18,7 @@ $grey-light:  #d9d9d9;
 $hilite: #fffbd7;
 
 /* Accent Colors */
-$link: #2455c3;
+$link: #666;
 $accent: #24536B;
 
 
@@ -37,7 +35,7 @@ $serif: 'Roboto', sans-serif;
 
 /** * 12 & 16 as roots then powers of two. */
 
-$fs1:36px; /* need to convert everything away from pixels */
+$fs1:4.5em; /* 72px / 16px */ /* need to convert everything away from pixels */
 $fs2:24px;
 $fs3:18px;
 $fs4:24px;

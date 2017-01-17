@@ -11,8 +11,9 @@ description: I'm Daryl. I work in marketing. Welcome to my site.
 I work in marketing and sometimes post stuff here.
 
 
-<div class="latest-posts">
-  <h2>Latest Posts</h2>
+
+## Latest Posts
+
   <ul class="archive-posts">
   {% for post in site.posts %}
     <li>
@@ -20,4 +21,3 @@ I work in marketing and sometimes post stuff here.
     </li>
   {% endfor %}
   </ul>
-</div>

@@ -1,20 +1,43 @@
 
 /************ Basic *************/
 
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: $serif;
   color: $black;
   -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
   text-size-adjust: 100%;
   background: $white;
+  margin: 0;
   min-height: 100%;
-  height: 100%;
   overflow-x: hidden;
+  position: relative;
+  padding-bottom: 7em;
+}
+
+@media only screen and (min-width: 50em) { /* 800px / 16px = 50em */
+  body {
+    padding-bottom: 4em;
+  }
 }
 
 h1,h2,h3,h4,h5 {
   font-family: $serif;
   font-weight: 900;
+}
+
+h2 {
+  margin-top: 3em;
 }
 
 p {
@@ -27,7 +50,7 @@ a, a:visited, a:active {
 
 a:hover {
   color: $link;
-  text-decoration: underline;
+  opacity: .6;
 }
 
 em {
@@ -142,11 +165,7 @@ input {
 
       a {
         color: #000;
-
-        &:hover {
-          text-decoration: none;
-          opacity: .6;
-        }
+        text-decoration: none;
       }
     }
   }
@@ -162,11 +181,7 @@ input {
 
     a {
       color: #000;
-
-      &:hover {
-        text-decoration: none;
-        opacity: .6;
-      }
+      text-decoration: none;
     }
   }
 }
@@ -195,6 +210,10 @@ input {
 
 /* Content Stuff */
 
+.page {
+  padding-bottom: 6em;
+}
+
 .page-content {
   margin: 3em;
 }
@@ -211,16 +230,8 @@ input {
   margin: 0.5em 0;
 }
 
-.latest-posts {
-  margin-top: 3em;
-
-  .archive-posts {
-    margin-bottom: 6em;
-
-    li {
-      margin: 1em 0;
-    }
-  }
+.archive-posts li {
+  margin: 1em 0;
 }
 
 @media only screen and (min-width: 50em) { /* 800px / 16px = 50em */
@@ -261,6 +272,10 @@ input {
 }
 
 // Post Formatting
+
+.post-date {
+  font-style: italic;
+}
 
 .post {
   min-height: 500px;
@@ -384,8 +399,12 @@ input {
 
 .site-footer {
   background: #e5e5e5;
-  font-size: $fsp;
-  color: #000;
+  font-size: 1em;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 7em; /* 64px / 16px = 4em */
 
   // Contain that ish
   section {
@@ -461,7 +480,7 @@ input {
 }
 
 .site-footer-main {
-  padding: 1.5em 3em;
+  padding: 1.5em 2.66669em;
 
   ul {
     li {
@@ -485,8 +504,12 @@ input {
 }
 
 @media only screen and (min-width: 50em) { /* 800px / 16px = 50em */
-  .site-footer-main {
-    padding: 3em 6em;
+  .site-footer {
+    font-size: 1.125em; /* 18px / 16px = 1.125em */
+
+    .site-footer-main {
+      padding: 3em 5.33331em;
+    }
   }
 }
 
@@ -497,7 +520,7 @@ input {
   // Type Fixes
 
   h1 {
-    font-size: $fs1;
+    font-size: 2.25em; /* 36 / 16 */
   }
 
   blockquote, blockquote p {
