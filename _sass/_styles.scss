@@ -186,7 +186,7 @@ input {
   }
 }
 
-@media only screen and (min-width: 27.5em) { /* 440px / 16px = 27.5em */
+@media only screen and (min-width: $breakpoint-0-min-width) {
   .site-header-main {
     display: flex;
     justify-content: space-between;
@@ -230,7 +230,7 @@ input {
   margin: 0.5em 0;
 }
 
-.archive-posts li {
+.latest-posts li {
   margin: 1em 0;
 }
 
@@ -254,7 +254,7 @@ input {
   margin: 0 0 0.5em;
 }
 
-@media only screen and (min-width: 27.5em) {
+@media only screen and (min-width: $breakpoint-0-min-width) {
   .archive-month {
     display: flex;
     margin-bottom: 2em;

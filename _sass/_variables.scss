@@ -61,11 +61,12 @@ $footerHeight: 320px;
    ========================================================================== */
 
 /* Mobile */
-$breakpoint-1-max-width:480px;
+$breakpoint-0-min-width: 27.5em; /* 440px / 16px */
+$breakpoint-1-max-width: 30em; /* 480px / 16px */
 
 /* Tablet */
-$breakpoint-2-max-width:800px;
-$breakpoint-3-max-width:1200px;
+$breakpoint-2-max-width: 50em; /* 800px / 16px */
+$breakpoint-3-max-width: 75em; /* 1200px / 16px */
 
 /* Style Tidbits
    ========================================================================== */

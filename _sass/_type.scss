@@ -18,6 +18,10 @@ p {
     line-height: 1.4em;
 }
 
+ul li {
+  font-size: $fs5;
+}
+
 .post ul li {
     font-size: $fsp;
     line-height: $lh;
@@ -47,18 +51,19 @@ blockquote, blockquote p {  font-size: $fs2; }
 
 
 
-// Iphone
-
 @media only screen and (min-width: $breakpoint-1-max-width) {
 
 p {
     font-size: $fsp;
-    // line-height: $lhsmall;
 }
 
 .intro {
     font-size: 18px;
     line-height: 33px;
+}
+
+ul li {
+  font-size: $fsp;
 }
 
 .post ul li {

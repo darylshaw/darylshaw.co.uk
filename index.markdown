@@ -14,7 +14,7 @@ I work in marketing and sometimes post stuff here.
 
 ## Latest Posts
 
-  <ul class="archive-posts">
+  <ul class="latest-posts">
   {% for post in site.posts %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a> - <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d" }}</time>
