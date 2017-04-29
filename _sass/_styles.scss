@@ -154,7 +154,7 @@ input {
 /* Header */
 
 .site-header-main {
-  padding: 1.5em 3em;
+  padding: 1.5em 2em;
 
   hgroup {
     margin: 0 0 1em;
@@ -215,7 +215,7 @@ input {
 }
 
 .page-content {
-  margin: 3em;
+  margin: 2em;
 }
 
 .title {
@@ -368,26 +368,31 @@ input {
       }
     }
   }
+}
 
-  .share {
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    width: 76px;
-    font-size: $fs5;
-    font-family: $sans;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1px;
-    padding: 4px 6px 4px 6px;
-    color: $grey-light;
-    border: 2px solid transparentize($grey-light,.3);
-    @include br(4px);
+.post-footer {
+  max-width: 37.5em;
 
-    &:hover {
-      color: $link;
-      border-color: transparentize($link,.3);
-      @include transit(all,.2s,ease)
+  .next-prev {
+    border-top: 1px solid $lt-grey;
+    display: flex;
+    line-height: 1.5;
+
+    li {
+      flex: 0 0 50%;
+
+      a {
+        text-decoration: none;
+        padding: 1em;
+
+        h3 {
+          color: $black;
+        }
+
+        span {
+          border-bottom: 1px solid $grey;
+        }
+      }
     }
   }
 }
@@ -437,50 +442,10 @@ input {
     font-style: italic;
     font-size: $fs4;
   }
-  .prev-posts {
-    @include column(6,10);
-    max-width: 600px;
-    min-height: 250px;
-    padding-left: 5vw;
-
-    p {
-      padding-top: $lh*2;
-    }
-
-    li {
-      @include row(12);
-      margin-top: $lh/2;
-
-      .recent-title {
-        @include column(8,12);
-        font-style: italic;
-        a {
-          &:hover {
-            color: $white;
-          }
-        }
-      }
-
-      span.date {
-        float: none;
-        color: transparentize($grey-light, .4);
-        @include column(4,12);
-        position: relative;
-        font-size: $fs5;
-        font-family: $sans;
-        text-transform: uppercase;
-        text-align: right;
-      }
-    }
-  }
-}
-
-.disqus {
-  margin-top: $lh*3;
 }
 
 .site-footer-main {
-  padding: 1.5em 2.66669em;
+  padding: 1.5em 2em;
 
   ul {
     li {
@@ -529,18 +494,6 @@ input {
 
   footer {
     font-size: $fs5;
-
-    .prev-posts {
-      li  {
-        span.date {
-          font-size: $fs6;
-        }
-      }
-    }
-
-    .social {
-      right: 10vw;
-    }
   }
 }
 
@@ -555,18 +508,6 @@ input {
     aside {
       width: 90%;
       margin: 0 auto;
-    }
-
-    .prev-posts {
-      @include column(9);
-      padding-left: 0;
-      float: none;
-      margin: 0 auto;
-      display: block;
-
-      li {
-        margin-top: $lh/2;
-      }
     }
   }
 }
