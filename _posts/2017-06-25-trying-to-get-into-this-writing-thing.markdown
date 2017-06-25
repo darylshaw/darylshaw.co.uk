@@ -1,6 +1,7 @@
 ---
 title: Trying to Get Into This Writing Thing
 date: 2017-06-25 17:17:00 Z
+layout: post
 ---
 
 On the commute home the other day my phone had no battery which meant without Wi-Fi I couldn't spend my commute reading emails and doing work like usual so it forced my hand to write some words.
@@ -10,13 +11,9 @@ I started writing this in Atom in markdown because of the lack of internet acces
 I’ve recently started using Dropbox Paper instead of Google Docs. There were a number of reasons I decided to switch to Dropbox Paper:
 
 1. One of them being I like how stripped back it is which lets me just focus on the words.
-
 2. You can download Dropbox Paper docs in markdown format.
-
 3. I was having issues with [switching between Google accounts](https://support.google.com/docs/answer/2405894) when working with Google Docs, even though my accounts have different endings.
-
 4. On switching accounts, I also like the clear separation between work and personal with the new Dropbox design.
-
 5. The [formatting options](https://www.dropbox.com/help/paper/formatting).
 
 Although I would like to write exclusively in markdown in Atom and not use Dropbox Paper, the formatting options and markdown inspired macros do add to the writing experience. I’ve also found that when I’m writing I like to leave comments for myself, which can make things messy and break the flow of writing when trying to do this in Markdown in a text editor. Even though it has a good interface, I don’t like to write directly in Siteleaf because of the GitHub sync. I have a habit of starting things that I never finish (or take a long time to finish) so all the drafts would be sat in the GitHub repo until I got round to finishing them.
