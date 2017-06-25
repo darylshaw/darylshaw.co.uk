@@ -1,31 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-{% include head.html %}
-  <body>
-    {% include header.html %}
-    <div class="page">
-      <div class="page-content">
-        <h1 class="title">{{ page.title }}</h1>
-        <div class="content-main">
-          {{ content }}
-        </div>
-      </div>
-    </div>
-    
-    {% include footer.html %}
+---
+layout: default
+---
 
-
-      <!-- If they're out, get some from the cellar -->
-      <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-      <script src="/assets/js/retina.min.js"></script>
-
-      <!-- symbolset icons -->
-      <script src="//cdn.symbolset.com/{{ site.symbolset }}/symbolset.js"></script>
-
-      <!-- Custom JS -->
-      <script src="/assets/js/scripts.js"></script>
-
-      <!-- PTN253454darylshaw.co.uk75792633 -->
-    </div>
-  </body>
-</html>
+<h1 class="title">{{ page.title }}</h1>
+<div class="content-main">
+  {{ content }}
+</div>
