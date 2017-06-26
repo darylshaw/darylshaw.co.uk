@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+{% assign tag = page.title | downcase %}
+{% assign tag_posts = site.tags[tag] %}
+{% for post in tag_posts %}
+  {% include post.html post=post %}
+{% endfor %}

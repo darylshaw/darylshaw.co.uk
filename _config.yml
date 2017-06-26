@@ -8,12 +8,20 @@ collections:
   uploads:
     title: Uploads
     output: true
+  blog_tags:
+    title: Tags
+    output: true
 defaults:
 - scope:
     path: ''
     type: posts
   values:
     permalink: "/blog/:title/"
+- scope:
+    path: ''
+    type: blog_tags
+  values:
+    layout: tag
 url: https://darylshaw.co.uk
 permalink: pretty
 google_analytics: UA-54371675-1
