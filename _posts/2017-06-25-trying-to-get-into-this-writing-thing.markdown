@@ -1,8 +1,6 @@
 ---
 title: Trying to Get Into This Writing Thing
 date: 2017-06-25 17:17:00 Z
-tags:
-- dropbox paper
 layout: post
 ---
 

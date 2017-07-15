@@ -34,6 +34,7 @@ body {
 h1,h2,h3,h4,h5 {
   font-family: $serif;
   font-weight: 900;
+  line-height: 1.5em;
 }
 
 h2 {
@@ -270,7 +271,7 @@ input {
   margin-bottom: 1.5em;
 
   li {
-    line-height: 1em;
+    line-height: 1.5em;
   }
 }
 
@@ -278,6 +279,40 @@ input {
 
 .post-date {
   font-style: italic;
+}
+
+article {
+  header {
+    h2 {
+      line-height: 1.5em;
+
+      a, a:visited, a:active {
+        color: #000;
+        text-decoration: none;
+      }
+    }
+
+    .post-meta {
+      margin-bottom: 1.25em;
+      line-height: 2.0625em;
+
+      .post-tag {
+        display: inline-block;
+
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+          background: #e5e5e5;
+          padding: 0.3em 0.6em;
+          font-size: .8125em;
+
+          &:before {
+            content: "#";
+          }
+        }
+      }
+    }
+  }
 }
 
 ol {
@@ -488,6 +523,7 @@ ol {
 
   h1 {
     font-size: 2.25em; /* 36 / 16 */
+    line-height: 1.5em;
   }
 
   blockquote, blockquote p {
