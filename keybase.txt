@@ -4,66 +4,73 @@ https://keybase.io/darylshaw
 
 I hereby claim:
 
-  * I am an admin of http://darylshaw.co.uk
+  * I am an admin of https://darylshaw.co.uk
   * I am darylshaw (https://keybase.io/darylshaw) on keybase.
   * I have a public key with fingerprint 459F 5C11 D6D7 DE81 FA71  3574 2E10 3C66 2E92 0BC9
 
 To do so, I am signing this object:
 
 {
-    "body": {
-        "key": {
-            "eldest_kid": "0101ea1a1cfdf0aa11e71c09741d2beb0f642daab1e8f1436ded8bc6d4c4dbd7a51a0a",
-            "fingerprint": "459f5c11d6d7de81fa7135742e103c662e920bc9",
-            "host": "keybase.io",
-            "key_id": "2e103c662e920bc9",
-            "kid": "0101ea1a1cfdf0aa11e71c09741d2beb0f642daab1e8f1436ded8bc6d4c4dbd7a51a0a",
-            "uid": "34626fb2bbe2264b6471f0dff29fd519",
-            "username": "darylshaw"
+    &quot;body&quot;: {
+        &quot;key&quot;: {
+            &quot;eldest_kid&quot;: &quot;0101ea1a1cfdf0aa11e71c09741d2beb0f642daab1e8f1436ded8bc6d4c4dbd7a51a0a&quot;,
+            &quot;fingerprint&quot;: &quot;459f5c11d6d7de81fa7135742e103c662e920bc9&quot;,
+            &quot;host&quot;: &quot;keybase.io&quot;,
+            &quot;key_id&quot;: &quot;2e103c662e920bc9&quot;,
+            &quot;kid&quot;: &quot;0101ea1a1cfdf0aa11e71c09741d2beb0f642daab1e8f1436ded8bc6d4c4dbd7a51a0a&quot;,
+            &quot;uid&quot;: &quot;34626fb2bbe2264b6471f0dff29fd519&quot;,
+            &quot;username&quot;: &quot;darylshaw&quot;
         },
-        "revoke": {
-            "sig_ids": [
-                "8ad4ffc05ea52b6d4d6cc68b21317bd1817f6e6c4b851f5041af35d32486c7270f"
+        &quot;merkle_root&quot;: {
+            &quot;ctime&quot;: 1500239605,
+            &quot;hash_meta&quot;: &quot;65258b85442431813a5a8adcc82918986e32318815ec2a8552cf788af0e172e1&quot;,
+            &quot;seqno&quot;: 1236884
+        },
+        &quot;revoke&quot;: {
+            &quot;sig_ids&quot;: [
+                &quot;75f71b4045e8e2008d4f7067244ebbe3bb48ba511c7163aea9fa991d76ccc2510f&quot;
             ]
         },
-        "service": {
-            "hostname": "darylshaw.co.uk",
-            "protocol": "http:"
+        &quot;service&quot;: {
+            &quot;hostname&quot;: &quot;darylshaw.co.uk&quot;,
+            &quot;protocol&quot;: &quot;https:&quot;
         },
-        "type": "web_service_binding",
-        "version": 1
+        &quot;type&quot;: &quot;web_service_binding&quot;,
+        &quot;version&quot;: 1
     },
-    "ctime": 1472936788,
-    "expire_in": 157680000,
-    "prev": "6486f8f69414f4f3e0c937c829e48870fc4effebc9974f0b094f83ebdabbf4da",
-    "seqno": 5,
-    "tag": "signature"
+    &quot;ctime&quot;: 1500239689,
+    &quot;expire_in&quot;: 157680000,
+    &quot;prev&quot;: &quot;0764af90f72c6a0c5d1368818a2f7c0c99ac2e5d5c2449dc65ed0b7bd5cab4f1&quot;,
+    &quot;seqno&quot;: 9,
+    &quot;tag&quot;: &quot;signature&quot;
 }
 
 which yields the signature:
 
 -----BEGIN PGP MESSAGE-----
-Version: Keybase OpenPGP v2.0.56
+Version: Keybase OpenPGP v2.0.73
 Comment: https://keybase.io/crypto
 
-yMJsAnicrZJfaBxFHMfvYho1UE1R8UEUMyQ2knjMzM7O7l5jsRWVQqtQFYsajvnz
-m2S5dPe6u3dpiDFq1Retxf5DiOhDeyKlWhRtoISaNtqWVlR8iCJKQa0KRlELRVqu
-OBv0RXx0XoaZ+f6+3w+/33y4/IpCZ/H4VVMXqs/NrC2eOXahXnjkzKqHJpCM9Tgq
-T6AqLG0wqiHNKtVQozLCBBMQRBBltMFCEAIeUTjwGNFUgsSGM6qFkAR8Q5jDNWhf
-Kq6ZYlpqT7hEYIEGkAmjYUhqSRhl1pa5gXEVIZprT4NPjPCI43qMAsGO4pxCQLFU
-gS0cidO8wsJJkUIpjO2dPVSW8P5D/z9z15fsHMYpN5JKCZRyJjnziMHaGBoY7ZI8
-t55CEonNYNVaJOOj6YgYQ5MDKIFGXIW8sWk4bKlTVH4M+UIzYxR2QbhU2lTNleK+
-pMQhntTEJ57hwBWTvkuMixkRxnG1Q5nPlUc9bNCQ9baRjVAtmedt+nd8ScWletWy
-1ZI4i1U8ah9HsqxWzrmy8VouHgNZ+dumIsNI2zHZggYkaRhHqEysUmVh7kuYRwOH
-e74/gGBrLUygEuYK1+M+tiuPgYa15BbS+IYHjDDDjANYBY6nfBoA833LrhgYA3Zc
-dhwGSxww4zsgtZDSMJ13PYUtUYzKrsUUw9bSti4SWT0BNHl87vH2QrGz0LGsLf++
-hc6ru/751HPfXdlasfIUGrxubGZvunCx6/bL4v39b7335RokVef9m2ce+PaDCh7s
-P33LO6vfbps+Orzv0Bd3Lb5bwr3N/qk3P86O3PP77vWvye7PzrWub/VOjJzb9GtP
-vK/a9+DPxy6lqnmivmHPS/dd3Ihm31jZ1vph5zX66e9Phtu+OfLos+jP9MWFU9F2
-tWbqfPPk9Pri/hM39B3e1DHY3X3Tb72T9O4t23sVml9eemrb1p2m59oNq5Obd3c8
-+en8pQN3wjPrZhfbm7d9dUfpk4fn+ucPPm+GenZ07Vp16/mzweszfbsU3TuNu5q/
-jL5SXBEsLH69LGp9tPbzw42OF+594tWjl0//+NO6ofZDf+y4cc/s2Zf/AifpYDw=
-=FlYH
+yMK1AnicrVNbaFxFGN6Y2NgtYrW2SI0+HC8t5sLMnLmdECqmTxILfchDqw3buW6O
+u9mzPefsNmuNJVTbB2vxQWqJilqV9kkqiQqitYlFwSpRWy0YBFMSqAhtEdZaiJc5
+QUGKj56X4fzz/d/3/d/MnL65NZdvmblp76+lZ97vbzkz06jltpfOP7zHk5FueL17
+vJJZXkxZmyQtlELt9XoAAmgEFFBZbYEQEBoGFQgYhhpJI4GlGGkhJDTcQuxTbTSX
+imqssJaaCQIFEF6XZ8NK0cTVOKykjhaTwBIFoaaaacOhFQz6hGFkIPAVpcgECEgV
+uMbhKMk6nDkpEtMTRq7mfgrL9v4D/z/7ri3T+ZgiaiWS0iBEsaSYQQu0tSiwmsBM
+t5aYuCJGjENrETfKybDY7Y11eSMmLpVNIY6iNEtXpWGGgQQA5AcUEDehSIYLIyYV
+rpUSRLjkBGOEfcihL4jgQivFUQB5wKnxkatzSIxCghOClGWcCwsMZC4NZyQxuyqR
+U0A+5Rw7B7GpRyWTiSdh0eWWeL2PeYxYBiUGmBhuEABcY8sAZQhj46b0pcRcuhSg
+YpD6wojAiiCAmlGlFCIQWG9oLBOL66FaJs8O6voAelTUUys5U9U4SiMVld3mcJpW
+k94smrRRzdC7jSz8zVOQYUW7m+I66iZOwqjiBnHI61LjQZdnRqthbAphhiCMcuC+
+TMfUs+NnFAsbAMuQogIoomGWBuQCWaaACgKhkCGaKDdvoBUlRgPJpCsIie2/YnRK
+qSg6SpddRaS12HhjM6d2tOVa8rkVN96QvaBcfuXqf97VXLP9T/HtmksHu1tPvnG2
+e2R8fOG1Q0c6N81Ndr531+DAwpl7O9Z09C1u3NxRm24sNV/8YFv1/C3tj482Nmz5
+eN9zS+VHbf6P4iNogfz06TsHv6vv//CldZM77+yYjl+9Uto68O7an/ue7vH7tu4b
+mn0rt/2bX0YHH5q69Nv6u9ceKNdefvC2O4a+PHpkfGJs/xd7m+bYVbz41RONjzrP
+Htim7fz9T81Juk7nn7zqf73lhdPoh0PJ694FverEyo309tlND3xy4Vpz8+HuK+KV
+51uP2uNL5X7QPjBxuG3w2nqt2ttunW0JL6849+bExGfzz77dnLzn1I/3LU5Nz587
+4fV/Xj0+Orjq9+LU6ovfzyxc/Au1xYan
+=E4RQ
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
