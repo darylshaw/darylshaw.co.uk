@@ -5,14 +5,15 @@
 /* Colors
    ========================================================================== */
 
-$black:  #000;
-$white: #fff;
-$grey: #ddd;
+$black: #000411;
+$white: #E1EFE6;
+$grey: #AEB7B3;
+$yellow: #EFCB68;
+$purple: #160C28;
 $lt-grey: #eee;
 
 /* Gray scale */
 
-$grey-dark:   #222;
 $grey-medium: #999;
 $grey-light:  #d9d9d9;
 
@@ -37,7 +38,7 @@ $serif: 'Roboto', sans-serif;
 
 /** * 12 & 16 as roots then powers of two. */
 
-$fs1:4.5em; /* 72px / 16px */ /* need to convert everything away from pixels */
+$fs1:4.5em;
 $fs2:24px;
 $fs3:18px;
 $fs4:24px;
@@ -63,12 +64,12 @@ $footerHeight: 320px;
    ========================================================================== */
 
 /* Mobile */
-$breakpoint-0-min-width: 27.5em; /* 440px / 16px */
-$breakpoint-1-max-width: 30em; /* 480px / 16px */
+$breakpoint-0-min-width: 27.5em;
+$breakpoint-1-max-width: 30em;
 
 /* Tablet */
-$breakpoint-2-max-width: 50em; /* 800px / 16px */
-$breakpoint-3-max-width: 75em; /* 1200px / 16px */
+$breakpoint-2-max-width: 50em;
+$breakpoint-3-max-width: 75em;
 
 /* Style Tidbits
    ========================================================================== */

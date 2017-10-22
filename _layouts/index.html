@@ -1,6 +1,19 @@
 ---
 layout: default
 ---
-
-{{ content }}
-{% include latest-posts.html %}
+<body class="theme-purple">
+  <div class="content-main">
+    {{ content }}
+    <ul class="archive-posts">
+      <div class="archive-posts-header">
+        <h2>Latest Posts</h2>
+        <a class="btn" href="/blog/">View All</a>
+      </div>
+      {% for post in site.posts limit:3 %}
+      <li>
+        {% include post.html post=post is_excerpt=true %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</body>
