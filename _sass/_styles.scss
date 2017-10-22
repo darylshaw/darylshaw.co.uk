@@ -34,7 +34,7 @@ html {
 }
 
 body {
-  font-family: $serif;
+  font-family: $content;
   color: var(--text);
   -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
   text-size-adjust: 100%;
@@ -53,9 +53,10 @@ body {
 }
 
 h1,h2,h3,h4,h5 {
-  font-family: $serif;
-  font-weight: 900;
-  line-height: 1.5em;
+  font-family: $heading;
+  font-weight: 700;
+  line-height: 1.1em;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -172,7 +173,7 @@ input {
   background: none;
   outline: none;
   width: 100%;
-  font-family: $serif;
+  font-family: $content;
   &:focus {
       background: white;
       color: $black;
@@ -190,8 +191,9 @@ input {
     margin: 0 0 1em;
 
     h1 {
-      font-size: 1.25em;
-      font-weight: 400;
+      font-size: 1.2em;
+      font-weight: 700;
+      text-transform: uppercase;
 
       a {
         color: var(--text);
@@ -203,7 +205,10 @@ input {
   nav ul li {
     display: inline-block;
     margin: 0 0.5em;
-    font-size: 1.125em;
+    font-size: 1.1em;
+    font-family: $heading;
+    text-transform: uppercase;
+    font-weight: 700;
 
     &:first-child {
       margin-left: 0;
@@ -354,7 +359,7 @@ input {
 article {
   header {
     h2 {
-      line-height: 1.5em;
+      line-height: 1.1em;
 
       a, a:visited, a:active {
         color: var(--link);
@@ -364,7 +369,7 @@ article {
 
     .post-meta {
       margin-bottom: 1.25em;
-      line-height: 2.0625em;
+      line-height: 1.75em;
 
       .post-tag {
         display: inline-block;
@@ -436,7 +441,7 @@ ol {
 
     figcaption {
       font-size: $fs5;
-      font-family: $sans;
+      font-family: $content;
       font-weight: bold;
       text-transform: uppercase;
       color: lighten($black, 50%);
@@ -530,7 +535,7 @@ ol {
     width: 100%;
     position: absolute;
     bottom: 8px;
-    font-family: $sans;
+    font-family: $content;
     text-transform: uppercase;
     color: transparentize($white, .9);
 
@@ -589,7 +594,7 @@ ol {
 
   h1 {
     font-size: 2.25em;
-    line-height: 1.5em;
+    line-height: 1.1em;
   }
 
   blockquote, blockquote p {

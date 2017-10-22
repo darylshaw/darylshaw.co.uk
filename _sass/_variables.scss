@@ -28,9 +28,8 @@ $accent: #24536B;
 /* Typography
    ========================================================================== */
 
-$sans: 'Roboto Mono';
-$serif: 'Roboto', sans-serif;
-
+$heading: 'Rubik', sans-serif;
+$content: 'Roboto', sans-serif;
 
 
 /* Type Scale
@@ -50,7 +49,7 @@ $fs6:12px;
 
 // Line Height
 
-$lh: 33px;
+$lh: 1.75em;
 $lhsmall: 24px;
 
 // Sizing
