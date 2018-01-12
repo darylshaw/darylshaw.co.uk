@@ -3,6 +3,8 @@ title: I'm Starting a Newsletter
 date: 2017-04-28 21:34:00 Z
 layout: post
 excerpt: It’s going to be called Untitled Digest (for now)
+tags:
+- tag
 ---
 
 It's going to be called Untitled Digest (for now) and is going to be a newsletter with a selection of links, apps, and tools loosely related to the web, marketing, and technology.

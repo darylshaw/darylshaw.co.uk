@@ -1,5 +1,5 @@
-{% assign post = include.post %}
-{% assign is_excerpt = include.is_excerpt %}
+{%- assign post = include.post -%}
+{%- assign is_excerpt = include.is_excerpt -%}
 <article>
   <header>
     {% if is_excerpt %}
@@ -7,27 +7,29 @@
       <h2>{{ post.title }}</h2>
     </a>
     {% else %}
-      <h1>{{ post.title }}</h1>
+    <h1>{{ post.title }}</h1>
     {% endif %}
-    {% if is_excerpt %}
-      {{ post.excerpt | markdownify }}
-    {% endif %}
-      <div class="post-meta">
-        <time class="post-date">{{ post.date | date: "%d %B %Y" }}</time>
-        {% if post.tags %}
-          <ul>
-            {% for post_tag in post.tags %}
-              {% assign post_tag_downcase = post_tag | downcase %}
-              {% for site_tag in site.blog_tags %}
-                {% assign site_tag_title = site_tag.title | downcase %}
-                {% if site_tag_title == post_tag_downcase %}
-                  <li class="post-tag"><a href="{{ site_tag.permalink }}">{{ site_tag.title }}</a></li>
-                {% endif %}
-              {% endfor %}
-            {% endfor %}
-          </ul>
+    {%- if is_excerpt -%}
+    {{ post.excerpt | markdownify }}
+    {%- endif -%}
+    <div class="post-meta">
+      <time class="post-date">{{ post.date | date: "%d %B %Y" }}</time>
+      {% if post.tags %}
+      <ul>
+        {% for post_tag in post.tags %}
+        {%- assign post_tag_downcase = post_tag | downcase -%}
+        {%- for site_tag in site.blog_tags -%}
+        {%- assign site_tag_title = site_tag.title | downcase -%}
+        {% if site_tag_title == post_tag_downcase %}
+        <li class="post-tag">
+          <a href="{{ site_tag.permalink }}">{{ site_tag.title }}</a>
+        </li>
         {% endif %}
-      </div>
+        {%- endfor -%}
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
   </header>
   {% unless is_excerpt %}
   <div class="content-main">

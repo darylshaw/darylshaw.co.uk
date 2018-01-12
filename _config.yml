@@ -43,7 +43,7 @@ redcarpet:
 sass:
   sass_dir: _sass
   style: compressed
-gems:
+plugins:
 - jekyll-seo-tag
 - jekyll-github-metadata
 - jekyll-sitemap
