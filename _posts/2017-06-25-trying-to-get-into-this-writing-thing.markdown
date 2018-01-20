@@ -4,8 +4,8 @@ date: 2017-06-25 17:17:00 Z
 layout: post
 excerpt_separator: ''
 tags:
-- announcement
-- tag
+- markdown
+- writing
 ---
 
 On the commute home the other day my phone had no battery which meant without Wi-Fi I couldn't spend my commute reading emails and doing work like usual so it forced my hand to write some words.
