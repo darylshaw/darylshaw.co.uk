@@ -2,7 +2,7 @@
 title: 'Work in Progress: Part Two'
 date: 2016-03-12 20:34:00 Z
 layout: post
-description:
+description: 
 excerpt_separator: ''
 ---
 
