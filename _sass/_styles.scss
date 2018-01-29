@@ -259,6 +259,7 @@ input {
 
 .content-main {
   max-width: 37.5em;
+  margin-top: 1.25em;
 }
 
 #contact {
@@ -295,6 +296,7 @@ input {
   li {
     line-height: 1.5em;
     border-bottom: 1px solid var(--text);
+    padding-bottom: 1.25em;
 
     &:last-child {
       border-bottom: none;
@@ -358,12 +360,13 @@ input {
 
 article {
   header {
-    h2 {
-      line-height: 1.1em;
 
-      a, a:visited, a:active {
-        color: var(--link);
-        text-decoration: none;
+    a, a:visited, a:active {
+      color: var(--link);
+      text-decoration: none;
+
+      h2 {
+        line-height: 1.1em;
       }
     }
 
@@ -372,15 +375,11 @@ article {
     }
 
     .post-meta {
-      margin-bottom: 1.25em;
       line-height: 1.75em;
     }
   }
 
-  .post-tag {
-    display: inline-block;
-    border-bottom: none;
-
+  .post-tags {
     a {
       text-decoration: none;
       text-transform: uppercase;
@@ -481,6 +480,7 @@ ol {
 
 .post-footer {
   max-width: 37.5em;
+  padding-top: 2em;
 
   .next-prev {
     border-top: 1px solid $lt-grey;
@@ -492,7 +492,6 @@ ol {
 
       a {
         text-decoration: none;
-        padding: 1em;
 
         h3 {
           color: $black;
