@@ -2,9 +2,15 @@
 layout: default
 ---
 
-<h1 class="title">{{ page.title }}</h1>
-{%- assign tag = page.title | downcase -%}
-{%- assign tag_posts = site.tags[tag] -%}
-{% for post in tag_posts %}
-{% include post.html post=post is_excerpt=true %}
-{% endfor %}
+<div class="content-main">
+  <h1 class="title">{{ page.title }}</h1>
+  <ul class="archive-posts">
+    {%- assign tag = page.title | downcase -%}
+    {%- assign tag_posts = site.tags[tag] -%}
+    {% for post in tag_posts %}
+    <li>
+      {% include post.html post=post is_excerpt=true %}
+    </li>
+    {% endfor %}
+  </ul>
+</div>
