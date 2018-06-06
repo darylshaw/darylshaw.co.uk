@@ -1,6 +1,7 @@
 ---
 title: The Cinema
 date: 2018-06-06 22:03:00 Z
+excerpt: I love going to the cinema.
 ---
 
 I spend most of my day in front of a screen and I want to get better at switching off from work and devices. I've started to get into running and I'm currently training for my first 10K which is one way to get away from a screen. I want to start reading more and I have a backlog of magazines building up which I want to make more time for. The other thing I already do is go to the cinema. This maybe is just me swapping my smaller screens for the big screen but it helps me switch off from work and devices.
