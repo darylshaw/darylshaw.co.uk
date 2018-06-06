@@ -12,4 +12,4 @@ On top of this, tickets are only £4.99 at my local Vue cinema and most weeks we
 
 I've embedded a video so you can see what I am referring to above:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/m3ZUFixrby8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe style="max-width: 560px; width: 100%;" height="315" src="https://www.youtube.com/embed/m3ZUFixrby8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
