@@ -1,6 +1,7 @@
 ---
 title: The Cinema
 date: 2018-06-06 22:03:00 Z
+layout: post
 excerpt: I love going to the cinema.
 ---
 

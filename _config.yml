@@ -48,4 +48,5 @@ plugins:
 - jekyll-github-metadata
 - jekyll-sitemap
 - jekyll-feed
+- jekyll-redirect-from
 repository: darylshaw/darylshaw.co.uk
