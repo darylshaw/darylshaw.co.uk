@@ -4,7 +4,7 @@ date: 2015-11-11 00:21:00 Z
 position: 0
 layout: index
 description: I'm Daryl. I work in marketing. Welcome to my site.
-redirect_from: /about/
+redirect_from: "/about/"
 ---
 
 # Hi, I'm Daryl.
