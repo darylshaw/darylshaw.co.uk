@@ -1,15 +1,33 @@
 backend:
   name: git-gateway
+  branch: master
 publish_mode: editorial_workflow
-media_folder: "images/uploads"
+media_folder: "assets/uploads"
 collections:
   - name: "posts"
+    preview_path: "blog/{{title}}"
     label: "Posts"
+    label_singular: "Post"
     folder: "_posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
-      - {label: "Excerpt", name: "excerpt", widget: "hidden"}
+      - {label: "Excerpt", name: "excerpt", widget: "markdown"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "pages"
+    label: "Pages"
+    editor:
+      preview: false
+    files:
+      - label: "About Page"
+        name: "about"
+        file: "about.markdown"
+        fields:
+          - {label: "Title", name: "title", widget: "hidden", default: "about"}
+          - {label: "Layout", name: "title", widget: "hidden", default: "about"}
+          - {label: "Body", name: "body", widget: "markdown"}
