@@ -24,7 +24,6 @@ defaults:
     layout: tag
 url: https://darylshaw.co.uk
 permalink: pretty
-google_analytics: UA-54371675-1
 fathom_analytics: JNJBHQAI
 name: Daryl Shaw
 email: daryl@darylshaw.co.uk
