@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 {% include head.html %}
-  <body>
-    <div class="page">
-      <div class="page-content">
-        {{ content }}
-      </div>
-    </div>
+<body>
+  {% include header.html %}
+  <div class="content">
+    {{ content }}
+  </div>
+  {% include footer.html %}
 
-      <!-- <div class="push"></div> -->
-      {% include footer.html %}
-
-      <!-- PTN253454darylshaw.co.uk75792633 -->
-
-      {% include js-fathom-analytics.html %}
-  </body>
+  <!-- PTN253454darylshaw.co.uk75792633 -->
+  
+  {% include js-fathom-analytics.html %}
+</body>
 </html>

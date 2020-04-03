@@ -5,7 +5,7 @@ position: 0
 description: I'm Daryl. I help businesses manage their online presence. Welcome to
   my website.
 redirect_from: "/about/"
-layout: index
+layout: default
 ---
 
 # Hi, I'm Daryl.
@@ -16,4 +16,4 @@ I have a blog and the latest post is "[The Cinema](/blog/the-cinema/)". I'm als
 
 ## What I can offer.
 
-I help businesses manage their online presence with a particular focus on ecommerce. Looking for support with strategy or building and maintaining your website? [We should chat](mailto:hi@darylshaw.co.uk).
+I help businesses manage their online presence with a particular focus on ecommerce. Looking for support with strategy or building and maintaining your website? [We should chat](/contact/).

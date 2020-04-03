@@ -1,24 +1,22 @@
-<div class="post-footer">
-  <footer>
-    <nav>
-      <ul class="next-prev">
-        <li class="prev">
-          {% if page.previous.url %}
-          <a href="{{page.previous.url}}">
-            <h3>Previous</h3>
-            <span>{{page.previous.title}}</span>
-          </a>
-          {% endif %}
-        </li>
-        <li class="next">
-          {% if page.next.url %}
-          <a href="{{page.next.url}}">
-            <h3>Next</h3>
-            <span>{{page.next.title}}</span>
-          </a>
-          {% endif %}
-        </li>
-      </ul>
-    </nav>
-  </footer>
-</div>
+<footer>
+  <nav>
+    <ul>
+      <li>
+        {% if page.previous.url %}
+        <a href="{{page.previous.url}}">
+          <h3>Previous</h3>
+          <span>{{page.previous.title}}</span>
+        </a>
+        {% endif %}
+      </li>
+      <li>
+        {% if page.next.url %}
+        <a href="{{page.next.url}}">
+          <h3>Next</h3>
+          <span>{{page.next.title}}</span>
+        </a>
+        {% endif %}
+      </li>
+    </ul>
+  </nav>
+</footer>

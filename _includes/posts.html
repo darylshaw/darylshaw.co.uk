@@ -5,13 +5,13 @@
   {%- assign currentdate = post.date | date: "%Y" -%}
   {% if currentdate != date %}
   {% unless forloop.first %}</ul>{% endunless %}
-  <li class="archive-year">
-    <h2 class="archive-year-header">
+  <li>
+    <h2>
       <span>
         {{ currentdate }}
       </span>
     </h2>
-    <ul class="archive-posts">
+    <ul>
       {%- assign date = currentdate -%}
       {% endif %}
       <li>
