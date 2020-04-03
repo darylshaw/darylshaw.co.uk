@@ -1,0 +1,29 @@
+.home-intro {
+  grid-column: full;
+  grid-template-rows: 1fr 1fr;
+
+  img {
+    grid-column: 6 / span 5;
+    grid-row: 1 / -1;
+    width: 100%;
+    max-height: 26em;
+    object-fit: cover;
+  }
+
+  .home-intro-block {
+    display: contents;
+
+    .home-intro-header {
+      grid-column: full-content-start / span 4;
+      grid-row: 1;
+      align-self: end;
+    }
+
+    .home-intro-content {
+      grid-column: 3 / span 4;
+      grid-row: 2;
+      align-self: start;
+      background: rgba($bg-color, 0.8)
+    }
+  }
+}

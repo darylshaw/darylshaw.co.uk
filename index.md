@@ -8,9 +8,8 @@ redirect_from: "/about/"
 layout: default
 ---
 
-# Hi, I'm Daryl.
+{% include home-intro.html %}
 
-I currently run an independent jewellery business. We are pioneering the use of lab-grown diamonds in the UK to make ethical engagement rings.
 
 I have a blog and the latest post is "[The Cinema](/blog/the-cinema/)". I'm also active on [Instagram](https://www.instagram.com/daryl_shaw/) and [Twitter](https://twitter.com/daryl_shaw). I enjoy running and you can follow my activities on [Strava](https://www.strava.com/athletes/15739817).
 

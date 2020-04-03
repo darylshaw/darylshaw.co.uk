@@ -1,6 +1,30 @@
-.content {
-  max-width: 33em;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 32px;
+html, body {
+  height: 100%;
+  padding: 0 1rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding-top: 2rem;
+}
+
+time, iframe {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, p, ol, ul, time, iframe {
+  max-width: 33rem;
+  margin-left: auto;
+  margin-right: auto;
+  // padding-top: 32px;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
 }

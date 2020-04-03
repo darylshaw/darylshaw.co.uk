@@ -1,0 +1,16 @@
+body {
+  background: $bg-color;
+  color: $text-color;
+}
+
+a {
+  color: $text-color;
+
+  &:hover {
+    opacity: .6;
+  }
+}
+
+.layout {
+  display: grid;
+}

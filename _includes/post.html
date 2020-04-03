@@ -12,7 +12,7 @@
     {%- if is_excerpt -%}
     {{ post.excerpt | markdownify }}
     {%- endif -%}
-    <time class="post-date">{{ post.date | date: "%d %B %Y" }}</time>
+    <time>{{ post.date | date: "%d %B %Y" }}</time>
   </header>
   {% unless is_excerpt %}
   {{ post.content | markdownify }}

@@ -1,8 +1,11 @@
 ---
 ---
 
-
-@import "header";
-@import "helpers";
 @import "normalize";
+@import "variables";
 @import "typography";
+@import "helpers";
+@import "base";
+@import "header";
+@import "footer";
+@import "pages/home";
