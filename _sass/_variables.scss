@@ -1,2 +1,4 @@
 $text-color: #E1EFE6;
 $bg-color: #160C28;
+
+$primary-grid: [full-start] 1rem [full-content-start] repeat( 2, 1fr ) [main-content-start] repeat( 4, 1fr ) [main-content-end outdent-start] 1fr [outdent-end] 1fr [full-content-end] 1rem calc(100vw - 74.25rem) [full-end];

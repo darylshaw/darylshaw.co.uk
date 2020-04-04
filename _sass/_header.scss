@@ -1,16 +1,21 @@
 header {
+  display: grid;
+  grid-template-columns: $primary-grid;
+
+  h1 {
+    font-size: 1rem;
+    padding-top: 2rem;
+    margin-bottom: 0;
+    grid-column: full-content-start / span 2;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
   nav {
     padding-top: 2rem;
-    
-    h1 {
-      font-size: 1rem;
-      margin-bottom: 0;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
+    grid-column: main-content-start / main-content-end;
     ul {
       list-style: none;
       margin-top: 0;
