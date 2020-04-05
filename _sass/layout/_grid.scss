@@ -1,4 +1,100 @@
+:root {
+  --grid-offset-left: 1rem;
+  --grid-offset-right: 1rem;
+  --primary-grid: [full-start] var(--grid-offset-left) [full-content-start] repeat( 2, 1fr ) [main-content-start] repeat( 4, 1fr ) [main-content-end outdent-start] 1fr [outdent-end] 1fr [full-content-end] var(--grid-offset-right) calc(100vw - var(--grid-max-width)) [full-end];
+  --grid-gutter: 1.25rem;
+  --grid-max-width: 74.25rem;
+}
+
 .layout {
   display: grid;
-  grid-template-columns: $primary-grid;
+  grid-template-columns: var(--primary-grid);
+  // grid-column: full;
 }
+
+// Archive Page
+//
+// .archive-year {
+//   list-style: none;
+//   border-top: 1px solid var(--text);
+// }
+//
+// .archive-year-header {
+//   border-bottom: 1px solid var(--text);
+//   margin-top: 2em;
+//   padding-bottom: 2em;
+// }
+//
+// .archive-posts {
+//   margin-bottom: 1.5em;
+//   list-style: none;
+//
+//   li {
+//     line-height: 1.5em;
+//     border-bottom: 1px solid var(--text);
+//     padding-bottom: 1.25em;
+//
+//     &:last-child {
+//       border-bottom: none;
+//     }
+//
+//     article {
+//       header {
+//         margin-bottom: 0;
+//         text-align: left;
+//       }
+//
+//       .post-meta {
+//         margin-top: 0;
+//       }
+//     }
+//
+//     a {
+//       text-decoration: none;
+//
+//       h2 {
+//         margin-top: 1em;
+//
+//         &:hover {
+//           opacity: .6;
+//         }
+//       }
+//     }
+//
+//     p {
+//       margin-bottom: 0;
+//     }
+//   }
+// }
+//
+// .archive-posts-header {
+//   border-bottom: 1px solid var(--text);
+//   padding-bottom: 1em;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   margin-top: 4.5em;
+//
+//   h2 {
+//     margin-top: 0;
+//   }
+//
+// }
+//
+// @media only screen and (min-width: $breakpoint-0-min-width) {
+//   .archive-year {
+//     display: flex;
+//   }
+//
+//   .archive-year-header {
+//     width: 30%;
+//     border-bottom: none;
+//     margin-top: 1em;
+//     padding-bottom: 1em;
+//   }
+//
+//   .archive-year {
+//     display: grid;
+//     grid-template-columns: 30% 70%;
+//   }
+// }

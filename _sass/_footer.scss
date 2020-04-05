@@ -1,4 +1,9 @@
 footer {
   flex-shrink: 0;
   margin-top: 2rem;
+
+
+  .copyright {
+    grid-column: full-content;
+  }
 }
