@@ -1,14 +1,9 @@
-:root {
-  --grid-offset-left: 1rem;
-  --grid-offset-right: 1rem;
-  --primary-grid: [full-start] var(--grid-offset-left) [full-content-start] repeat( 2, 1fr ) [main-content-start] repeat( 4, 1fr ) [main-content-end outdent-start] 1fr [outdent-end] 1fr [full-content-end] var(--grid-offset-right) calc(100vw - var(--grid-max-width)) [full-end];
-  --grid-gutter: 1.25rem;
-  --grid-max-width: 74.25rem;
-}
-
 .layout {
   display: grid;
-  grid-template-columns: var(--primary-grid);
+  grid-template-columns: $primary-grid;
+  @include bp(small) {
+    column-gap: $grid-gutter;
+  }
   // grid-column: full;
 }
 

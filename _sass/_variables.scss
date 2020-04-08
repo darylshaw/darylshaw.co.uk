@@ -1,2 +1,43 @@
 $text-color: #E1EFE6;
 $bg-color: #160C28;
+
+
+
+$grid-offset-left: 1rem;
+$grid-offset-right: 1rem;
+$grid-max-width: 64em;
+$primary-grid: [full-start] $grid-offset-left [full-content-start] repeat( 2, 1fr ) [main-content-start] repeat( 4, 1fr ) [main-content-end outdent-start] 1fr [outdent-end] 1fr [full-content-end] $grid-offset-right calc(100vw - #{$grid-max-width}) [full-end];
+$grid-gutter: 1.25rem;
+$space-medium: $grid-gutter;
+$space-large: calc( #{$grid-gutter} * 2.5 );
+
+
+// Breakpoints map
+$breakpoints: (
+  'small': (min-width: 37.5em),
+  'medium': (min-width: 43.75em),
+  'large': (min-width: 50em),
+) !default;
+
+/// Responsive breakpoint manager
+/// @access public
+/// @param {String} $breakpoint - Breakpoint
+/// @requires $breakpoints
+@mixin bp($breakpoint) {
+  $raw-query: map-get($breakpoints, $breakpoint);
+
+  @if $raw-query {
+    $query: if(
+      type-of($raw-query) == 'string',
+      unquote($raw-query),
+      inspect($raw-query)
+    );
+
+    @media #{$query} {
+      @content;
+    }
+  } @else {
+    @error 'No value found for `#{$breakpoint}`. '
+         + 'Please make sure it is defined in `$breakpoints` map.';
+  }
+}

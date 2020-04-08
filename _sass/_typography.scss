@@ -1,6 +1,9 @@
 html {
   // 18px
   font-size: 112.5%;
+  @include bp(medium) {
+    font-size: 125%;
+  }
 }
 
 body {

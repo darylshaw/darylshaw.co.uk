@@ -3,7 +3,10 @@ header {
     font-size: 1rem;
     padding-top: 2rem;
     margin-bottom: 0;
-    grid-column: full-content-start / span 2;
+    grid-column: full-content;
+    @include bp(small) {
+      grid-column: full-content-start / span 2;
+    }
   }
 
   a {
@@ -11,8 +14,12 @@ header {
   }
 
   nav {
-    padding-top: 2rem;
-    grid-column: main-content-start / main-content-end;
+    grid-column: full-content;
+    @include bp(small) {
+      padding-top: 2rem;
+      grid-column: main-content-start / main-content-end;
+    }
+
     ul {
       list-style: none;
       margin-top: 0;
