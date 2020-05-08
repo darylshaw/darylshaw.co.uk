@@ -1,4 +1,4 @@
-{%- if jekyll.environment == 'production' and site.fathom_analytics -%}
+{%- if jekyll.environment == 'production' or 'staging' and site.fathom_analytics -%}
 <!-- Fathom - beautiful, simple website analytics -->
 <script src="https://cdn.usefathom.com/3.js" site="{{ site.fathom_analytics }}"></script>
 <script>
