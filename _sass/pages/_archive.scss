@@ -1,0 +1,83 @@
+.archive {
+  padding: 0;
+  grid-column: full-content;
+}
+.archive-year {
+  list-style: none;
+  border-top: 1px solid var(--text);
+  @include bp(small) {
+    display: flex;
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+}
+
+.archive-year-header {
+  border-bottom: 1px solid var(--text);
+  margin-top: 2em;
+  padding-bottom: 2em;
+
+  @include bp(small) {
+    width: 30%;
+    border-bottom: none;
+    margin-top: 1em;
+    padding-bottom: 1em;
+  }
+}
+
+.archive-posts {
+  margin-bottom: 1.5em;
+  list-style: none;
+  padding: 0;
+
+  li {
+    line-height: 1.5em;
+    border-bottom: 1px solid var(--text);
+    padding-bottom: 1.25em;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    article {
+      header {
+        margin-bottom: 0;
+        text-align: left;
+      }
+
+      .post-meta {
+        margin-top: 0;
+      }
+    }
+
+    a {
+      text-decoration: none;
+
+      h2 {
+        margin-top: 1em;
+
+        &:hover {
+          opacity: .6;
+        }
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.archive-posts-header {
+  border-bottom: 1px solid var(--text);
+  padding-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4.5em;
+
+  h2 {
+    margin-top: 0;
+  }
+
+}
