@@ -19,15 +19,4 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Excerpt", name: "excerpt", widget: "markdown"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "pages"
-    label: "Pages"
-    editor:
-      preview: false
-    files:
-      - label: "About Page"
-        name: "about"
-        file: "about.markdown"
-        fields:
-          - {label: "Title", name: "title", widget: "hidden", default: "about"}
-          - {label: "Layout", name: "title", widget: "hidden", default: "about"}
-          - {label: "Body", name: "body", widget: "markdown"}
+  
