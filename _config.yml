@@ -45,7 +45,6 @@ sass:
   style: compressed
 plugins:
 - jekyll-seo-tag
-- jekyll-github-metadata
 - jekyll-sitemap
 - jekyll-feed
 - jekyll-redirect-from
