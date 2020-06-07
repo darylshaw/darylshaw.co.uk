@@ -1,7 +1,7 @@
 # Production context: all deploys from the Production branch set in your site's
 # deploy contexts will inherit these settings.
 [context.production]
-  command = "JEKYLL_ENV=production bundle exec jekyll build"
+  command = "JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,_config_staging.yml"
 
 # Specific branch context: all deploys from this specific branch will inherit
 # these settings.
