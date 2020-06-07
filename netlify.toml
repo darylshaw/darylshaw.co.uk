@@ -1,7 +1,6 @@
 # Production context: all deploys from the Production branch set in your site's
 # deploy contexts will inherit these settings.
 [context.production]
-  publish = "_site/"
   command = "JEKYLL_ENV=production bundle exec jekyll build"
 
 # Specific branch context: all deploys from this specific branch will inherit
