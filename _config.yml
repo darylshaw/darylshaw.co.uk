@@ -23,7 +23,6 @@ defaults:
   values:
     layout: tag
 url: https://darylshaw.co.uk
-baseurl: /
 permalink: pretty
 google_analytics: UA-54371675-1
 fathom_analytics: JNJBHQAI
@@ -47,7 +46,6 @@ sass:
   style: compressed
 plugins:
 - jekyll-seo-tag
-- jekyll-github-metadata
 - jekyll-sitemap
 - jekyll-feed
 - jekyll-redirect-from
