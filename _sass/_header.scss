@@ -15,9 +15,11 @@ header {
 
   nav {
     grid-column: full-content;
+    margin-top: 0.5em;
     @include bp(small) {
       padding-top: 2rem;
       grid-column: main-content-start / main-content-end;
+      margin-top: 0;
     }
 
     ul {
