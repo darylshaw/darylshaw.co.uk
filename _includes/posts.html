@@ -1,23 +1,10 @@
 {%- assign post = include.post -%}
 {%- assign is_excerpt = include.is_excerpt -%}
-<ol class="archive">
+
+<ul class="archive-posts">
   {% for post in site.posts %}
-  {%- assign currentdate = post.date | date: "%Y" -%}
-  {% if currentdate != date %}
-  {% unless forloop.first %}</ul>{% endunless %}
-  <li class="archive-year">
-    <h2 class="archive-year-header">
-      <span>
-        {{ currentdate }}
-      </span>
-    </h2>
-    <ul class="archive-posts">
-      {%- assign date = currentdate -%}
-      {% endif %}
-      <li>
-        {% include post.html post=post is_excerpt=true %}
-      </li>
-      {% if forloop.last %}</ul>{% endif %}
+  <li>
+    {% include post.html post=post is_excerpt=true %}
   </li>
   {% endfor %}
-</ol>
+</ul>

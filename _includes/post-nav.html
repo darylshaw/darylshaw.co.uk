@@ -1,16 +1,12 @@
 <section class="post-nav">
   {% if page.previous.url %}
   <div>
-    <span>Previous</span>
-    <br>
-    <a href="{{page.previous.url}}">{{page.previous.title}}</a>
+    <a href="{{page.previous.url}}">Previous</a>
     {% endif %}
   </div>
   {% if page.next.url %}
   <div>
-    <span>Next</span>
-    <br>
-    <a href="{{page.next.url}}">{{page.next.title}}</a>
+    <a href="{{page.next.url}}">Next</a>
   </div>
   {% endif %}
 </section>
