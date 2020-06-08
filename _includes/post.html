@@ -2,12 +2,11 @@
 {%- assign is_excerpt = include.is_excerpt -%}
 <article>
   <header>
-
     {% if is_excerpt %}
     {% if post.title != empty %}
-    <a href="{{ post.url }}">
-      <h2>{{ post.title }}</h2>
-    </a>
+    <h2>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </h2>
     {% endif %}
     {% else %}
     <h1>{{ post.title }}</h1>
@@ -21,16 +20,4 @@
   <time>{{ post.date | date: "%d %B %Y" }}</time>
   {{ post.content | markdownify }}
   {% endunless %}
-  {% if post.tags != empty %}
-  <i class="fas fa-tag"></i>
-  {% for post_tag in post.tags %}
-  {%- assign post_tag_downcase = post_tag | downcase -%}
-  {%- for site_tag in site.blog_tags -%}
-  {%- assign site_tag_title = site_tag.title | downcase -%}
-  {% if site_tag_title == post_tag_downcase %}
-  <a href="{{ site_tag.permalink }}">{{ site_tag.title }}</a>{% unless forloop.last %},{% endunless %}
-  {% endif %}
-  {%- endfor -%}
-  {% endfor %}
-  {% endif %}
 </article>

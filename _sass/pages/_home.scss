@@ -58,4 +58,7 @@
 
 .content-main {
   grid-column: full-content;
+  @include bp(small) {
+    grid-column: full-content / main-content-end;
+  }
 }
