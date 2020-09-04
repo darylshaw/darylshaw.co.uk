@@ -4,18 +4,12 @@
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
 main {
-  flex: 1;
   padding-top: 2rem;
+  min-height: 100vh;
+  background: linear-gradient($light-grey, $white);
+  position: relative;
+  z-index: 1;
 }
 
 time, iframe {
@@ -37,7 +31,7 @@ textarea {
   width: 100%;
   padding: 1em;
   font-size: 0.8em;
-  box-shadow: 3px 3px $grey;
+  box-shadow: 3px 3px $dark-grey;
   border: 0;
   height: 100%;
 }
