@@ -2,6 +2,25 @@ footer {
   flex-shrink: 0;
   margin-top: 2rem;
 
+  .newsletter {
+    grid-column: full-content;
+    @include bp(small) {
+      grid-column: main-content;
+      text-align: center;
+    }
+
+    form {
+      display: inline-flex;
+    }
+
+    p {
+      margin: inherit;
+    }
+
+    .button {
+      margin-left: 0.5em;
+    }
+  }
 
   .copyright {
     grid-column: full-content;

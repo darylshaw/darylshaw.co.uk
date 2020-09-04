@@ -61,4 +61,11 @@
   @include bp(small) {
     grid-column: full-content / main-content-end;
   }
+
+  .button {
+    width: 100%;
+    @include bp(small) {
+      width: 11.111111111em; // 200 / 18
+    }
+  }
 }
