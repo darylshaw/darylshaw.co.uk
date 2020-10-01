@@ -11,17 +11,28 @@ collections:
   uploads:
     title: Uploads
     output: true
+  notes:
+    title: Notes
+    output: true
 defaults:
-- scope:
-    path: ''
-    type: posts
+-
+  scope:
+    path: ""
+    type: "posts"
   values:
     permalink: "/blog/:title/"
-- scope:
-    path: ''
-    type: blog_tags
+-
+  scope:
+    path: ""
+    type: "blog_tags"
   values:
-    layout: tag
+    layout: "tag"
+-
+  scope:
+    path: ""
+    type: "notes"
+  values:
+    permalink: "/:collection/:title"
 url: https://darylshaw.co.uk
 permalink: pretty
 fathom_analytics: JNJBHQAI
@@ -30,16 +41,6 @@ email: daryl@darylshaw.co.uk
 twitter:
   username: daryl_shaw
 markdown: kramdown
-redcarpet:
-  extensions:
-  - autolink
-  - fenced_code_blocks
-  - lax_spacing
-  - strikethrough
-  - superscript
-  - tables
-  - footnotes
-  - highlight
 sass:
   sass_dir: _sass
   style: compressed
@@ -49,3 +50,6 @@ plugins:
 - jekyll-feed
 - jekyll-redirect-from
 repository: darylshaw/darylshaw.co.uk
+feed:
+  collections:
+  - notes
