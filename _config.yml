@@ -61,7 +61,15 @@ plugins:
 - jekyll-sitemap
 - jekyll-feed
 - jekyll-redirect-from
+- jekyll-archives
 repository: darylshaw/darylshaw.co.uk
 feed:
   collections:
   - notes
+jekyll-archives:
+  enabled: all
+  layout: archive
+  permalinks:
+    year: '/:year/'
+  layouts:
+    year: year-archive
