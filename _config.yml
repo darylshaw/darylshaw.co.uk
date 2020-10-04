@@ -14,12 +14,16 @@ collections:
   notes:
     title: Notes
     output: true
+  photos:
+    title: Photos
+    output: true
 defaults:
 -
   scope:
     path: ""
     type: "posts"
   values:
+    layout: "post"
     permalink: "/blog/:title/"
 -
   scope:
@@ -31,6 +35,13 @@ defaults:
   scope:
     path: ""
     type: "notes"
+  values:
+    layout: "post"
+    permalink: "/:collection/:title"
+-
+  scope:
+    path: ""
+    type: "photos"
   values:
     permalink: "/:collection/:title"
 url: https://darylshaw.co.uk

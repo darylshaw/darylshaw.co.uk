@@ -24,5 +24,22 @@ footer {
 
   .copyright {
     grid-column: full-content;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.nav {
+  display: flex;
+  padding: 0;
+  margin-left: auto;
+
+  li {
+    list-style: none;
+    margin-right: 0.5em;
+
+    a {
+      color: $text-color;
+    }
   }
 }
