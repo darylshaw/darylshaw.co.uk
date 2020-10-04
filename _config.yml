@@ -37,6 +37,7 @@ defaults:
     type: "notes"
   values:
     layout: "post"
+    title: ""
     permalink: "/:collection/:title"
 -
   scope:
