@@ -53,6 +53,7 @@ email: daryl@darylshaw.co.uk
 twitter:
   username: daryl_shaw
 markdown: kramdown
+highlighter: rouge
 sass:
   sass_dir: _sass
   style: compressed
