@@ -44,6 +44,8 @@ defaults:
     path: ""
     type: "photos"
   values:
+    layout: "post"
+    title: ""
     permalink: "/:collection/:title"
 url: https://darylshaw.co.uk
 permalink: pretty

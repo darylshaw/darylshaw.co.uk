@@ -3,4 +3,8 @@ title: Photos
 layout: photos
 ---
 
-Nothing to see here _yet_.
+Photos I post go here.
+
+{% for photo in site.photos %}
+  { photo.content | markdownify }
+{% endfor %}
