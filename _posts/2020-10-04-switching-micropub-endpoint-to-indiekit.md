@@ -1,6 +1,6 @@
 ---
 title: Switching Micropub endpoint to Indiekit
-date: 2020-10-04T20:55:33.957+01:00
+date: 2020-10-04T21:55:33.957+01:00
 layout: post
 render_with_liquid: false
 excerpt: On a rainy Saturday in October, stuck in isolation, with rainwater leaking into my room through the roof.
