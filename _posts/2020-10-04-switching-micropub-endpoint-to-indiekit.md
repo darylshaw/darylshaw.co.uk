@@ -1,7 +1,6 @@
 ---
 title: Switching Micropub endpoint to Indiekit
 date: 2020-10-04T21:55:33.957+01:00
-layout: post
 render_with_liquid: false
 excerpt: On a rainy Saturday in October, stuck in isolation, with rainwater leaking into my room through the roof.
 ---
@@ -58,6 +57,6 @@ defaults:
 
 As notes don't have a title output on my website, I set the default title to be an empty string. This way it doesn't use the slug for the title. The empty string for path means all files and is required when working with scope/values pairs.
 
-Indiekit doesn't support syndication yet. But I have my feeds added in Micro.blog. When I post to my website, Micro.blog picks this up and then cross-posts to Twitter. There's more I need to do like adding micro formats to content and configuring the photos post type. But this feels like good progress.
+Indiekit doesn't support syndication yet. But I have my feeds added in Micro.blog. When I post to my website, Micro.blog picks this up and then cross-posts to Twitter. There's more I need to do like adding microformats to content and configuring the photos post type. But this feels like good progress.
 
 I tried publishing this to my website as a draft, directly from iA Writer. I probably should have, erm, tested it first. But still pretty sweet.
