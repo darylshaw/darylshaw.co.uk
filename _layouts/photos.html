@@ -7,4 +7,24 @@ layout: default
   <div class="content-main">
     {{ content }}
   </div>
-</section>
+  {% for photo in site.photos reversed %}
+  {%- assign currentdate = photo.date | date: "%d %B %Y" -%}
+  {% if currentdate != date %}
+  {% unless forloop.first %}</article>{% endunless %}
+  <article>
+    <header>
+      <strong>{{ currentdate }}</strong>
+    </header>
+    {%- assign date = currentdate -%}
+    {% endif %}
+    <article>
+      <div class="h-entry">
+        {{ photo.content | markdownify }}
+        <time class="dt-published" datetime="{{ photo.date | date: "%Y-%m-%d %H:%M" }}">
+          <a href="{{ photo.url }}">{{ photo.date | date: "%l:%M %p" }}</a>
+        </time>
+      </div>
+    </article>
+    {% if forloop.last %}</article>{% endif %}
+    {% endfor %}
+  </section>

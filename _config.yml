@@ -68,3 +68,4 @@ repository: darylshaw/darylshaw.co.uk
 feed:
   collections:
   - notes
+  - photos
