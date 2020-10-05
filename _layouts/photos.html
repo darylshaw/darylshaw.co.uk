@@ -20,7 +20,7 @@ layout: default
     <article>
       <div class="h-entry">
         {{ photo.content | markdownify }}
-        <time class="dt-published" datetime="{{ photo.date | date: "%Y-%m-%d %H:%M" }}">
+        <time class="dt-published" datetime="{{ photo.date }}">
           <a href="{{ photo.url }}">{{ photo.date | date: "%l:%M %p" }}</a>
         </time>
       </div>
