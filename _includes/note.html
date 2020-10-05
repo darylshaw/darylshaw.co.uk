@@ -1,0 +1,7 @@
+
+  <article>
+    {{ note.content | markdownify }}
+    <time datetime="{{ note.date | date: "%Y-%m-%d %H:%M" }}">
+      <a href="{{ note.url }}">{{ note.date | date: "%l:%M %p" }}</a>
+    </time>
+  </article>

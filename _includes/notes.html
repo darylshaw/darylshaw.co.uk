@@ -1,0 +1,11 @@
+{%- assign currentdate = note.date | date: "%d %B %Y" -%}
+{% if currentdate != date %}
+{% unless forloop.first %}</article>{% endunless %}
+<article>
+  <header>
+    <strong>{{ currentdate }}</strong>
+  </header>
+  {%- assign date = currentdate -%}
+  {% endif %}
+  {% include note.html %}
+  {% if forloop.last %}</article>{% endif %}

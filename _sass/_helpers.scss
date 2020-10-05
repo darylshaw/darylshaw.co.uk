@@ -19,8 +19,8 @@ main {
 }
 
 time, iframe {
-  display: block;
-  font-size: 0.9em;
+  // display: block;
+  // font-size: 0.9em;
 }
 
 form {
@@ -79,11 +79,11 @@ button {
 }
 
 .title {
-  grid-column: full-content;
+  grid-column: main-content;
 }
 
 .blog-intro {
-  grid-column: full-content;
+  grid-column: main-content;
 }
 
 article {
@@ -91,7 +91,10 @@ article {
   padding-bottom: 1.25em;
   margin-bottom: 1.5em;
   @include bp(small) {
-    grid-column: full-content / main-content-end;
+    grid-column: main-content / 10;
+  }
+  @include bp(large) {
+    grid-column: main-content;
   }
 
   header {

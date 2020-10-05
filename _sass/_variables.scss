@@ -1,7 +1,9 @@
-$text-color: #E1EFE6;
+$text-color: rgba(0,0,0,0.7);
 $link-color: #EFCB68;
-$bg-color: #160C28;
+$bg-color: #F9F7EE;
 $grey: #555555;
+$purple: #160C28;
+$white: #FFFFFF;
 
 
 
@@ -16,9 +18,9 @@ $space-large: calc( #{$grid-gutter} * 2.5 );
 
 // Breakpoints map
 $breakpoints: (
-  'small': (min-width: 37.5em),
-  'medium': (min-width: 43.75em),
-  'large': (min-width: 50em),
+  'small': (min-width: 36em),
+  'medium': (min-width: 48em),
+  'large': (min-width: 60em),
 ) !default;
 
 /// Responsive breakpoint manager

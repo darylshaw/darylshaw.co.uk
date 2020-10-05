@@ -1,9 +1,13 @@
 footer {
-  flex-shrink: 0;
+  position: sticky;
+  bottom: 0;
   margin-top: 2rem;
+  background: $purple;
+  color: $white;
 
   .newsletter {
     grid-column: full-content;
+    margin-bottom: 2.75rem;
     @include bp(small) {
       grid-column: main-content;
       text-align: center;

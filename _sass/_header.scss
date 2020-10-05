@@ -1,8 +1,15 @@
 
   .mast {
+    @include bp(medium) {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      height: 100%;
+    }
+
     h1 {
       font-size: 1rem;
-      padding-top: 2rem;
+      padding: 2rem;
       margin-bottom: 0;
       grid-column: full-content;
       @include bp(small) {
@@ -19,7 +26,7 @@
       grid-column: full-content;
       margin-top: 0.5em;
       @include bp(small) {
-        padding-top: 2rem;
+        padding: 0 2rem;
         grid-column: main-content-start / main-content-end;
         margin-top: 0;
       }
@@ -28,11 +35,6 @@
         list-style: none;
         margin-top: 0;
         padding: 0;
-
-        li {
-          display: inline-block;
-          margin-right: 0.5em;
-        }
       }
     }
   }
