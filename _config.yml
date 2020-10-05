@@ -1,6 +1,6 @@
 ---
 title: Daryl Shaw
-timezone: UTC
+timezone: Europe/London
 collections:
   posts:
     title: Posts
@@ -11,17 +11,42 @@ collections:
   uploads:
     title: Uploads
     output: true
+  notes:
+    title: Notes
+    output: true
+  photos:
+    title: Photos
+    output: true
 defaults:
-- scope:
-    path: ''
-    type: posts
+-
+  scope:
+    path: ""
+    type: "posts"
   values:
+    layout: "post"
     permalink: "/blog/:title/"
-- scope:
-    path: ''
-    type: blog_tags
+-
+  scope:
+    path: ""
+    type: "blog_tags"
   values:
-    layout: tag
+    layout: "tag"
+-
+  scope:
+    path: ""
+    type: "notes"
+  values:
+    layout: "post"
+    title: ""
+    permalink: "/:collection/:title"
+-
+  scope:
+    path: ""
+    type: "photos"
+  values:
+    layout: "post"
+    title: ""
+    permalink: "/:collection/:title"
 url: https://darylshaw.co.uk
 permalink: pretty
 fathom_analytics: JNJBHQAI
@@ -30,16 +55,7 @@ email: daryl@darylshaw.co.uk
 twitter:
   username: daryl_shaw
 markdown: kramdown
-redcarpet:
-  extensions:
-  - autolink
-  - fenced_code_blocks
-  - lax_spacing
-  - strikethrough
-  - superscript
-  - tables
-  - footnotes
-  - highlight
+highlighter: rouge
 sass:
   sass_dir: _sass
   style: compressed
@@ -49,3 +65,7 @@ plugins:
 - jekyll-feed
 - jekyll-redirect-from
 repository: darylshaw/darylshaw.co.uk
+feed:
+  collections:
+  - notes
+  - photos
