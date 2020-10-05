@@ -1,11 +1,6 @@
 
   .mast {
-    @include bp(medium) {
-      display: flex;
-      flex-direction: column;
-      position: fixed;
-      height: 100%;
-    }
+    background: $light-grey;
 
     h1 {
       font-size: 1rem;
@@ -19,7 +14,7 @@
 
     a {
       text-decoration: none;
-      color: $text-color;
+      color: $purple;
     }
 
     nav {
