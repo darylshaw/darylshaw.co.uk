@@ -1,5 +1,5 @@
 footer {
-  position: sticky;
+  // position: sticky;
   bottom: 0;
   margin-top: 2rem;
   background: $purple;
@@ -10,7 +10,6 @@ footer {
     margin-bottom: 2.75rem;
     @include bp(small) {
       grid-column: main-content;
-      text-align: center;
     }
 
     form {
@@ -24,29 +23,75 @@ footer {
     .button {
       margin-left: 0.5em;
     }
+
+    .button {
+      position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        border: 2px solid $white;
+        width: 100%;
+        height: 100%;
+        top: 3px;
+        left: 3px;
+      }
+    }
+
+    button {
+      background-color: $purple;
+      color: $white;
+      cursor: pointer;
+      padding: 1em 1.5em;
+      font-size: 0.8em;
+      border: 2px solid;
+      font-weight: 700;
+      width: inherit;
+      height: 100%;
+      position: relative;
+
+      &:hover {
+        transform: translate(3px, 3px);
+        color: $white;
+      }
+    }
   }
-<<<<<<< HEAD
-=======
 
   .copyright {
+    position: inherit;
     grid-column: full-content;
-    display: flex;
-    flex-direction: row-reverse;
+    font-size: 0.75em;
+    color: $white;
+    @include bp(medium) {
+      position: fixed;
+      bottom: 0.5em;
+      padding-left: 2rem;
+      color: $text-color;
+
+      &.invert {
+        color: $white;
+      }
+    }
   }
 }
 
-.nav {
-  display: flex;
+.social {
   padding: 0;
-  margin-left: auto;
+  display: flex;
 
   li {
     list-style: none;
     margin-right: 0.5em;
+  }
 
-    a {
+  a {
+    color: $white;
+    border-bottom: inherit;
+    @include bp(small) {
       color: $text-color;
     }
-  }
->>>>>>> master
+    &.invert {
+      color: $white;
+      }
+    }
 }

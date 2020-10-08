@@ -1,13 +1,17 @@
 {%- assign post = include.post -%}
 {%- assign is_excerpt = include.is_excerpt -%}
-<article class="h-entry">
+<article class="h-entry post">
   <header>
+    {% unless page.layout == "stream" %}
+    <span class="post-meta">
+    <time>{{ post.date | date_to_long_string: "ordinal" }}</time>
+    {% endunless %}
+    </span>
     {% if is_excerpt %}
-    <time>{{ post.date | date: "%d %B %Y" }}</time>
     {% if post.title != empty %}
-    <h2>
+    <h3>
       <a href="{{ post.url }}">{{ post.title }}</a>
-    </h2>
+    </h3>
     {% endif %}
     {% else %}
     <h1>{{ post.title }}</h1>
@@ -18,7 +22,6 @@
     {%- endif -%}
   </header>
   {% unless is_excerpt %}
-  <time>{{ post.date | date: "%d %B %Y" }}</time>
   {{ post.content | markdownify }}
   {% endunless %}
 </article>

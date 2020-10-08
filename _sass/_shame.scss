@@ -16,9 +16,120 @@
   pre {
     overflow: auto;
     padding: 1em;
+    color: $white;
   }
 
   code {
     font-size: 14px;
+  }
+}
+
+.note {
+  border: 1px solid $text-color--lighter;
+  background-image: url(../uploads/noise.png);
+  p {
+    font-family: 'Cedarville Cursive', cursive;
+    padding: 0.5rem 1rem;
+  }
+
+  .post-meta {
+    padding: 0 1rem;
+  }
+}
+
+.post-meta {
+  font-size: 0.75em;
+  font-weight: 700;
+}
+
+.day {
+  h2 {
+    font-size: 1em;
+  }
+}
+
+.post {
+  h3 {
+    margin-top: 0;
+  }
+
+  .post-meta {
+    time {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+      font-family: 'Rubik', sans-serif;
+    }
+  }
+}
+
+.photo {
+  display: flex;
+  flex-direction: column-reverse;
+
+  img {
+    height: 500px !important;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+svg {
+  fill: currentColor;
+
+  &:hover {
+    fill: $text-color--darker;
+  }
+  &.invert {
+    fill: $white;
+    &:hover {
+      fill: $dark-grey;
+    }
+  }
+}
+
+.hover-reveal {
+  position: relative;
+  cursor: pointer;
+  border-bottom: 2px solid $yellow;
+
+  &:hover {
+    color: $text-color--darker;
+    border-bottom-color: inherit;
+    transition: 0.2s ease-in;
+  }
+}
+
+.hover-effect {
+  color: $text-color--darker;
+  border-bottom-color: inherit;
+}
+
+.hover-reveal.no-touch:hover .hover-reveal-img,
+.hover-reveal.hover-effect .hover-reveal-img {
+    opacity: 1;
+    transform: translate3d(-50%, -40%, 0) rotate3d(0,0,1,5deg);
+    left: 50%;
+  }
+
+.hover-reveal-img {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  width: 120px;
+  height: auto;
+  left: 50%;
+  transition: opacity 0.3s ease-in-out, transform 0.55s ease-in-out, transform 0.55s ease-in-out;
+  pointer-events: none;
+}
+
+.content-main {
+  margin-bottom: 2.75rem;
+
+  .button {
+    width: 100%;
+    @include bp(small) {
+      width: 11.111111111em; // 200 / 18
+    }
   }
 }

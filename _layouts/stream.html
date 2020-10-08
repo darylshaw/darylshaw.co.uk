@@ -3,64 +3,50 @@ layout: default
 ---
 
 <section class="layout">
-<h1 class="title">{{ page.title }}</h1>
-<div class="blog-intro">
-  {{ content }}
-</div>
+  <h1 class="title">{{ page.title }}</h1>
+  <div class="page-intro h-card">
+    {{ content }}
+  </div>
+
+  <article class="posts">
+  <p>This is where I post <a href="/notes">notes</a>, <a href="/photos">photos</a>, and <a href="/blog">articles</a>.</p>
+  <p>Here's the latest:</p>
 
   {% for post in paginator.posts %}
 
+  {%- assign currentdate = post.date | date_to_long_string: "ordinal" -%}
+  {% if currentdate != date %}
+  {% unless forloop.first %}</article>{% endunless %}
+  <article class="day">
+    <header><h2>{{ currentdate }}</h2></header>
+      {%- assign date = currentdate -%}
+      {% endif %}
+      {% if post.collection == "posts" %}
+      {% include post.html post=post is_excerpt=true %}
+      {% else %}
+      <article class="h-entry note">
+        {{ post.content }}
+        <span class="post-meta">{{ post.post_type }} posted at <time datetime="{{ post.date | date: "%Y-%m-%d %H:%M" }}">
+          <a href="{{ post.url }}">{{ post.date | date: "%R" }}</a>
+        </time></span>
+      </article>
+      {% endif %}
+      {% if forloop.last %}</article>{% endif %}
+      {% endfor %}
+      {% if paginator.total_pages > 1 %}
+      <section class="post-nav">
+        {% if paginator.previous_page %}
+        <p class="previous">
+          <a href="{{ paginator.previous_page_path | prepend: site.base_url }}">Newer</a>
+        </p>
+        {% endif %}
+        {% if paginator.next_page %}
+        <p class="next">
+          <a class="pagination__next" href="{{ paginator.next_page_path | prepend: site.base_url }}">Older</a>
+        </p>
+        {% endif %}
+      </section>
+      {% endif %}
 
-
-{%- assign currentdate = post.date | date: "%d %B %Y" -%}
-
-{% if currentdate != date %}
-{% unless forloop.first %}</article>{% endunless %}
-<article>
-  <header><h4>Posts from {% assign day = post.date | date: "%-d"  %}
-  {% case day %}
-  {% when '1' or '21' or '31' %}{{ day }}st
-  {% when '2' or '22' %}{{ day }}nd
-  {% when '3' or '23' %}{{ day }}rd
-  {% else %}{{ day }}th
-  {% endcase %}
-  {{ post.date | date: "%B %Y" }}</h4></header>
-  {%- assign date = currentdate -%}
-  {% endif %}
-
-
-          {% if post.collection == "posts" %}
-            {% include post.html post=post is_excerpt=true %}
-          {% else %}
-            <article class="h-entry note">
-              {{ post.content }}
-              <span class="post-meta">{{ post.post_type }} posted at <time datetime="{{ post.date | date: "%Y-%m-%d %H:%M" }}">
-                <a href="{{ post.url }}">{{ post.date | date: "%l:%M %p" }}</a>
-              </time></span>
-            </article>
-          {% endif %}
-
-
-  {% if forloop.last %}</article>{% endif %}
-  {% endfor %}
-
-
-
-
-
-
-{% if paginator.total_pages > 1 %}
-<ul>
-  {% if paginator.previous_page %}
-  <li>
-    <a href="{{ paginator.previous_page_path | prepend: site.base_url }}">Newer</a>
-  </li>
-  {% endif %}
-  {% if paginator.next_page %}
-  <li>
-    <a href="{{ paginator.next_page_path | prepend: site.base_url }}">Older</a>
-  </li>
-  {% endif %}
-</ul>
-{% endif %}
-</section>
+      </article>
+    </section>

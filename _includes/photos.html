@@ -1,4 +1,5 @@
-{%- assign currentdate = note.date | date_to_long_string: "ordinal" -%}
+{% for photo in site.photos reversed %}
+{%- assign currentdate = photo.date | date_to_long_string: "ordinal" -%}
 {% if currentdate != date %}
 {% unless forloop.first %}</article>{% endunless %}
 <article>
@@ -7,5 +8,6 @@
   </header>
   {%- assign date = currentdate -%}
   {% endif %}
-  {% include note.html %}
+    {% include photo.html %}
   {% if forloop.last %}</article>{% endif %}
+{% endfor %}

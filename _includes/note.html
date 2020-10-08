@@ -1,7 +1,15 @@
+{%- assign note = include.post -%}
+{%- assign is_excerpt = include.is_excerpt -%}
 
-  <article>
-    {{ note.content | markdownify }}
-    <time datetime="{{ note.date | date: "%Y-%m-%d %H:%M" }}">
-      <a href="{{ note.url }}">{{ note.date | date: "%l:%M %p" }}</a>
-    </time>
-  </article>
+<article class="h-entry note">
+  {{ note.content | markdownify }}
+  {%- if is_excerpt -%}
+  <span class="post-meta">Posted at <time datetime="{{ note.date | date: "%Y-%m-%d %H:%M" }}">
+    <a href="{{ note.url }}">{{ note.date | date: "%R" }}</a>
+  </time></span>
+  {% else %}
+  <span class="post-meta">Posted at <time datetime="{{ note.date | date: "%Y-%m-%d %H:%M" }}">
+    {{ note.date | date: "%R" }} on {{ note.date | date_to_long_string: "ordinal" }}
+  </time></span>
+  {% endif %}
+</article>

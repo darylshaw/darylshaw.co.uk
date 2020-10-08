@@ -6,15 +6,10 @@
 
 main {
   padding-top: 2rem;
-  min-height: 100vh;
-  background: linear-gradient($light-grey, $white);
-  position: relative;
-  z-index: 1;
 }
 
-time, iframe {
-  // display: block;
-  // font-size: 0.9em;
+iframe {
+  display: block;
 }
 
 form {
@@ -68,30 +63,31 @@ button {
 
   &:hover {
     transform: translate(3px, 3px);
-    color: $link-color;
+    color: $text-color--darker;
   }
 }
 
-.title {
-  grid-column: main-content;
-}
-
-.blog-intro {
-  grid-column: main-content;
-}
-
-article {
+.title,
+.page-intro,
+article,
+.content-main,
+.archive-posts,
+.post-nav {
   grid-column: full-content;
-  padding-bottom: 1.25em;
-  margin-bottom: 1.5em;
-  @include bp(small) {
-    grid-column: main-content / 10;
+  @include bp(medium) {
+    grid-column: main-content/ 10;
   }
   @include bp(large) {
     grid-column: main-content;
   }
+}
+
+article {
+  padding-bottom: 1.25em;
+  margin-bottom: 1.5em;
 
   header {
+    margin-top: 1rem;
     h1 {
       font-size: 1.802em;
     }
@@ -99,21 +95,10 @@ article {
 }
 
 .post-nav {
-  grid-column: full-content;
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid $text-color;
-  padding-top: 1em;
-  @include bp(small) {
-    grid-column: full-content / main-content-end;
-  }
 
   .next {
     text-align: right;
-  }
-
-  a {
-    color: $text-color;
-    text-decoration-thickness: 2px;
   }
 }

@@ -1,6 +1,6 @@
 ---
 title: Daryl Shaw
-timezone: UTC
+timezone: Europe/London
 collections:
   posts:
     title: Posts
@@ -14,12 +14,16 @@ collections:
   notes:
     title: Notes
     output: true
+  photos:
+    title: Photos
+    output: true
 defaults:
 -
   scope:
     path: ""
     type: "posts"
   values:
+    layout: "post"
     permalink: "/blog/:title/"
     post_type: "Article"
 -
@@ -33,7 +37,7 @@ defaults:
     path: ""
     type: "notes"
   values:
-    layout: "post"
+    layout: "note"
     title: ""
     permalink: "/:collection/:title"
     post_type: "Note"
@@ -42,7 +46,7 @@ defaults:
     path: ""
     type: "photos"
   values:
-    layout: "post"
+    layout: "photo"
     title: ""
     permalink: "/:collection/:title"
     post_type: "Photo"
@@ -70,7 +74,7 @@ feed:
   - photos
 pagination:
   enabled: true
-  debug: true
+  debug: false
   collection: 'posts'
   per_page: 10
   permalink: 'page/:num/'

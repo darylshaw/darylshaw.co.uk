@@ -4,10 +4,10 @@ layout: default
 
 <section class="layout">
   <h1 class="title">{{page.title}}</h1>
-  <div class="blog-intro">
+  <div class="page-intro">
     {{content}}
   </div>
     {% for note in site.notes reversed %}
-      {% include notes.html %}
+      {% include notes.html is_excerpt=true %}
     {% endfor %}
 </section>
