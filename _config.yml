@@ -39,7 +39,7 @@ defaults:
   values:
     layout: "note"
     title: ""
-    permalink: "/:collection/:title"
+    permalink: "/:collection/:title/"
     post_type: "Note"
 -
   scope:
@@ -48,7 +48,7 @@ defaults:
   values:
     layout: "photo"
     title: ""
-    permalink: "/:collection/:title"
+    permalink: "/:collection/:title/"
     post_type: "Photo"
 url: https://darylshaw.co.uk
 permalink: pretty
