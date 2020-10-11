@@ -5,7 +5,12 @@ Install the bundle:
 ```
 bundle install
 ```
-Start Jekyll server:
+
 ```
-bundle exec jekyll serve
+npm install
+```
+
+Start Jekyll server and Grunt watch task:
+```
+npm run dev
 ```

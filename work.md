@@ -14,3 +14,5 @@ Here are some of the areas where I can help:
 * Migrations and replatforming
 * Web development (WordPress, Jamstack)
 * Website support & maintenance
+
+[Get in touch](/contact)

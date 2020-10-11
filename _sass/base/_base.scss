@@ -1,0 +1,92 @@
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: $yellow;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: $bg-color;
+  color: $text-color;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  padding-top: 2rem;
+  flex: 1;
+}
+
+article {
+  padding-bottom: 1.25em;
+  margin-bottom: 1.5em;
+
+  header {
+    margin-top: 1rem;
+  }
+}
+
+iframe {
+  display: block;
+}
+
+form {
+  padding-bottom: 1.25em;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1em;
+  font-size: 0.8em;
+  box-shadow: 3px 3px $dark-grey;
+  border: 0;
+  height: 100%;
+}
+
+textarea {
+  height: 10em;
+}
+
+a {
+  color: $text-color;
+  text-decoration: none;
+  border-bottom: 2px solid $yellow;
+
+  &:hover {
+    color: $text-color--darker;
+    border-color: inherit;
+    transition: 0.2s ease-in;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+svg {
+  fill: currentColor;
+
+  &:hover {
+    fill: $text-color--darker;
+  }
+  &.invert {
+    fill: $white;
+    &:hover {
+      fill: $dark-grey;
+    }
+  }
+}

@@ -1,9 +1,8 @@
 footer {
-  // position: sticky;
-  bottom: 0;
   margin-top: 2rem;
   background: $purple;
   color: $white;
+  flex-shrink: 0;
 
   .newsletter {
     grid-column: full-content;

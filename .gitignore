@@ -1,5 +1,12 @@
+# ignore all files starting with .
+.*
+
+# track these files, if they exist
+!.gitignore
+!.ruby-version
+
+# ignore these folders
+node_modules
+
+# ignore compiled files
 _site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-.DS_Store
