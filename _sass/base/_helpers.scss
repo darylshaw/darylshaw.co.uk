@@ -84,17 +84,6 @@ article,
   }
 }
 
-
-.photo {
-  display: flex;
-  flex-direction: column-reverse;
-
-  img {
-    object-fit: cover;
-    width: 100%;
-  }
-}
-
 .hover-reveal {
   position: relative;
   cursor: pointer;

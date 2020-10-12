@@ -22,14 +22,11 @@ layout: default
       {%- assign date = currentdate -%}
       {% endif %}
       {% if post.collection == "posts" %}
-      {% include post.html post=post is_excerpt=true %}
+        {% include post.html is_excerpt=true %}
+      {% elsif post.collection == "photos" %}
+        {% include photo.html is_excerpt=true %}
       {% else %}
-      <article class="h-entry note">
-        {{ post.content }}
-        <span class="post-meta">{{ post.post_type }} posted at <time datetime="{{ post.date | date: "%Y-%m-%d %H:%M" }}">
-          <a href="{{ post.url }}">{{ post.date | date: "%R" }}</a>
-        </time></span>
-      </article>
+        {% include note.html is_excerpt=true %}
       {% endif %}
       {% if forloop.last %}</article>{% endif %}
       {% endfor %}

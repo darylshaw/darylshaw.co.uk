@@ -6,6 +6,7 @@ Install the bundle:
 bundle install
 ```
 
+Run:
 ```
 npm install
 ```

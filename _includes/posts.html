@@ -2,5 +2,5 @@
 {%- assign is_excerpt = include.is_excerpt -%}
 
 {% for post in site.posts %}
-  {% include post.html post=post is_excerpt=true %}
+  {% include post.html is_excerpt=true %}
 {% endfor %}

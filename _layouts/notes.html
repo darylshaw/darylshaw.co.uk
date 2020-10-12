@@ -7,7 +7,5 @@ layout: default
   <div class="page-intro">
     {{content}}
   </div>
-    {% for note in site.notes reversed %}
-      {% include notes.html is_excerpt=true %}
-    {% endfor %}
+  {% include notes.html %}
 </section>
