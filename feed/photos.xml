@@ -19,10 +19,10 @@
 		<updated>{{ post.date | date_to_xmlschema }}</updated>
 		<id>{{ site.url }}{{ post.url }}</id>
 		<content type="html"><![CDATA[
+			{{ post.content }}
 			{% for photo in post.photo %}
 			<img src="{{ photo.url }}" alt="{{ photo.alt }}" class="u-image" />
 			{% endfor %}
-			{{ post.content }}
 		]]></content>
 	</entry>
 	{% endfor %}
