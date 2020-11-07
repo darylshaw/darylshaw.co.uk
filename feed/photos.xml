@@ -4,12 +4,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>Daryl Shaw's Photos</title>
 	<link rel="self" href="{{ site.url }}/{{ page.path }}" type="application/atom+xml" />
-	<link rel="alternate" href="{{ site.url }}/" type="text/html" />
+	<link rel="alternate" href="{{ site.url }}" type="text/html" />
 	<updated>{% assign photos = site.photos | date_sort | reverse %}{% for post in photos limit:1 %}{{ post.date | date_to_xmlschema }}{% endfor %}</updated>
 	<author>
 		<name>{{ site.name | xml_escape }}</name>
 	</author>
-	<id>{{ site.url }}</id>
+	<id>{{ site.url }}/</id>
 	<rights> &#169; 2015 - {{ "now" | date: '%Y' }} Daryl Shaw </rights>
 	{% assign feed_items = site.feed_items | default: 10 %}
 	{% for post in site.photos reversed limit:feed_items %}
