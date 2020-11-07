@@ -64,14 +64,10 @@ sass:
 plugins:
 - jekyll-seo-tag
 - jekyll-sitemap
-- jekyll-feed
 - jekyll-redirect-from
 - jekyll-paginate-v2
+- jekyll-mentions
 repository: darylshaw/darylshaw.co.uk
-feed:
-  collections:
-  - notes
-  - photos
 pagination:
   enabled: true
   debug: false
@@ -79,3 +75,6 @@ pagination:
   per_page: 10
   permalink: 'page/:num/'
   limit: 0
+feed_items: 10
+jekyll-mentions:
+  base_url: https://twitter.com
