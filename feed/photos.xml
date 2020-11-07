@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>Daryl Shaw's Photos</title>
 	<link rel="self" href="{{ site.url }}/{{ page.path }}" type="application/atom+xml" />
-	<link rel="alternate" href="{{ site.url }}" type="text/html" />
+	<link rel="alternate" href="{{ site.url }}/" type="text/html" />
 	<updated>{% assign photos = site.photos | date_sort | reverse %}{% for post in photos limit:1 %}{{ post.date | date_to_xmlschema }}{% endfor %}</updated>
 	<author>
 		<name>{{ site.name | xml_escape }}</name>
@@ -18,12 +18,12 @@
 		<link rel="alternate" href="{{ site.url }}{{ post.url }}" type="text/html"/>
 		<updated>{{ post.date | date_to_xmlschema }}</updated>
 		<id>{{ site.url }}{{ post.url }}</id>
-		<content type="html">
+		<content type="html"><![CDATA[
 			{% for photo in post.photo %}
 			<img src="{{ photo.url }}" alt="{{ photo.alt }}" class="u-image" />
 			{% endfor %}
-			{{ post.content | xml_escape }}
-		</content>
+			{{ post.content }}
+		]]></content>
 	</entry>
 	{% endfor %}
 </feed>

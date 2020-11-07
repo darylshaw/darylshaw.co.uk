@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>Daryl Shaw's Notes</title>
 	<link rel="self" href="{{ site.url }}/{{ page.path }}" type="application/atom+xml" />
-	<link rel="alternate" href="{{ site.url }}" type="text/html" />
+	<link rel="alternate" href="{{ site.url }}/" type="text/html" />
 	<updated>{% assign notes = site.notes | date_sort | reverse %}{% for post in notes limit:1 %}{{ post.date | date_to_xmlschema }}{% endfor %}</updated>
 	<author>
 		<name>{{ site.name | xml_escape }}</name>
