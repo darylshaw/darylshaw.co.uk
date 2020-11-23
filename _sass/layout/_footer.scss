@@ -11,12 +11,21 @@ footer {
       grid-column: main-content;
     }
 
-    form {
-      display: inline-flex;
+    h3 {
+      font-size: 1em;
+      margin-bottom: 0;
     }
 
     p {
-      margin: inherit;
+      font-size: 0.8em;
+      margin: 0 0 1em;
+    }
+
+    form {
+      display: inline-flex;
+      p {
+        margin: inherit;
+      }
     }
 
     .button {

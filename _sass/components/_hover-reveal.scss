@@ -1,0 +1,34 @@
+.hover-reveal {
+  position: relative;
+  cursor: pointer;
+  border-bottom: 2px solid $yellow;
+
+  &:hover {
+    color: $text-color--darker;
+    border-bottom-color: inherit;
+    transition: 0.2s ease-in;
+  }
+}
+
+.hover-effect {
+  color: $text-color--darker;
+  border-bottom-color: inherit;
+}
+
+.hover-reveal.no-touch:hover .hover-reveal-img,
+.hover-reveal.hover-effect .hover-reveal-img {
+    opacity: 1;
+    transform: translate3d(-50%, -40%, 0) rotate3d(0,0,1,5deg);
+    left: 50%;
+  }
+
+.hover-reveal-img {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  width: 120px;
+  height: auto;
+  left: 50%;
+  transition: opacity 0.3s ease-in-out, transform 0.55s ease-in-out, transform 0.55s ease-in-out;
+  pointer-events: none;
+}

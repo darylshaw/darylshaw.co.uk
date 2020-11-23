@@ -1,0 +1,21 @@
+.note {
+  h2 {
+    font-size: 1em;
+  }
+
+  p {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 1.2em;
+    text-align: justify;
+    
+    a {
+      border-bottom: inherit;
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-decoration-color: $yellow;
+      &:hover {
+        text-decoration-color: inherit;
+      }
+    }
+  }
+}

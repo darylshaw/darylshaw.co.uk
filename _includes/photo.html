@@ -2,17 +2,20 @@
 {%- assign is_excerpt = include.is_excerpt -%}
 
 <article class="h-entry note">
-  {% for photo in post.photo %}
-    <img src="{{ photo.url }}" alt="{{ photo.alt }}" class="u-image" />
-  {% endfor %}
-  {{ post.content | markdownify }}
   {%- if is_excerpt -%}
-  <span class="post-meta">Posted at <time class="dt-published" datetime="{{ post.date | date: "%Y-%m-%d %H:%M" }}">
-    <a href="{{ post.url }}">{{ post.date | date: "%R" }}</a>
-  </time></span>
-  {% else %}
-  <span class="post-meta">Posted at <time class="dt-published" datetime="{{ post.date | date: "%Y-%m-%d %H:%M" }}">
-    {{ post.date | date: "%R" }} on {{ post.date | date_to_long_string: "ordinal" }}
-  </time></span>
-  {% endif %}
+  {%- for photo in post.photo -%}
+  <img src="{{ photo.url }}" alt="{{ photo.alt }}" class="u-image" loading="lazy" />
+  {%- endfor -%}
+  {{ post.content | markdownify }}
+  {%- include post-meta.html -%}
+  {%- else -%}
+  <h2>
+    {{ post.date | date_to_long_string: "ordinal" }}
+  </h2>
+  {%- for photo in post.photo -%}
+  <img src="{{ photo.url }}" alt="{{ photo.alt }}" class="u-image" loading="lazy" />
+  {%- endfor -%}
+  {{ post.content | markdownify }}
+  {%- include post-meta.html -%}
+  {%- endif -%}
 </article>

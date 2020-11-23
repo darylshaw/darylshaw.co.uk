@@ -1,13 +1,13 @@
-{% for post in site.notes reversed %}
+{%- for post in site.notes reversed -%}
 {%- assign currentdate = post.date | date_to_long_string: "ordinal" -%}
-{% if currentdate != date %}
-{% unless forloop.first %}</article>{% endunless %}
+{%- if currentdate != date -%}
+{%- unless forloop.first -%}</article>{%- endunless -%}
 <article>
   <header>
     <h4>{{ currentdate }}</h4>
   </header>
   {%- assign date = currentdate -%}
-  {% endif %}
-  {% include note.html is_excerpt=true %}
-  {% if forloop.last %}</article>{% endif %}
-{% endfor %}
+  {%- endif -%}
+  {%- include note.html is_excerpt=true -%}
+  {%- if forloop.last -%}</article>{%- endif -%}
+{%- endfor -%}

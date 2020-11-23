@@ -10,10 +10,10 @@ layout: default
   <ul class="archive-posts">
     {%- assign tag = page.title | downcase -%}
     {%- assign tag_posts = site.tags[tag] -%}
-    {% for post in tag_posts %}
+    {%- for post in tag_posts -%}
     <li>
-      {% include post.html post=post is_excerpt=true %}
+      {%- include post.html post=post is_excerpt=true -%}
     </li>
-    {% endfor %}
+    {%- endfor -%}
   </ul>
 </section>

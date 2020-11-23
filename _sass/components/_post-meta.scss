@@ -2,3 +2,14 @@
   font-size: 0.75em;
   font-weight: 700;
 }
+
+.post {
+  .post-meta {
+    time {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+      font-family: 'Rubik', sans-serif;
+    }
+  }
+}
