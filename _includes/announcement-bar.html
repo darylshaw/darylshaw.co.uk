@@ -1,3 +1,11 @@
 <div class="announcement-bar">
-  <p>I'm available for work. Looking for an experienced marketer and web developer? <a href="/work/" onclick="fathom.trackGoal('LJJT8SRY', 0);">Hire me</a>.</p>
-</div>
+  <p>I'm available for work. Looking for an experienced marketer and web developer?
+    {%- if jekyll.environment == 'production' and site.fathom_analytics -%}
+    <a href="/work/" onclick="fathom.trackGoal('LJJT8SRY', 0);">Hire me</a>
+    {%- elsif jekyll.environment == 'staging' and site.fathom_analytics -%}
+    <a href="/work/" onclick="fathom.trackGoal('NDL0BK9A', 0);">Hire me</a>
+    {% else %}
+    <a href="/work/">Hire me</a>
+    {%- endif -%}
+    .</p>
+  </div>
