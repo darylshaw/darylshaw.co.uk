@@ -12,4 +12,4 @@ pagination:
   sort_reverse: true
 ---
 
-Hey, <span class="hover-reveal no-touch">I'm Daryl<img class="hover-reveal-img" src="/assets/uploads/profile-crop.jpg" alt="A photo of Daryl"></span>. I help businesses manage their online presence with a particular focus on ecommerce. Looking for support with strategy or building and maintaining your website? <a href="/contact/">We should chat</a>.
+Hey, <span class="hover-reveal no-touch">I'm Daryl<a class="u-url" rel="me" href="https://darylshaw.co.uk/"><img class="hover-reveal-img u-photo" src="/assets/uploads/profile-crop.jpg" alt="A photo of Daryl"></a></span>. I help businesses manage their online presence with a particular focus on ecommerce. Looking for support with strategy or building and maintaining your website? <a href="/contact/">We should chat</a>.
