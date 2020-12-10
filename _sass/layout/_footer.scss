@@ -2,22 +2,21 @@ footer {
   margin-top: 2rem;
   background: $purple;
   color: $white;
+  font-size: 0.75em;
   flex-shrink: 0;
 
   .newsletter {
     grid-column: full-content;
     margin-bottom: 2.75rem;
-    @include bp(small) {
+    @include bp(medium) {
       grid-column: main-content;
     }
 
     h3 {
-      font-size: 1em;
       margin-bottom: 0;
     }
 
     p {
-      font-size: 0.8em;
       margin: 0 0 1em;
     }
 
@@ -65,20 +64,34 @@ footer {
     }
   }
 
-  .copyright {
+  .links {
     position: inherit;
     grid-column: full-content;
-    font-size: 0.75em;
-    color: $white;
     @include bp(medium) {
       position: fixed;
       bottom: 0.5em;
       padding-left: 2rem;
-      color: $text-color;
+    }
+  }
+}
 
-      &.invert {
-        color: $white;
-      }
+.fathom {
+  color: $white;
+  @include bp(medium) {
+    color: $text-color;
+  }
+
+  a {
+    color: $white;
+    @include bp(medium) {
+      color: $text-color;
+    }
+  }
+
+  &.invert {
+    color: $white;
+    a {
+      color: $white;
     }
   }
 }
@@ -95,11 +108,23 @@ footer {
   a {
     color: $white;
     border-bottom: inherit;
-    @include bp(small) {
+    @include bp(medium) {
       color: $text-color;
     }
     &.invert {
       color: $white;
+      &:hover {
+        color: $white;
+      }
       }
     }
+}
+
+.copyright {
+  @include bp(medium) {
+    color: $text-color;
+  }
+  &.invert {
+    color: $white;
+  }
 }
