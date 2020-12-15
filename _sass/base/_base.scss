@@ -23,9 +23,6 @@ body {
 main {
   padding-top: 2rem;
   flex: 1;
-  @include bp(medium) {
-    margin-top: 2.85em; // 57 / 20
-  }
 }
 
 article {

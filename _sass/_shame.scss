@@ -1,0 +1,23 @@
+.posts {
+  .photo {
+    // display: flex;
+    // flex-direction: row-reverse;
+    // justify-content: space-between;
+
+    img {
+      width: 30%;
+      margin-left: 1em;
+      object-fit: contain;
+    }
+  }
+}
+
+header {
+  h3 {
+    font-size: 0.75em;
+  }
+}
+
+.post-meta {
+  display: block;
+}

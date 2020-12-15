@@ -10,6 +10,12 @@
     padding: 0 2rem;
   }
 
+  @include bp(large) {
+    width: 25%;
+    top: 2em;
+    right: 2em;
+  }
+
   p {
     margin-bottom: 1em;
   }

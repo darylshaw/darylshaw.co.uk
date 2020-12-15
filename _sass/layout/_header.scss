@@ -11,6 +11,9 @@
     padding-top: 2em;
     margin-top: 2.85em; // 57 / 20
   }
+  @include bp(large) {
+    margin-top: inherit;
+  }
 
   h1 {
     font-size: 1rem;

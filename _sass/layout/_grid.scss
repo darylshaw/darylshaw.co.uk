@@ -8,7 +8,6 @@
 
 .title,
 .page-intro,
-article,
 .content-main,
 .archive-posts,
 .post-nav {
@@ -18,5 +17,15 @@ article,
   }
   @include bp(large) {
     grid-column: main-content;
+  }
+}
+
+article {
+  grid-column: full-content;
+  @include bp(medium) {
+    grid-column: main-content/ 10;
+  }
+  @include bp(large) {
+    grid-column: main-content / 9;
   }
 }
