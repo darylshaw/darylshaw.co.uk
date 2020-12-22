@@ -1,19 +1,13 @@
 {%- assign post = include.post -%}
 {%- assign is_excerpt = include.is_excerpt -%}
 
+{%- if is_excerpt -%}
+<div class="note box-content">
+  {{ post.content | markdownify }}
+  {%- include post-meta.html -%}
+</div>
+{%- else -%}
 <article class="h-entry note">
-  {%- if is_excerpt -%}
-  <header>
-    <h3>
-      {{ post.date | date_to_long_string: "ordinal" }}
-      {%- include post-meta.html -%}
-    </h3>
-    {{ post.content | markdownify }}
-  </header>
-  {%- else -%}
-  <h2>
-    {{ post.date | date_to_long_string: "ordinal" }}
-  </h2>
   {{ post.content | markdownify }}
   {%- include post-meta.html -%}
   {%- endif -%}

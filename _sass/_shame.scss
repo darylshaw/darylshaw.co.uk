@@ -1,15 +1,38 @@
 .posts {
-  .photo {
-    // display: flex;
-    // flex-direction: row-reverse;
-    // justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  grid-column: main-content / full-content;
+}
 
-    img {
-      width: 30%;
-      margin-left: 1em;
-      object-fit: contain;
+.box-content,
+.photo-back {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  p {
+    font-size: 0.65em;
+    padding: 0.5rem;
+    margin-bottom: inherit;
+  }
+
+  .post-meta {
+    padding: 0.5rem;
+    font-size: 0.5rem;
+    font-weight: inherit;
+
+    a {
+      border-bottom: inherit;
     }
   }
+}
+
+.note,
+.post {
+  width: 250px;
+  height: 250px;
+  border: 1px solid $dark-grey;
 }
 
 header {

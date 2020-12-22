@@ -1,13 +1,5 @@
-{%- for post in site.photos reversed -%}
-{%- assign currentdate = post.date | date_to_long_string: "ordinal" -%}
-{%- if currentdate != date -%}
-{%- unless forloop.first -%}</article>{%- endunless -%}
-<article>
-  <header>
-    <h4>{{ currentdate }}</h4>
-  </header>
-  {%- assign date = currentdate -%}
-  {%- endif -%}
-    {%- include photo.html is_excerpt=true -%}
-  {%- if forloop.last -%}</article>{%- endif -%}
-{%- endfor -%}
+<div class="posts">
+  {%- for post in site.photos reversed -%}
+  {%- include photo.html is_excerpt=true -%}
+  {%- endfor -%}
+</div>

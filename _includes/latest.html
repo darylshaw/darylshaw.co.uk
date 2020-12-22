@@ -1,6 +1,4 @@
-<article class="posts">
-  <p>This is where I post <a href="/notes/">notes</a>, <a href="/photos/">photos</a>, and <a href="/blog/">articles</a>.</p>
-  <h2>Latest</h2>
+<div class="posts">
   {%- for post in paginator.posts -%}
   {%- if post.collection == "posts" -%}
     {%- include post.html is_excerpt=true -%}
@@ -10,18 +8,19 @@
     {%- include note.html is_excerpt=true -%}
   {%- endif -%}
   {%- endfor -%}
-  {%- if paginator.total_pages > 1 -%}
-  <section class="post-nav">
-    {%- if paginator.previous_page -%}
-    <p class="previous">
-      <a href="{{ paginator.previous_page_path | prepend: site.base_url }}">Newer</a>
-    </p>
-    {%- endif -%}
-    {%- if paginator.next_page -%}
-    <p class="next">
-      <a class="pagination__next" href="{{ paginator.next_page_path | prepend: site.base_url }}">Older</a>
-    </p>
-    {%- endif -%}
-  </section>
+</div>
+
+{%- if paginator.total_pages > 1 -%}
+<section class="post-nav">
+  {%- if paginator.previous_page -%}
+  <p class="previous">
+    <a href="{{ paginator.previous_page_path | prepend: site.base_url }}">Newer</a>
+  </p>
   {%- endif -%}
-</article>
+  {%- if paginator.next_page -%}
+  <p class="next">
+    <a class="pagination__next" href="{{ paginator.next_page_path | prepend: site.base_url }}">Older</a>
+  </p>
+  {%- endif -%}
+</section>
+{%- endif -%}

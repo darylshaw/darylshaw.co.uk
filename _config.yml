@@ -72,9 +72,9 @@ pagination:
   enabled: true
   debug: false
   collection: 'posts'
-  per_page: 5
+  per_page: 9
   permalink: 'page/:num/'
-  limit: 1
+  limit: 0
 feed_items: 10
 jekyll-mentions:
   base_url: https://twitter.com
