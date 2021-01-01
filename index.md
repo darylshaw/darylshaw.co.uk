@@ -5,7 +5,7 @@ position: 0
 description: I'm Daryl. I help businesses manage their online presence. Welcome to
   my website.
 redirect_from: "/about/"
-layout: stream
+layout: archive
 pagination:
   enabled: true
   collection: notes, photos, posts

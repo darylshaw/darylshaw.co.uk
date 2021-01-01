@@ -1,21 +1,20 @@
 {%- assign post = include.post -%}
 {%- assign is_excerpt = include.is_excerpt -%}
 
-<article class="h-entry note">
-  {%- if is_excerpt -%}
+{%- if is_excerpt -%}
+<div class="h-entry archive-item">
+  {{ post.content | markdownify }}
+  {%- for photo in post.photo -%}
+  <img src="{{ photo.url }}" alt="{{ photo.alt }}" class="u-image" width="50%" loading="lazy" />
+  {%- endfor -%}
+  {%- include post-meta.html -%}
+</div>
+{%- else -%}
+<article class="h-entry">
+  {%- include post-meta.html -%}
+  {{ post.content | markdownify }}
   {%- for photo in post.photo -%}
   <img src="{{ photo.url }}" alt="{{ photo.alt }}" class="u-image" loading="lazy" />
   {%- endfor -%}
-  {{ post.content | markdownify }}
-  {%- include post-meta.html -%}
-  {%- else -%}
-  <h2>
-    {{ post.date | date_to_long_string: "ordinal" }}
-  </h2>
-  {%- for photo in post.photo -%}
-  <img src="{{ photo.url }}" alt="{{ photo.alt }}" class="u-image" loading="lazy" />
-  {%- endfor -%}
-  {{ post.content | markdownify }}
-  {%- include post-meta.html -%}
-  {%- endif -%}
 </article>
+{%- endif -%}
