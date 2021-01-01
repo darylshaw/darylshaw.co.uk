@@ -5,7 +5,7 @@
 <div class="h-entry archive-item">
   {{ post.content | markdownify }}
   {%- for photo in post.photo -%}
-  <img src="{{ photo.url }}" alt="{{ photo.alt }}" class="u-image" width="50%" loading="lazy" />
+  <img src="{{ photo.url }}" alt="{{ photo.alt }}" class="u-image" width="250" height="250" loading="lazy" />
   {%- endfor -%}
   {%- include post-meta.html -%}
 </div>
