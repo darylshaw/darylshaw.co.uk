@@ -23,11 +23,11 @@
 
   a {
     text-decoration: none;
-    color: $text-color;
+    color: var(--text-color);
     border-bottom: inherit;
 
     &:hover {
-      color: $text-color--darker;
+      color: var(--text-color--darker);
       transition: 100ms ease-in;
     }
   }
@@ -47,8 +47,8 @@
       li {
         a {
           &:hover {
-            color: $text-color--darker;
-            border-bottom: solid 2px $text-color--darker;
+            color: var(--text-color--darker);
+            border-bottom: solid 2px var(--text-color--darker);
           }
         }
       }

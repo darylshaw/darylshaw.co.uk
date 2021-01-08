@@ -1,17 +1,17 @@
 .hover-reveal {
   position: relative;
   cursor: pointer;
-  border-bottom: 2px solid $yellow;
+  border-bottom: 2px solid var(--yellow);
 
   &:hover {
-    color: $text-color--darker;
+    color: var(--text-color--darker);
     border-bottom-color: inherit;
     transition: 0.2s ease-in;
   }
 }
 
 .hover-effect {
-  color: $text-color--darker;
+  color: var(--text-color--darker);
   border-bottom-color: inherit;
 }
 
