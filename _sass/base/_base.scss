@@ -89,12 +89,12 @@ svg {
   fill: currentColor;
 
   &:hover {
-    fill: $text-color--darker;
+    fill: var(--text-color--darker);
   }
   &.invert {
-    fill: $white;
+    fill: var(--white);
     &:hover {
-      fill: $dark-grey;
+      fill: var(--dark-grey);
     }
   }
 }
