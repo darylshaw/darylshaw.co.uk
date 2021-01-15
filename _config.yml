@@ -75,7 +75,7 @@ pagination:
   per_page: 10
   permalink: 'page/:num/'
   limit: 0
-feed_items: 10
+feed_items: 20
 jekyll-mentions:
   base_url: https://twitter.com
 exclude: [README.md, Gruntfile.js, package.json, package-lock.json, netlify.toml]
