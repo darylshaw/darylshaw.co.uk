@@ -1,0 +1,36 @@
+.highlight {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  @include bp(small) {
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  pre {
+    overflow: auto;
+    padding: 1em;
+    color: var(--white);
+  }
+
+  code {
+    font-size: 14px;
+  }
+}
+
+.content-main {
+  margin-bottom: 2.75rem;
+
+  .button {
+    width: 100%;
+    @include bp(small) {
+      width: 11.111111111em; // 200 / 18
+    }
+  }
+}

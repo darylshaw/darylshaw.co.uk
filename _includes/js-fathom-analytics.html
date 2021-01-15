@@ -1,8 +1,5 @@
 {%- if jekyll.environment == 'production' or jekyll.environment == 'staging' and site.fathom_analytics -%}
 <!-- Fathom - beautiful, simple website analytics -->
-<script src="https://cdn.usefathom.com/3.js" site="{{ site.fathom_analytics }}"></script>
-<script>
-window.fathom || document.write('<script src="https://vole.darylshaw.co.uk/core.js"><\/script>');
-</script>
+<script src="https://vole.darylshaw.co.uk/script.js" data-site="{{ site.fathom_analytics }}" defer></script>
 <!-- / Fathom -->
 {%- endif -%}

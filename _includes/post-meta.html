@@ -1,0 +1,9 @@
+<span class="post-meta">
+  <time class="dt-published" datetime="{{ post.date | date: "%Y-%m-%d %H:%M" }}">
+    {%- if is_excerpt -%}
+    <a href="{{ post.url }}">{{ post.date | date: "%-d %b %Y, %l:%M %P" }}</a>
+    {%- else -%}
+    {{ post.date | date: "%-d %b %Y, %l:%M %P" }}
+    {%- endif -%}
+  </time>
+</span>

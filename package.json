@@ -1,0 +1,35 @@
+{
+  "name": "darylshaw.co.uk",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "scripts": {
+    "dev": "grunt && grunt dev & bundle exec jekyll serve",
+    "staging": "grunt && bundle exec jekyll build --config _config.yml,_config_staging.yml",
+    "build": "grunt && bundle exec jekyll build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darylshaw/darylshaw.co.uk.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Daryl Shaw",
+    "url": "https://darylshaw.co.uk"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darylshaw/darylshaw.co.uk/issues"
+  },
+  "homepage": "https://darylshaw.co.uk",
+  "devDependencies": {
+    "grunt": "^1.3.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-imagemin": "^4.0.0",
+    "grunt-contrib-uglify": "^5.0.0",
+    "grunt-contrib-watch": "^1.1.0"
+  },
+  "dependencies": {
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.1"
+  }
+}

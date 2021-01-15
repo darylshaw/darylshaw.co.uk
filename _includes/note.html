@@ -1,0 +1,14 @@
+{%- assign post = include.post -%}
+{%- assign is_excerpt = include.is_excerpt -%}
+
+{%- if is_excerpt -%}
+<div class="h-entry archive-item">
+  {{ post.content | markdownify }}
+  {%- include post-meta.html -%}
+</div>
+{%- else -%}
+<article class="h-entry">
+  {%- include post-meta.html -%}
+  {{ post.content | markdownify }}
+</article>
+{%- endif -%}

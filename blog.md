@@ -1,7 +1,5 @@
 ---
-title: Blog
+title: Articles
 position: 1
 layout: posts
 ---
-
-Welcome to my weblog

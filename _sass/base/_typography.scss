@@ -8,7 +8,7 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  line-height: 1.5;
+  line-height: 1.8;
 }
 
 p {
@@ -21,7 +21,7 @@ h3,
 h4,
 h5 {
   margin: 2.75rem 0 1.05rem;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 h1 {
@@ -31,4 +31,8 @@ h1 {
 
 h2 {
   font-size: 1.602em;
+  margin-top: 1.5rem;
+  a {
+    border: inherit;
+  }
 }

@@ -4,25 +4,8 @@ layout: default
 
 <section class="layout">
   <h1 class="title">{{page.title}}</h1>
-  <div class="blog-intro">
+  <div class="page-intro">
     {{content}}
   </div>
-    {% for note in site.notes reversed %}
-    {%- assign currentdate = note.date | date: "%d %B %Y" -%}
-    {% if currentdate != date %}
-    {% unless forloop.first %}</article>{% endunless %}
-    <article>
-      <header>
-        <strong>{{ currentdate }}</strong>
-      </header>
-      {%- assign date = currentdate -%}
-      {% endif %}
-      <article>
-        {{ note.content | markdownify }}
-        <time datetime="{{ note.date | date: "%Y-%m-%d %H:%M" }}">
-          <a href="{{ note.url }}">{{ note.date | date: "%l:%M %p" }}</a>
-        </time>
-      </article>
-      {% if forloop.last %}</article>{% endif %}
-    {% endfor %}
+  {%- include notes.html -%}
 </section>

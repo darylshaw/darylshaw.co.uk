@@ -1,0 +1,20 @@
+.announcement-bar {
+  background: var(--purple);
+  color: var(--white);
+  padding: 0 1rem;
+  font-size: 0.75rem;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  @include bp(medium) {
+    padding: 0 2rem;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  a {
+    color: var(--white);
+  }
+}

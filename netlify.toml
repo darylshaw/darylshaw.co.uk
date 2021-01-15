@@ -1,9 +1,19 @@
+[build]
+  command = "npm run build"
+  publish = "_site/"
+
 # Production context: all deploys from the Production branch set in your site's
 # deploy contexts will inherit these settings.
 [context.production]
-  command = "JEKYLL_ENV=production bundle exec jekyll build"
+  command = "npm run build"
+  [context.production.environment]
+    JEKYLL_ENV = "production"
+    TZ = "Europe/London"
 
 # Specific branch context: all deploys from this specific branch will inherit
 # these settings.
 [context.staging] # 'staging' is a branch name
-  command = "JEKYLL_ENV=staging bundle exec jekyll build --config _config.yml,_config_staging.yml"
+  command = "npm run staging"
+  [context.staging.environment]
+    JEKYLL_ENV = "staging"
+    TZ = "Europe/London"

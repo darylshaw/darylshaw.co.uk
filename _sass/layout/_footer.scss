@@ -1,0 +1,130 @@
+footer {
+  margin-top: 2rem;
+  background: var(--purple);
+  color: var(--white);
+  font-size: 0.75em;
+  flex-shrink: 0;
+
+  .newsletter {
+    grid-column: full-content;
+    margin-bottom: 2.75rem;
+    @include bp(medium) {
+      grid-column: main-content;
+    }
+
+    h3 {
+      margin-bottom: 0;
+    }
+
+    p {
+      margin: 0 0 1em;
+    }
+
+    form {
+      display: inline-flex;
+      p {
+        margin: inherit;
+      }
+    }
+
+    .button {
+      margin-left: 0.5em;
+    }
+
+    .button {
+      position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        border: 2px solid var(--white);
+        width: 100%;
+        height: 100%;
+        top: 3px;
+        left: 3px;
+      }
+    }
+
+    button {
+      background-color: var(--purple);
+      color: var(--white);
+      cursor: pointer;
+      padding: 1em 1.5em;
+      font-size: 0.8em;
+      border: 2px solid;
+      font-weight: 700;
+      width: inherit;
+      height: 100%;
+      position: relative;
+
+      &:hover {
+        transform: translate(3px, 3px);
+        color: var(--white);
+      }
+    }
+  }
+
+  .links {
+    position: inherit;
+    grid-column: full-content;
+    @include bp(medium) {
+      position: fixed;
+      bottom: 0.5em;
+      padding-left: 2rem;
+    }
+  }
+}
+
+.fathom {
+  color: var(--white);
+  @include bp(medium) {
+    color: var(--text-color);
+  }
+
+  a {
+    color: var(--white);
+    @include bp(medium) {
+      color: var(--text-color);
+    }
+  }
+
+  &.invert {
+    color: var(--white);
+    a {
+      color: var(--white);
+    }
+  }
+}
+
+.social {
+  padding: 0;
+  display: flex;
+
+  li {
+    list-style: none;
+    margin-right: 0.5em;
+  }
+
+  a {
+    color: var(--white);
+    border-bottom: inherit;
+    @include bp(medium) {
+      color: var(--text-color);
+    }
+    &.invert {
+      color: var(--white);
+      &:hover {
+        color: var(--white);
+      }
+      }
+    }
+}
+
+.copyright {
+  @include bp(medium) {
+    color: var(--text-color);
+  }
+  &.invert {
+    color: var(--white);
+  }
+}

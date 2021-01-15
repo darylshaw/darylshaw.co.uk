@@ -1,28 +1,31 @@
 <head>
   <meta charset="utf-8">
-  {% include meta-mobile.html %}
-  {% seo %}
-  {% feed_meta %}
-  {% include robots.html %}
+  {%- include meta-mobile.html -%}
+  {%- seo -%}
+  {%- include robots.html -%}
+  {%- include icons.html -%}
 
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
 
+  <link rel="alternate" href="/feed.xml" type="application/atom+xml" title="Articles Atom/RSS Feed" />
+  <link rel="alternate" href="/feed/notes.xml" type="application/atom+xml" title="Notes Atom/RSS Feed" />
+  <link rel="alternate" href="/feed/photos.xml" type="application/atom+xml" title="Photos Atom/RSS Feed" />
   <link rel="micropub" href="https://indiekit.darylshaw.co.uk/micropub">
   <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
   <link rel="authorization_endpoint" href="https://indieauth.com/auth">
   <link href="https://micro.blog/darylshaw" rel="me" />
   <link href="https://github.com/darylshaw" rel="me" />
 
-
   <!-- Type -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i|Rubik:700" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:wght@700&display=swap" rel="stylesheet">
 
   <!-- For all browsers -->
   <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/monokai.css">
 
   <meta http-equiv="cleartype" content="on">
 
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
