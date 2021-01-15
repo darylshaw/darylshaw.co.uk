@@ -5,7 +5,20 @@
 }
 
 ::selection {
-  background: $yellow;
+  background: var(--yellow);
+}
+
+html {
+  --text-color: #{$text-color};
+  --text-color--darker: #{$text-color--darker};
+  --text-color--lighter: #{$text-color--lighter};
+  --link-color: #{$link-color};
+  --bg-color: #{$bg-color};
+  --white: #{$white};
+  --light-grey: #{$light-grey};
+  --dark-grey: #{$dark-grey};
+  --purple: #{$purple};
+  --yellow: #{$yellow};
 }
 
 html,
@@ -14,8 +27,8 @@ body {
 }
 
 body {
-  background: $bg-color;
-  color: $text-color;
+  background: var(--bg-color);
+  color: var(--text-color);
   display: flex;
   flex-direction: column;
 }
@@ -23,14 +36,8 @@ body {
 main {
   padding-top: 2rem;
   flex: 1;
-}
-
-article {
-  padding-bottom: 1.25em;
-
-  header {
-    margin-top: 1rem;
-    margin-bottom: 1.5em;
+  @include bp(medium) {
+    margin-top: 2.85em; // 57 / 20
   }
 }
 
@@ -52,7 +59,7 @@ textarea {
   width: 100%;
   padding: 1em;
   font-size: 0.8em;
-  box-shadow: 3px 3px $dark-grey;
+  box-shadow: 3px 3px var(--dark-grey);
   border: 0;
   height: 100%;
 }
@@ -62,12 +69,12 @@ textarea {
 }
 
 a {
-  color: $text-color;
+  color: var(--text-color);
   text-decoration: none;
-  border-bottom: 2px solid $yellow;
+  border-bottom: 2px solid var(--yellow);
 
   &:hover {
-    color: $text-color--darker;
+    color: var(--text-color--darker);
     border-color: inherit;
     transition: 0.2s ease-in;
   }
@@ -75,18 +82,19 @@ a {
 
 img {
   max-width: 100%;
+  object-fit: cover;
 }
 
 svg {
   fill: currentColor;
 
   &:hover {
-    fill: $text-color--darker;
+    fill: var(--text-color--darker);
   }
   &.invert {
-    fill: $white;
+    fill: var(--white);
     &:hover {
-      fill: $dark-grey;
+      fill: var(--dark-grey);
     }
   }
 }

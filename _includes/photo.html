@@ -2,25 +2,19 @@
 {%- assign is_excerpt = include.is_excerpt -%}
 
 {%- if is_excerpt -%}
-<div class="photo">
-  <div class="photo-box">
-    <div class="photo-front">
-      {%- for photo in post.photo -%}
-      <img src="{{ photo.url }}" alt="{{ photo.alt }}" loading="lazy" />
-      {%- endfor -%}
-    </div>
-    <div class="photo-back">
-      {{ post.content | markdownify }}
-      {%- include post-meta.html -%}
-    </div>
-  </div>
+<div class="h-entry archive-item">
+  {{ post.content | markdownify }}
+  {%- for photo in post.photo -%}
+  <img src="{{ photo.url }}" alt="{{ photo.alt }}" class="u-image" width="250" height="250" loading="lazy" />
+  {%- endfor -%}
+  {%- include post-meta.html -%}
 </div>
 {%- else -%}
-<article class="h-entry photo">
+<article class="h-entry">
+  {%- include post-meta.html -%}
+  {{ post.content | markdownify }}
   {%- for photo in post.photo -%}
   <img src="{{ photo.url }}" alt="{{ photo.alt }}" class="u-image" loading="lazy" />
   {%- endfor -%}
-  {{ post.content | markdownify }}
-  {%- include post-meta.html -%}
-  {%- endif -%}
 </article>
+{%- endif -%}

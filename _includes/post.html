@@ -1,23 +1,25 @@
 {%- assign post = include.post -%}
 {%- assign is_excerpt = include.is_excerpt -%}
 
-
 {%- if is_excerpt -%}
-{%- if post.title != empty -%}
-<div class="post">
-  <h3>
+<div class="h-entry archive-item">
+  <h2>
     <a href="{{ post.url }}">{{ post.title }}</a>
-  </h3>
+  </h2>
   {{ post.excerpt | markdownify }}
-  <a href="{{ post.url }}">Read article</a>
-  {%- include post-meta.html -%}
+  <span class="post-meta">
+    <time>{{ post.date | date: "%-d %b %Y" }}</time>
+    <a href="{{ post.url }}">Read article</a>
+  </span>
 </div>
-{%- endif -%}
 {%- else -%}
-<article class="h-entry post">
-  <h1>{{ post.title }}</h1>
-  {%- endif -%}
-  {%- unless is_excerpt -%}
+<article class="h-entry">
+  <header>
+    <span class="post-meta">
+      <time>{{ post.date | date: "%-d %b %Y" }}</time>
+    </span>
+    <h1>{{ post.title }}</h1>
+  </header>
   {{ post.content | markdownify }}
-  {%- endunless -%}
 </article>
+{%- endif -%}

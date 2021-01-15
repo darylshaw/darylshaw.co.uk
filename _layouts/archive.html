@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<section class="layout">
+  <h1 class="title">{{ page.title }}</h1>
+  <div class="page-intro h-card">
+    {{ content }}
+  </div>
+  <article class="posts">
+    <p>This is where I post <a href="/notes/">notes</a>, <a href="/photos/">photos</a>, and <a href="/blog/">articles</a>.</p>
+    <p>Here's the latest:</p>
+    {%- for post in paginator.posts -%}
+    {%- if post.collection == "posts" -%}
+    {%- include post.html is_excerpt=true -%}
+    {%- elsif post.collection == "photos" -%}
+    {%- include photo.html is_excerpt=true -%}
+    {%- else -%}
+    {%- include note.html is_excerpt=true -%}
+    {%- endif -%}
+    {%- endfor -%}
+    {%- if paginator.total_pages > 1 -%}
+    <section class="post-nav">
+      {%- if paginator.previous_page -%}
+      <p class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.base_url }}">Newer</a>
+      </p>
+      {%- endif -%}
+      {%- if paginator.next_page -%}
+      <p class="next">
+        <a class="pagination__next" href="{{ paginator.next_page_path | prepend: site.base_url }}">Older</a>
+      </p>
+      {%- endif -%}
+    </section>
+    {%- endif -%}
+  </article>
+</section>

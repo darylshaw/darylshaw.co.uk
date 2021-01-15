@@ -1,7 +1,7 @@
 footer {
   margin-top: 2rem;
-  background: $purple;
-  color: $white;
+  background: var(--purple);
+  color: var(--white);
   font-size: 0.75em;
   flex-shrink: 0;
 
@@ -37,7 +37,7 @@ footer {
       &:before {
         content: "";
         position: absolute;
-        border: 2px solid $white;
+        border: 2px solid var(--white);
         width: 100%;
         height: 100%;
         top: 3px;
@@ -46,8 +46,8 @@ footer {
     }
 
     button {
-      background-color: $purple;
-      color: $white;
+      background-color: var(--purple);
+      color: var(--white);
       cursor: pointer;
       padding: 1em 1.5em;
       font-size: 0.8em;
@@ -59,7 +59,7 @@ footer {
 
       &:hover {
         transform: translate(3px, 3px);
-        color: $white;
+        color: var(--white);
       }
     }
   }
@@ -76,22 +76,22 @@ footer {
 }
 
 .fathom {
-  color: $white;
+  color: var(--white);
   @include bp(medium) {
-    color: $text-color;
+    color: var(--text-color);
   }
 
   a {
-    color: $white;
+    color: var(--white);
     @include bp(medium) {
-      color: $text-color;
+      color: var(--text-color);
     }
   }
 
   &.invert {
-    color: $white;
+    color: var(--white);
     a {
-      color: $white;
+      color: var(--white);
     }
   }
 }
@@ -106,15 +106,15 @@ footer {
   }
 
   a {
-    color: $white;
+    color: var(--white);
     border-bottom: inherit;
     @include bp(medium) {
-      color: $text-color;
+      color: var(--text-color);
     }
     &.invert {
-      color: $white;
+      color: var(--white);
       &:hover {
-        color: $white;
+        color: var(--white);
       }
       }
     }
@@ -122,9 +122,9 @@ footer {
 
 .copyright {
   @include bp(medium) {
-    color: $text-color;
+    color: var(--text-color);
   }
   &.invert {
-    color: $white;
+    color: var(--white);
   }
 }

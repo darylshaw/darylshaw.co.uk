@@ -2,13 +2,13 @@
 {%- assign is_excerpt = include.is_excerpt -%}
 
 {%- if is_excerpt -%}
-<div class="note box-content">
+<div class="h-entry archive-item">
   {{ post.content | markdownify }}
   {%- include post-meta.html -%}
 </div>
 {%- else -%}
-<article class="h-entry note">
-  {{ post.content | markdownify }}
+<article class="h-entry">
   {%- include post-meta.html -%}
-  {%- endif -%}
+  {{ post.content | markdownify }}
 </article>
+{%- endif -%}

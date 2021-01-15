@@ -10,6 +10,7 @@
 .page-intro,
 .content-main,
 .archive-posts,
+.archive-item,
 .post-nav {
   grid-column: full-content;
   @include bp(medium) {
