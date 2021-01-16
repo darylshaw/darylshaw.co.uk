@@ -1,16 +1,12 @@
 .announcement-bar {
   background: var(--purple);
   color: var(--white);
-  padding: 0 1rem;
   font-size: 0.75rem;
-  position: fixed;
-  width: 100%;
-  z-index: 2;
-  @include bp(medium) {
-    padding: 0 2rem;
-  }
+  position: relative;
+  z-index: 1;
 
   p {
+    grid-column: full-content;
     margin-bottom: 1em;
   }
 

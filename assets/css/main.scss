@@ -8,10 +8,10 @@
 @import "base/base";
 @import "layout/grid";
 @import "layout/header";
-@import "layout/footer";
-@import "components/button";
+@import "layout/footer/footer";
+@import "layout/footer/bio";
+@import "layout/footer/hire";
 @import "components/post-meta";
 @import "components/post-nav";
 @import "components/announcement-bar";
-@import "components/hover-reveal";
 @import "shame";

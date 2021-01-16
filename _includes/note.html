@@ -3,8 +3,8 @@
 
 {%- if is_excerpt -%}
 <div class="h-entry archive-item">
-  {{ post.content | markdownify }}
   {%- include post-meta.html -%}
+  {{ post.content | markdownify }}
 </div>
 {%- else -%}
 <article class="h-entry">

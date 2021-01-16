@@ -1,18 +1,11 @@
 .post-meta {
   font-size: 0.75em;
-  margin-bottom: 1.5em;
-  display: flex;
-  justify-content: space-between;
+  margin-top: 1.5em;
+  display: block;
 
   time {
     a {
       border-bottom: inherit;
     }
-  }
-}
-
-header {
-  .post-meta {
-    margin-bottom: inherit;
   }
 }

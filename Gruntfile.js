@@ -4,21 +4,6 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    concat: {
-      dist: {
-        src: [
-          'assets/js/libs/*.js',
-          'assets/js/main.js'
-        ],
-        dest: 'assets/js/build/production.js',
-      }
-    },
-    uglify: {
-      build: {
-        src: 'assets/js/build/production.js',
-        dest: 'assets/js/build/production.js'
-      }
-    },
     imagemin: {
       options: {
         use: [
@@ -34,21 +19,8 @@ module.exports = function(grunt) {
           dest: 'assets/uploads/'
         }]
       }
-    },
-    watch: {
-      scripts: {
-        files: ['assets/js/*.js'],
-        tasks: ['concat', 'uglify'],
-        options: {
-          spawn: false,
-        }
-      }
     }
   });
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.registerTask('dev', ['watch']);
-  grunt.registerTask('default', ['concat', 'uglify', 'imagemin']);
+  grunt.registerTask('default', ['imagemin']);
 };

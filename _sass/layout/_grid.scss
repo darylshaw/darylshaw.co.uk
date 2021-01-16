@@ -14,10 +14,7 @@ article,
 .archive-item,
 .post-nav {
   grid-column: full-content;
-  @include bp(medium) {
-    grid-column: main-content/ 10;
-  }
   @include bp(large) {
-    grid-column: main-content;
+    grid-column: main-content / 10;
   }
 }

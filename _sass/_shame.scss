@@ -1,3 +1,38 @@
 .archive-item {
   border-top: 1px solid var(--text-color--lighter);
+  margin-bottom: 1.5em;
+
+  h2 {
+    margin-top: inherit;
+  }
+}
+
+.work {
+  background-color: var(--paper-white);
+  grid-column: full;
+}
+
+.latest {
+  grid-column: full-content;
+  overflow: hidden;
+  @include bp(medium) {
+    grid-column: full-content / full-end;
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    margin: 3em 0 -10em;
+    object-position: 40% 0;
+    @include bp(medium) {
+      margin: 6em -20em -5em 5em;
+      object-position: 0 0;
+    }
+  }
+}
+
+.home-intro {
+  .title {
+    padding: 6rem 0;
+  }
 }

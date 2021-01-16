@@ -1,0 +1,35 @@
+.footer-hire {
+  grid-column: full-content;
+  @include bp(medium) {
+    grid-column: 7 / full-content-end;
+    grid-row: 2;
+  }
+
+  p {
+    font-size: 0.8em;
+    margin: 0;
+
+    a {
+      color: var(--white);
+    }
+  }
+}
+
+.social {
+  padding: 0;
+  display: flex;
+
+  li {
+    list-style: none;
+    margin-right: 0.5em;
+  }
+
+  a {
+    color: var(--white);
+    border-bottom: inherit;
+
+    &:hover {
+      color: var(--paper-white);
+    }
+  }
+}

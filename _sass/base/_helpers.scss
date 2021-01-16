@@ -16,21 +16,10 @@
   pre {
     overflow: auto;
     padding: 1em;
-    color: var(--white);
+    background: var(--light-grey);
   }
 
   code {
     font-size: 14px;
-  }
-}
-
-.content-main {
-  margin-bottom: 2.75rem;
-
-  .button {
-    width: 100%;
-    @include bp(small) {
-      width: 11.111111111em; // 200 / 18
-    }
   }
 }

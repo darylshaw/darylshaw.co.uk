@@ -3,11 +3,11 @@
 
 {%- if is_excerpt -%}
 <div class="h-entry archive-item">
+  {%- include post-meta.html -%}
   {{ post.content | markdownify }}
   {%- for photo in post.photo -%}
   <img src="{{ photo.url }}" alt="{{ photo.alt }}" class="u-image" width="250" height="250" loading="lazy" />
   {%- endfor -%}
-  {%- include post-meta.html -%}
 </div>
 {%- else -%}
 <article class="h-entry">

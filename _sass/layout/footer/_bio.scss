@@ -1,0 +1,21 @@
+.footer-bio {
+  display: flex;
+  align-items: flex-end;
+  grid-column: full-content;
+  @include bp(medium) {
+    grid-column: full-content-start / 6;
+    grid-row: 2;
+  }
+
+  img {
+    margin-right: 1em;
+  }
+
+  p {
+    font-size: 0.75em;
+
+    a {
+      color: var(--white);
+    }
+  }
+}

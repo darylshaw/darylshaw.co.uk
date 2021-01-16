@@ -4,21 +4,23 @@
   box-sizing: border-box;
 }
 
-::selection {
-  background: var(--yellow);
-}
-
 html {
   --text-color: #{$text-color};
   --text-color--darker: #{$text-color--darker};
   --text-color--lighter: #{$text-color--lighter};
-  --link-color: #{$link-color};
-  --bg-color: #{$bg-color};
+  --black: #{$black};
   --white: #{$white};
   --light-grey: #{$light-grey};
   --dark-grey: #{$dark-grey};
   --purple: #{$purple};
+  --paper-white: #{$paper-white};
   --yellow: #{$yellow};
+}
+
+html {
+  // theme vars
+  --bg-color: var(--white);
+  --link-color: var(--yellow);
 }
 
 html,
@@ -27,18 +29,16 @@ body {
 }
 
 body {
-  background: var(--bg-color);
+  background-color: var(--purple);
   color: var(--text-color);
-  display: flex;
-  flex-direction: column;
 }
 
 main {
-  padding-top: 2rem;
-  flex: 1;
-  @include bp(medium) {
-    margin-top: 2.85em; // 57 / 20
-  }
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+  background: var(--bg-color);
+  padding: 3rem 0;
 }
 
 iframe {
@@ -59,9 +59,8 @@ textarea {
   width: 100%;
   padding: 1em;
   font-size: 0.8em;
-  box-shadow: 3px 3px var(--dark-grey);
-  border: 0;
   height: 100%;
+  border: 1px solid var(--text-color);
 }
 
 textarea {
@@ -80,21 +79,33 @@ a {
   }
 }
 
+button {
+  cursor: pointer;
+  color: var(--text-color);
+  background-color: var(--paper-white);
+  border: 1px solid var(--text-color);
+  padding: 0.5em;
+
+  &:hover {
+    color: var(--text-color--darker);
+    border-color: inherit;
+  }
+}
+
 img {
   max-width: 100%;
   object-fit: cover;
 }
 
+figure {
+  margin: inherit;
+}
+
+figcaption {
+  font-size: 0.9em;
+  font-style: italic;
+}
+
 svg {
   fill: currentColor;
-
-  &:hover {
-    fill: var(--text-color--darker);
-  }
-  &.invert {
-    fill: var(--white);
-    &:hover {
-      fill: var(--dark-grey);
-    }
-  }
 }
