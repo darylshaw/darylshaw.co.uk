@@ -13,12 +13,99 @@
 }
 
 .latest {
-  grid-column: full-content;
-  overflow: hidden;
+  grid-column: full;
+  background-image: url("/assets/uploads/fabric-samples-iphone.png"), url("/assets/uploads/fabric-samples-empty-iphone.png"), url("/assets/uploads/fabric-samples-ipad.png");
+  background-size: auto 50%, auto 50%, 0 0;
+  background-repeat: no-repeat;
+  background-position: left 10% bottom -5em, right 10% bottom -6em, right -50% bottom -5em;
+  @include bp(x-small) {
+    // 640px
+    background-size: auto 60%, auto 60%, 0 0;
+    background-position: left 20% bottom -5em, right 20% bottom -6em, right -50% bottom -5em;
+  }
+
+  @include bp(small) {
+    // 800px
+    background-size: auto 70%, auto 70%, auto 70%;
+    background-position: left 20% bottom -6em, right 50% bottom -5em, right -30% bottom -2em;
+  }
+
   @include bp(medium) {
-    grid-column: full-content / full-end;
+    // 1000px
+    background-size: auto 70%, auto 70%, auto 70%;
+    background-position: left 50% bottom -8em, right 25% bottom -6em, right -70% bottom -1em;
+  }
+
+  @include bp(large) {
+    // 1200px
+    background-size: auto 80%, auto 80%, auto 80%;
+    background-position: left 30% bottom -7em, right 40% bottom -6em, right -30% bottom -1em;
+  }
+
+  @include bp(x-large) {
+    // 1400px
+    background-size: auto 80%, auto 80%, auto 90%;
+    background-position: left 25% bottom -8em, right 50% bottom -6em, right 5% bottom -1em;
+  }
+
+  h2 {
+    grid-column: full-content;
+    @include bp(medium) {
+      grid-column: full-content / span 6;
+    }
+  }
+
+  p {
+    grid-column: full-content;
+    @include bp(medium) {
+      grid-column: full-content / span 4;
+    }
+  }
+
+  .links {
+    grid-column: full-content;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    margin-bottom: 20em;
+    @include bp(small) {
+      grid-column: full-content;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      height: 100%;
+      padding-bottom: 1em;
+      // margin-bottom: 20em;
+    }
+
+    @include bp(x-large) {
+      align-items: inherit;
+      height: inherit;
+      justify-content: inherit;
+    }
+
+    a {
+      @include bp (small) {
+        color: var(--white);
+      }
+
+      @include bp (x-large) {
+        color: inherit;
+        align-self: flex-end;
+      }
+    }
+
+    .btn {
+      color: inherit;
+      position: sticky;
+      top: 1em;
+      align-self: flex-start;
+      margin-right: 1em;
+      padding: 0.2em 1em;
+
+      &:hover {
+        color: var(--text-color--darker);
+      }
+    }
   }
 
   img {

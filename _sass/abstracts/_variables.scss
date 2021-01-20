@@ -22,9 +22,11 @@ $space-large: calc( #{$grid-gutter} * 2.5 );
 
 // Breakpoints map
 $breakpoints: (
-  'small': (min-width: 36em),
-  'medium': (min-width: 48em),
-  'large': (min-width: 60em),
+  'x-small': (min-width: 40em),
+  'small': (min-width: 50em),
+  'medium': (min-width: 62.5em),
+  'large': (min-width: 75em),
+  'x-large': (min-width: 91em),
 ) !default;
 
 /// Responsive breakpoint manager
