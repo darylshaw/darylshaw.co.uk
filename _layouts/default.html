@@ -3,6 +3,7 @@
 {%- include head.html -%}
 {{ page.head }}
 <body>
+  {%- include nojs-gtm.html -%}
   {%- include announcement-bar.html -%}
   {%- include header.html -%}
   <main>
@@ -11,6 +12,7 @@
   {%- include footer.html -%}
   <!-- PTN253454darylshaw.co.uk75792633 -->
   {% include js-fathom-analytics.html %}
+  <script src="/assets/js/opt-in.js"></script>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </body>
 </html>

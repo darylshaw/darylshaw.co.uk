@@ -19,4 +19,6 @@ There are a couple of sans-serif fonts on show. [Roboto](https://fonts.google.co
 
 Tracking by [Fathom](https://usefathom.com/ref/SI9RS1).
 
+{%- include ga-opt-in.html -%}
+
 _Last updated 16 Jan 2021_
