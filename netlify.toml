@@ -19,4 +19,4 @@
     TZ = "Europe/London"
 
 [context.ga]
-  environment = { JEKYL_ENV = "ga" }
+  environment = { JEKYLL_ENV = "ga" }
