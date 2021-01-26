@@ -9,7 +9,7 @@ The source code is available on [GitHub](https://github.com/darylshaw/darylshaw.
 
 This site is running on [Jekyll](https://jekyllrb.com/). Jekyll provides built-in support for [Sass.](https://sass-lang.com/) It ships with its own Sass converter meaning there is nothing to install to process Sass.
 
-I _finally_ finished moving hosting to [Netlify](https://www.netlify.com/) from GitHub Pages in 2020\. After starting this back in 2018\. Netlify has nice features built-in. I switched to Netlify's free one-click SSL to prevent running [into](https://community.netlify.com/t/common-issue-why-not-proxy-to-netlify/8869) [issues](https://community.netlify.com/t/common-issue-why-isn-t-my-ssl-certificate-provisioning-automatically-with-cloudflare-netlify-are-there-other-problems-with-using-cloudflare-in-front-of-netlify/138). They have over [1 millions developers](https://million-devs.netlify.com/) using the platform and there is a good team behind it.
+I _finally_ finished moving hosting to [Netlify](https://www.netlify.com/) from GitHub Pages in 2020. After starting this back in 2018. Netlify has nice features built-in. I switched to Netlify's free one-click SSL to prevent running [into](https://community.netlify.com/t/common-issue-why-not-proxy-to-netlify/8869) [issues](https://community.netlify.com/t/common-issue-why-isn-t-my-ssl-certificate-provisioning-automatically-with-cloudflare-netlify-are-there-other-problems-with-using-cloudflare-in-front-of-netlify/138). They have over [1 millions developers](https://million-devs.netlify.com/) using the platform and there is a good team behind it.
 
 Hosting with Netlify solves my issues around using unsupported GitHub Pages gems. For example, tagging was a pain. For the time being I've removed tags from posts so you need a direct link to reach the tag pages. I need to find the time to put in place a better solution and start tagging posts.
 
@@ -19,4 +19,5 @@ There are a couple of sans-serif fonts on show. [Roboto](https://fonts.google.co
 
 {% include ga-opt-in.html %}
 
-_Last updated 16 Jan 2021_
+{:.post-meta}
+Last updated {{ page.last_modified_at | date: "%-d %b %Y" }}

@@ -8,4 +8,5 @@ group :jekyll_plugins do
   gem "jekyll-redirect-from"
   gem "jekyll-paginate-v2"
   gem "jekyll-mentions"
+  gem "jekyll-last-modified-at"
 end
