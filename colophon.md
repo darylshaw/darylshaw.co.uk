@@ -1,6 +1,8 @@
 ---
 title: About this site
 layout: page
+foot: |
+  <script src="/assets/js/opt-in.js"></script>
 ---
 
 This is my personal website. It is always going to be a [work in progress](/blog/work-in-progress-part-two/).
@@ -17,7 +19,7 @@ Not every website needs a CMS. This website is a prime example of one that doesn
 
 There are a couple of sans-serif fonts on show. [Roboto](https://fonts.google.com/specimen/Roboto) for the body. [Rubik](https://fonts.google.com/specimen/Rubik) for the headings.
 
-{% include ga-opt-in.html %}
+{% include ga-opt-out.html %}
 
 {:.post-meta}
 Last updated {{ page.last_modified_at | date: "%-d %b %Y" }}

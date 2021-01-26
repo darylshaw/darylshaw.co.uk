@@ -17,6 +17,3 @@
   [context.staging.environment]
     JEKYLL_ENV = "staging"
     TZ = "Europe/London"
-
-[context.ga]
-  environment = { JEKYLL_ENV = "ga" }
