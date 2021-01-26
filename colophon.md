@@ -1,6 +1,8 @@
 ---
 title: About this site
 layout: page
+foot: |
+  <script src="/assets/js/opt-in.js"></script>
 ---
 
 This is my personal website. It is always going to be a [work in progress](/blog/work-in-progress-part-two/).
