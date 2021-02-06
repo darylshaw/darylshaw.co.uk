@@ -3,6 +3,10 @@ title: Playbook
 layout: page
 ---
 
+{:.toc}
+* [Setting up a new Mac](#setting-up-a-new-mac)
+* [About the playbook](#about-the-playbook)
+
 ## Setting up a new Mac
 
 This is for my own benefit when setting up a new Mac. But you may pick up tips along the way.
@@ -56,12 +60,15 @@ This covers top-level utility/misc apps and preferences. Deeper, more specific b
 
 This is a work in progress. I have docs spread out over Google Drive, Dropbox Paper, Notion, Basecamp. Guides to how I work. I'll be migrating them to their new home, here.
 
-Inspiration:
+This is a work in progress. I have docs spread out over Google Drive, Dropbox Paper, Notion, Basecamp. Guides to how I work. I'll be migrating them to their new home, here.
 
-* [Glitch Employee Handbook](https://handbook.glitch.me/)
-* [Basecamp Employee Handbook](https://github.com/basecamp/handbook)
+**Inspiration**
+
 * [Public Google Drive folder](https://drive.google.com/drive/folders/1wBlDBNJI3h1KL-jeFqGiRr1U3OZDBQkV?usp=sharing) of how HAWRAF ran their studio
 * [GravityDept Field Manuals](https://manuals.gravitydept.com/)
-* [Manual of Me](https://www.manualof.me/)
 * [Meanbee Playbook](https://www.meanbee.com/our-playbook.html)
-* [Faculty Standards](https://faculty.com/standards)
+
+Open source company handbooks:
+
+* [Basecamp Employee Handbook](https://github.com/basecamp/handbook)
+* [Glitch Employee Handbook](https://handbook.glitch.me/)
