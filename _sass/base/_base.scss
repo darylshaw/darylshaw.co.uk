@@ -130,3 +130,12 @@ figcaption {
 svg {
   fill: currentColor;
 }
+
+.highlight {
+  pre {
+    overflow: auto;
+    font-size: 0.8em;
+    padding: 1rem;
+    background: var(--light-grey);
+  }
+}

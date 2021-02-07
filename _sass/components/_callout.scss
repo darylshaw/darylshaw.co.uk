@@ -1,0 +1,11 @@
+.callout {
+  background: var(--paper-white);
+  padding: 1rem;
+  font-size: 0.8em;
+  &:before {
+    content: attr(data-text);
+    display: block;
+    font-family: monospace;
+    text-transform: uppercase;
+  }
+}

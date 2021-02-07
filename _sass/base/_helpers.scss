@@ -1,25 +1,8 @@
-.highlight {
+.hug {
   width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  margin-left: calc(50% - 50vw);
   @include bp(small) {
-    width: 100%;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  pre {
-    overflow: auto;
-    padding: 1em;
-    background: var(--light-grey);
-  }
-
-  code {
-    font-size: 14px;
+    width: inherit;
+    margin-left: inherit;
   }
 }

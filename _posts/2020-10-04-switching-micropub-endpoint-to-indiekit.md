@@ -8,6 +8,7 @@ I posted back in June about playing with Micro.blog. I created an account for Mi
 
 Initially, I was including all blog posts and notes in the same collection. Earlier this week, I split up notes and blog posts. This is easy to do in Jekyll. Define a new collection in `_config.yml`:
 
+{:.hug}
 ```yaml
 collections:
     notes:
@@ -19,6 +20,7 @@ Then create a new folder for the collection and add content. By setting `output:
 
 To output the notes in a new page, I can do this (simplified):
 
+{:.hug}
 ```liquid
 ---
 layout: default
@@ -43,6 +45,7 @@ Previously, when I've deployed to Heroku, I click the button, go through the con
 
 There were a few changes I needed to make to my website to get Indiekit working how I needed. For Micropub to GitHub, when deploying to Heroku, it asks you to set a value for layout. I can set this in the front matter defaults. This will apply to all documents in the collection. I can override this by setting a value in the individual document front matter.
 
+{:.hug}
 ```yaml
 defaults:
 -

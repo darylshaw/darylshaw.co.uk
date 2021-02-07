@@ -19,6 +19,7 @@ There are many tools that I use across projects that I need to install once syst
 
 First, open Terminal and paste in the following command:
 
+{:.hug}
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
@@ -29,6 +30,7 @@ I use [Grunt](https://gruntjs.com/) which requires Node.js.
 
 I can use Homebrew to install Node.js and npm with the following command:
 
+{:.hug}
 ```
 brew install node
 ```
@@ -37,6 +39,7 @@ The [Homebrew docs](https://docs.brew.sh/) and warnings are helpful when trouble
 
 Install Grunt CLI globally:
 
+{:.hug}
 ```
 npm install -g grunt-cli
 ```
@@ -49,24 +52,28 @@ Once I install Homebrew, I use Homebrew to install rbenv. This allows me to mana
 
 Install rbenv:
 
+{:.hug}
 ```
 brew install rbenv
 ```
 
 Set up rbenv:
 
+{:.hug}
 ```
 rbenv init
 ```
 
 Append the following to `~/.zshrc`:
 
+{:.hug}
 ```
 eval "$(rbenv init -)"
 ```
 
 To edit `.zshrc`, type the following command into Terminal to open:
 
+{:.hug}
 ```
 nano .zshrc
 ```
@@ -75,12 +82,14 @@ To save changes to `.zshrc` type Control-O and hit return to save. Then type Con
 
 For the changes to take effect use the following command or close the Terminal window and open a new one:
 
+{:.hug}
 ```
 source .zshrc
 ```
 
 To verify rbenv is set up, use the following command:
 
+{:.hug}
 ```
 curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-doctor | bash
 ```
@@ -89,12 +98,14 @@ Jekyll requires Ruby and RubyGems. Apple include Ruby versions 2.0 and above by 
 
 List all available versions using:
 
+{:.hug}
 ```
 rbenv install -l
 ```
 
 Install a version using following command:
 
+{:.hug}
 ```
 rbenv install 2.6.2
 ```
@@ -103,6 +114,7 @@ rbenv install 2.6.2
 
 **Install Bundler**
 
+{:.hug}
 ```
 gem install bundler
 ```
@@ -113,35 +125,42 @@ When running `git`, there will be a prompt to install Xcode Command Line Tools i
 
 For a more up to date version, use Homebrew:
 
+{:.hug}
 ```
 brew install git
 ```
 
 Set a username in Git:
 
+{:.hug}
 ```
 git config --global user.name "Daryl Shaw"
 ```
 
 To confirm that username is set:
 
+{:.hug}
 ```
 git config --global user.name
 ```
 
 Set an email address in Git:
 
+{:.hug}
 ```
 git config --global user.email "daryl@darylshaw.co.uk"
 ```
 
 Again, to confirm that is set:
 
+{:.hug}
 ```
 git config --global user.email
 ```
 
-💡Tip: to show hidden files press **⌘-Space-Dot (.)**
+<div class="callout" data-text="Tip:">
+To show hidden files press <strong>⌘-Space-Dot (.)</strong>
+</div>
 
 ## Setting up a new Mac
 
