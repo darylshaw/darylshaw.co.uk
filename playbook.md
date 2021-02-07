@@ -4,8 +4,144 @@ layout: page
 ---
 
 {:.toc}
+* [Development](#development)
+  * [Local Development](#local-development)
 * [Setting up a new Mac](#setting-up-a-new-mac)
 * [About the playbook](#about-the-playbook)
+
+## Development
+
+### Local Development
+
+There are many tools that I use across projects that I need to install once system-wide.
+
+**Install Homebrew**
+
+First, open Terminal and paste in the following command:
+
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+**Install Grunt**
+
+I use [Grunt](https://gruntjs.com/) which requires Node.js.
+
+I can use Homebrew to install Node.js and npm with the following command:
+
+```
+brew install node
+```
+
+The [Homebrew docs](https://docs.brew.sh/) and warnings are helpful when troubleshooting any issues. When installing new packages, Homebrew will run `brew update` to make sure it is up to date. If it doesn't then I can run this myself.
+
+Install Grunt CLI globally:
+
+```
+npm install -g grunt-cli
+```
+
+**Install rbenv with Homebrew**
+
+Once I install Homebrew, I use Homebrew to install rbenv. This allows me to manage my own installation of Ruby. In the past I have used RVM. See reasons for rbenv over RVM [here](https://github.com/rbenv/rbenv/wiki/Why-rbenv%3F).
+
+**Note:** rbenv is _incompatible_ with RVM
+
+Install rbenv:
+
+```
+brew install rbenv
+```
+
+Set up rbenv:
+
+```
+rbenv init
+```
+
+Append the following to `~/.zshrc`:
+
+```
+eval "$(rbenv init -)"
+```
+
+To edit `.zshrc`, type the following command into Terminal to open:
+
+```
+nano .zshrc
+```
+
+To save changes to `.zshrc` type Control-O and hit return to save. Then type Control-X to exit.
+
+For the changes to take effect use the following command or close the Terminal window and open a new one:
+
+```
+source .zshrc
+```
+
+To verify rbenv is set up, use the following command:
+
+```
+curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-doctor | bash
+```
+
+Jekyll requires Ruby and RubyGems. Apple include Ruby versions 2.0 and above by default in macOS releases since at least El Capitan (10.11). It is useful to have our own version of Ruby installed using rbenv though.
+
+List all available versions using:
+
+```
+rbenv install -l
+```
+
+Install a version using following command:
+
+```
+rbenv install 2.6.2
+```
+
+**Note:** 2.6.2 is the version used for this website. It is set in the `.ruby-version` file [here](https://github.com/darylshaw/darylshaw.co.uk/blob/master/.ruby-version).
+
+**Install Bundler**
+
+```
+gem install bundler
+```
+
+**Install Git**
+
+When running `git`, there will be a prompt to install Xcode Command Line Tools if it isn't installed. Xcode Command Line tools ships a binary package of Git (version 2.24.3 at the time of writing).
+
+For a more up to date version, use Homebrew:
+
+```
+brew install git
+```
+
+Set a username in Git:
+
+```
+git config --global user.name "Daryl Shaw"
+```
+
+To confirm that username is set:
+
+```
+git config --global user.name
+```
+
+Set an email address in Git:
+
+```
+git config --global user.email "daryl@darylshaw.co.uk"
+```
+
+Again, to confirm that is set:
+
+```
+git config --global user.email
+```
+
+💡Tip: to show hidden files press **⌘-Space-Dot (.)**
 
 ## Setting up a new Mac
 
@@ -57,8 +193,6 @@ Pre-installed apps to trash:
 This covers top-level utility/misc apps and preferences. Deeper, more specific breakdown of what I use on the way.
 
 ## About the playbook
-
-This is a work in progress. I have docs spread out over Google Drive, Dropbox Paper, Notion, Basecamp. Guides to how I work. I'll be migrating them to their new home, here.
 
 This is a work in progress. I have docs spread out over Google Drive, Dropbox Paper, Notion, Basecamp. Guides to how I work. I'll be migrating them to their new home, here.
 
