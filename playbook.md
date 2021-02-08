@@ -3,11 +3,8 @@ title: Playbook
 layout: page
 ---
 
-{:.toc}
-* [Development](#development)
-  * [Local Development](#local-development)
-* [Setting up a new Mac](#setting-up-a-new-mac)
-* [About the playbook](#about-the-playbook)
+- TOC
+{:toc}
 
 ## Development
 
