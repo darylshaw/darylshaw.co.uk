@@ -45,7 +45,9 @@ npm install -g grunt-cli
 
 Once I install Homebrew, I use Homebrew to install rbenv. This allows me to manage my own installation of Ruby. In the past I have used RVM. See reasons for rbenv over RVM [here](https://github.com/rbenv/rbenv/wiki/Why-rbenv%3F).
 
-**Note:** rbenv is _incompatible_ with RVM
+<div class="callout" data-text="Note:">
+rbenv is <em>incompatible</em> with RVM
+</div>
 
 Install rbenv:
 
@@ -107,7 +109,9 @@ Install a version using following command:
 rbenv install 2.6.2
 ```
 
-**Note:** 2.6.2 is the version used for this website. It is set in the `.ruby-version` file [here](https://github.com/darylshaw/darylshaw.co.uk/blob/master/.ruby-version).
+<div class="callout" data-text="Note:">
+2.6.2 is the version used for this website. It is set in the <code>.ruby-version</code> file <a href="https://github.com/darylshaw/darylshaw.co.uk/blob/master/.ruby-version">here</a>.
+</div>
 
 **Install Bundler**
 
@@ -158,6 +162,78 @@ git config --global user.email
 <div class="callout" data-text="Tip:">
 To show hidden files press <strong>⌘-Space-Dot (.)</strong>
 </div>
+
+### WordPress
+
+#### Installing Composer on a WordPress project
+
+**Download Composer**
+
+Install [Composer](https://getcomposer.org/) on a per-project basis. Change to the project directory and run the [installer script](https://getcomposer.org/download/).
+
+This downloads the latest `composer.phar`. Now I can run `php composer.phar` to run Composer.
+
+To access the `composer.phar` globally, move it to a directory that is part of the path:
+
+{:.hug}
+```
+mv composer.phar /usr/local/bin/composer
+```
+
+Now I can run `composer` instead of `php composer.phar`.
+
+**Set up project**
+
+In the project create a `composer.json` file.
+
+Example:
+
+{:.hug}
+```
+{
+  "name": "darylshaw/ds-wp-starter",
+  "type": "wordpress-theme",
+  "description": "WordPress starter theme.",
+  "keywords": [
+    "WordPress",
+    "Themes"
+  ],
+  "homepage": "https://github.com/darylshaw/ds-wp-starter",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Daryl Shaw",
+      "email": "daryl@darylshaw.co.uk",
+      "homepage": "https://darylshaw.co.uk",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.6"
+  },
+  "require-dev": {
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+    "wptrt/wpthemereview": "^0.2.1",
+    "php-parallel-lint/php-parallel-lint": "^1.2.0",
+    "squizlabs/php_codesniffer": "^3.5"
+  },
+  "scripts": {
+    "lint:wpcs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs",
+    "lint:php": "@php ./vendor/bin/parallel-lint --exclude .git --exclude vendor ."
+  },
+  "support": {
+    "issues": "https://github.com/darylshaw/ds-wp-starter/issues",
+    "source": "https://github.com/darylshaw/ds-wp-starter"
+  }
+}
+```
+
+Run:
+
+{:.hug}
+```
+composer install
+```
 
 ## Setting up a new Mac
 
