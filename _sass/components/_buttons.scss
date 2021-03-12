@@ -1,0 +1,20 @@
+button,
+.btn {
+  cursor: pointer;
+  line-height: 1.8;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--purple);
+  border: 1px solid var(--purple);
+  padding: 0.2em 1em;
+  @include bp(small) {
+      width: inherit;
+  }
+
+  &:hover {
+    color: var(--link-color);
+    border-color: inherit;
+  }
+}

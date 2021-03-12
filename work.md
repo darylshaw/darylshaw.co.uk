@@ -22,3 +22,5 @@ Here are the areas where I can help:
 * Migrations and replatforming
 * Web development (WordPress, Jamstack)
 * Website support & maintenance
+
+{% include consultation.html %}

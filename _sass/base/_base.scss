@@ -99,20 +99,6 @@ a {
   }
 }
 
-button,
-.btn {
-  cursor: pointer;
-  color: var(--text-color);
-  background-color: var(--paper-white);
-  border: 1px solid var(--text-color);
-  padding: 0.5em;
-
-  &:hover {
-    color: var(--text-color--darker);
-    border-color: inherit;
-  }
-}
-
 img {
   max-width: 100%;
   object-fit: cover;

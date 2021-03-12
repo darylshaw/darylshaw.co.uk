@@ -95,15 +95,14 @@
     }
 
     .btn {
-      color: inherit;
       position: sticky;
       top: 1em;
       align-self: flex-start;
       margin-right: 1em;
-      padding: 0.2em 1em;
+      width: inherit;
 
       &:hover {
-        color: var(--text-color--darker);
+        color: var(--link-color);
       }
     }
   }
