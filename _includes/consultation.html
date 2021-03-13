@@ -7,4 +7,10 @@
     <li>Offer help and guidance on replatforming</li>
     <li>Investigate a Search Console issue</li>
 </ul>
+{%- if jekyll.environment == 'production' and site.fathom_analytics -%}
+<a onclick="fathom.trackGoal('41F7MG30', 0);" href="https://calendly.com/darylshaw/consultation" class="btn">Schedule a consultation for £250</a>
+{%- elsif jekyll.environment == 'staging' and site.fathom_analytics -%}
+<a onclick="fathom.trackGoal('3HSLSIEV', 0);" href="https://calendly.com/darylshaw/consultation" class="btn">Schedule a consultation for £250</a>
+{% else %}
 <a href="https://calendly.com/darylshaw/consultation" class="btn">Schedule a consultation for £250</a>
+{%- endif -%}
