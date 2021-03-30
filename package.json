@@ -27,6 +27,6 @@
   },
   "dependencies": {
     "imagemin-mozjpeg": "^9.0.0",
-    "imagemin-pngquant": "^9.0.1"
+    "imagemin-pngquant": "^9.0.2"
   }
 }
