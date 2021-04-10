@@ -1,9 +1,9 @@
 source 'http://rubygems.org'
 
-gem "jekyll", ">= 4.1.1"
+gem "jekyll", ">= 4.2.0"
 
 group :jekyll_plugins do
-  gem "jekyll-seo-tag", ">= 2.6.1"
+  gem "jekyll-seo-tag", ">= 2.7.1"
   gem "jekyll-sitemap", ">= 1.4.0"
   gem "jekyll-redirect-from", ">= 0.16.0"
   gem "jekyll-paginate-v2", ">= 3.0.0"
