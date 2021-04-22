@@ -3,17 +3,11 @@ layout: default
 ---
 
 <section class="layout">
-  <h1 class="title">{{ page.title }}</h1>
+  <h1 class="title">Tagged: {{ page.tag }}</h1>
   <div class="blog-intro">
     {{ content }}
   </div>
-  <ul class="archive-posts">
-    {%- assign tag = page.title | downcase -%}
-    {%- assign tag_posts = site.tags[tag] -%}
-    {%- for post in tag_posts -%}
-    <li>
-      {%- include post.html post=post is_excerpt=true -%}
-    </li>
-    {%- endfor -%}
-  </ul>
+    {% for post in page.posts %}
+      {%- include post.html is_excerpt=true -%}
+    {% endfor %}
 </section>
