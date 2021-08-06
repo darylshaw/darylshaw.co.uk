@@ -9,12 +9,14 @@ button,
   background-color: var(--purple);
   border: 1px solid var(--purple);
   padding: 0.2em 1em;
+  border-radius: 5px;
   @include bp(small) {
       width: inherit;
   }
 
   &:hover {
-    color: var(--link-color);
-    border-color: inherit;
+    background-color: lighten($purple, 10%);
+    color: var(--white);
+    border-color: lighten($purple, 10%);
   }
 }

@@ -10,14 +10,6 @@
   scroll-margin-top: 2ex;
 }
 
-:target {
-  text-decoration: underline;
-  text-decoration-thickness: 0.5ex;
-  text-decoration-color: var(--yellow);
-  text-decoration-skip-ink: none;
-  text-underline-offset: -0.2ex;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
@@ -67,6 +59,7 @@ iframe {
 
 form {
   padding-bottom: 1.25em;
+  margin-bottom: 2.75rem;
 }
 
 label {
@@ -81,6 +74,11 @@ textarea {
   font-size: 0.8em;
   height: 100%;
   border: 1px solid var(--text-color);
+  border-radius: 5px;
+
+  &:focus-visible {
+    border-radius: inherit;
+  }
 }
 
 textarea {
