@@ -1,8 +1,12 @@
 .archive-item {
-  border-top: 1px solid var(--text-color--lighter);
   margin-bottom: 1.5em;
 
   h2 {
+    margin-top: inherit;
+    margin-bottom: 0;
+  }
+
+  p {
     margin-top: inherit;
   }
 }
@@ -118,9 +122,45 @@
   }
 }
 
-.home-intro {
-  .title {
-    padding: 6rem 0;
+.index {
+  h1 {
+    @include bp(medium) {
+      margin-top: 2.75rem;
+    }
+  }
+
+  .title,
+  .content-main {
+    grid-column: full-content;
+    @include bp(medium) {
+      grid-column: full-content / 8;
+    }
+  }
+}
+
+footer.index {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-size: 0.75em;
+  position: inherit;
+
+  p {
+    grid-column: full-content;
+  }
+}
+
+// undecided between this or image pulled out from content or covatar
+.content-hed {
+  grid-column: full-content;
+  @include bp(medium) {
+    display: flex;
+	  justify-content: space-between;
+	  flex-flow: row-reverse;
+	  grid-column: full-content / 8;
+	  align-items: flex-end;
+  }
+	img {
+    margin-bottom: 1rem;
   }
 }
 

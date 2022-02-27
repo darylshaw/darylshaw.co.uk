@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+{%- include head.html -%}
+{{ page.head }}
+<body>
+  <main>
+    <section class="layout index">
+      <div class="content-hed">
+        <img width="100" height="100" src="/assets/uploads/profile-crop.jpg" alt="Photo of Daryl">
+        <h1 class="title">{{ page.title }}</h1>
+      </div>
+      <div class="content-main">
+        {{ content }}
+      </div>
+    </section>
+  </main>
+  <footer class="layout index">
+    <p>The source code of this site is available on <a href="https://github.com/darylshaw/darylshaw.co.uk">GitHub</a>. If you have any problems using the site, find an error or bug, you can <a href="https://github.com/darylshaw/darylshaw.co.uk/issues">file an issue</a>.</p>
+  </footer>
+  {% include js-fathom-analytics.html %}
+  {{ page.foot }}
+</body>
+</html>

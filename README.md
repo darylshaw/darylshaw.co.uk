@@ -1,5 +1,5 @@
 # darylshaw.co.uk
-My personal website
+This is my personal website. It is always going to be a [work in progress](https://darylshaw.co.uk/blog/work-in-progress-part-two/).
 
 Install the bundle:
 ```
