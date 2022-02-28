@@ -10,3 +10,5 @@ group :jekyll_plugins do
   gem "jekyll-mentions", ">= 1.6.0"
   gem "jekyll-last-modified-at", ">= 1.3.0"
 end
+
+gem "webrick", "~> 1.7"
