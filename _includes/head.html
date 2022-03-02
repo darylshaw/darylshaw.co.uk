@@ -1,11 +1,11 @@
 <head>
   <meta charset="utf-8">
-  {%- include meta-mobile.html -%}
-  {%- seo -%}
-  {%- include robots.html -%}
+  <title>{{ page.title }}{% if page.url contains "tags" %}Tagged: {{ page.tag }}{% endif %}{% if page.collection == "notes" %}Note posted {{ page.date | date: "%-d %b %Y, %l:%M %P" }}{% endif %}{% if page.collection == "photos" %}Photo posted {{ page.date | date: "%-d %b %Y, %l:%M %P" }}{% endif %}{% if page.url != '/' %} - Daryl Shaw{% endif %}</title>
+  {% include robots.html %}
   {%- include icons.html -%}
 
   <!-- http://t.co/dKP3o1e -->
+  <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
 

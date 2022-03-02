@@ -5,9 +5,6 @@ collections:
   posts:
     title: Posts
     output: true
-  blog_tags:
-    title: Tags
-    output: true
   uploads:
     title: Uploads
     output: true
@@ -26,12 +23,6 @@ defaults:
     layout: "post"
     permalink: "/blog/:title/"
     post_type: "Article"
--
-  scope:
-    path: ""
-    type: "blog_tags"
-  values:
-    layout: "tag"
 -
   scope:
     path: ""
@@ -62,12 +53,12 @@ sass:
   sass_dir: _sass
   style: compressed
 plugins:
-- jekyll-seo-tag
-- jekyll-sitemap
 - jekyll-redirect-from
 - jekyll-paginate-v2
 - jekyll-mentions
 - jekyll-last-modified-at
+- jekyll/tagging
+- jekyll-sitemap
 repository: darylshaw/darylshaw.co.uk
 pagination:
   enabled: true
@@ -82,3 +73,7 @@ jekyll-mentions:
 exclude: [README.md, Gruntfile.js, package.json, package-lock.json, netlify.toml]
 redirect_from:
   json: false
+tag_page_layout: tag
+tag_page_dir: blog/tags
+tag_page_data:
+  sitemap: false
