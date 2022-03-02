@@ -10,3 +10,5 @@ group :jekyll_plugins do
   gem "jekyll-tagging"
   gem "jekyll-sitemap", ">= 1.4.0"
 end
+
+gem "webrick", "~> 1.7"
