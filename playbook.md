@@ -286,7 +286,7 @@ This covers top-level utility/misc apps and preferences. Deeper, more specific b
 
 ## About the playbook
 
-This is a work in progress. I have docs spread out over Google Drive, Dropbox Paper, Notion, Basecamp. Guides to how I work. I'll be migrating them to their new home, here.
+I have docs spread out over Google Drive, Dropbox Paper, Notion, Basecamp. Guides to how I work. They now live here, in my playbook. I find that this structure suits them best. First I used Google Docs. Then Dropbox Paper. Then the plan was to migrate them to Notion. Before Basecamp. They could be blog posts or articles. But I will keep them up to date as processes and best practices evolve where I might not update articles. This is a work in progress and fluid though. And will adapt over time.
 
 **Inspiration**
 
@@ -294,7 +294,6 @@ This is a work in progress. I have docs spread out over Google Drive, Dropbox Pa
 * [GravityDept Field Manuals](https://manuals.gravitydept.com/)
 * [Meanbee Playbook](https://www.meanbee.com/our-playbook.html)
 
-Open source company handbooks:
+**Note on Basecamp**
 
-* [Basecamp Employee Handbook](https://github.com/basecamp/handbook)
-* [Glitch Employee Handbook](https://handbook.glitch.me/)
+I cancelled my Basecamp and HEY accounts after what happened back in April. Casey Newton has [two](https://www.platformer.news/p/-what-really-happened-at-basecamp) [pieces](https://www.platformer.news/p/-how-basecamp-blew-up) covering it on Platformer. I've used Basecamp's products for years. Read their books. Their [open source handbook](https://github.com/basecamp/handbook) is part inspiration for this playbook. It's sad to see what was happening behind closed doors.
