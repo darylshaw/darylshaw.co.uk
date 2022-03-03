@@ -7,9 +7,7 @@ description: I'm Daryl. I help businesses manage their online presence. Welcome 
 layout: index
 ---
 
-Hey, I'm Daryl. I'm a London-based technical marketer and web developer. I like finding solutions to businesses problems. Need help? [Let's talk](/contact).
-
-[Read my blog 	&rarr;](/blog/)
+Hey, I’m Daryl Shaw. I’m a London-based technical marketer and web developer. This is my homepage.
 
 ## About me
 
