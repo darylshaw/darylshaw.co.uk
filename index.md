@@ -28,7 +28,7 @@ Away from work you'll find me ~~supporting~~ suffering Newcastle. Out on a long-
 ## Contact me
 
 * Email me at [daryl@darylshaw.co.uk](mailto:daryl@darylshaw.co.uk)
-* [Book a call](https://fantastical.app/daryl-grHc/my-template)
+* [Book a call](https://fantastical.app/darylshaw/15-min-call)
 * Find me at Market workspace in Peckham
 * [Twitter](https://twitter.com/daryl_shaw) / [LinkedIn](https://www.linkedin.com/in/daryl-shaw/)
 
