@@ -14,7 +14,7 @@ I've switched from using Google Analytics to [Fathom](https://usefathom.com/ref/
 
 There are a few guides available from Netlify about using split testing and branch deploys to create private opt-in betas which is where I have taken inspiration from.
 
-What you do is create a new branch and deploy which will serve the branch on a unique URL. In this case [ga--darylshaw.netlify.app](https://ga--darylshaw.netlify.app/). Then you set up a split test between the new branch and production. But weight the test 100% to the production branch which means the user needs to opt in.
+What you do is create a new branch and deploy which will serve the branch on a unique URL. In this case `ga--darylshaw.netlify.app`. Then you set up a split test between the new branch and production. But weight the test 100% to the production branch which means the user needs to opt in.
 
 Then there are a few bits to put together.
 
@@ -53,7 +53,7 @@ javascript to set cookie when you click button then to clear cookie when you opt
 
 with jekyll you have environments. here if the the environment was ga, i want it to output the google analytics script.
 
-At first it didn't seem to like this set up. When on the [ga--darylshaw.netlify.app](https://ga--darylshaw.netlify.app/) url, analytics worked as expected across pages. When on darylshaw.co.uk and opting in to ga - it set the cookie but didn't remove existing cookie and the ga cookie wasn't persistent across the domain. Only the page it was set. I thought that this was an issue with the Jekyll environment variable but setting a path on the cookies resolved the issue.
+At first it didn't seem to like this set up. When on the `ga--darylshaw.netlify.app` url, analytics worked as expected across pages. When on darylshaw.co.uk and opting in to ga - it set the cookie but didn't remove existing cookie and the ga cookie wasn't persistent across the domain. Only the page it was set. I thought that this was an issue with the Jekyll environment variable but setting a path on the cookies resolved the issue.
 
 There are a few things I could revisit to round this off by setting up a subdomain for the ga branch similar to how I do for the staging branch. Or even setting up a redirect to only allow users to opt in through the button and not be able to visit the `ga--darylshaw.netlify.app` url. But I'm not bothered for these purposes.
 

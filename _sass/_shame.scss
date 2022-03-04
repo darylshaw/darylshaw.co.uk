@@ -149,22 +149,11 @@ footer.index {
   }
 }
 
-// undecided between this or image pulled out from content or covatar
-.content-hed {
-  grid-column: full-content;
-  @include bp(medium) {
-    display: flex;
-	  justify-content: space-between;
-	  flex-flow: row-reverse;
-	  grid-column: full-content / 8;
-	  align-items: flex-end;
-  }
-	img {
-    margin-bottom: 1rem;
-  }
-}
-
 .terms {
   font-size: 0.75em;
   font-style: italic;
+}
+
+ul {
+  padding: 0 1em;
 }

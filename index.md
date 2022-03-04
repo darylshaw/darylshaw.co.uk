@@ -7,32 +7,29 @@ description: I'm Daryl. I help businesses manage their online presence. Welcome 
 layout: index
 ---
 
-Hey, I’m Daryl Shaw. I’m a London-based technical marketer and web developer. This is my homepage.
+Hey, I’m Daryl. I’m a freelance technical marketer and web developer based in South East London.
 
 ## About me
 
-I've been working on the web since ~2013. Helping businesses manage their online presence. The majority of that time with a small agency working with ambitious businesses.
+The main focus of my work is around the technical side of marketing, PPC, and front-end development. For me technical marketing covers tech SEO, analytics and tag management through to conversion optimisation, migrations and replatforming.
 
-I did spend two-and-a-half years running a jewellery company in York. We were one of the first in the UK to sell diamonds grown in a lab.
+Whether you need transparent consultancy, a deep-dive audit or a best practices healthcheck. I can work with you to help you achieve your goals.
+
+Examples of areas where I'm probably not best placed to help:
+
+* Off-page SEO
+* Content production
+* Audience research
+
+I can add value and offer guidance. But where I'm happiest is on-page.
 
 Away from work you'll find me ~~supporting~~ suffering Newcastle. Out on a long-run. Or hitting the trails. I get out to run with [GoodGym](https://www.goodgym.org/) as much as I can.
 
-### What I can offer
-Here are the areas where I can help:
-
-* Paid media management
-* SEO
-* Audits (technical SEO, content, paid media, Google Analytics, performance)
-* Analytics & tag management
-* Ongoing consultancy
-* Migrations and replatforming
-* Web development (WordPress, Jamstack)
-* Website support & maintenance
-
-## Work
-
-* Built functionality for a client’s website to allow customers to order samples
-* Helping a business of 30+ years to not only survive during a pandemic but grow and record their best month *ever*
-* A successful domain migration that led to improved rankings and growth in traffic
-
 ## Contact me
+
+* Email me at [daryl@darylshaw.co.uk](mailto:daryl@darylshaw.co.uk)
+* [Book a call](https://fantastical.app/daryl-grHc/my-template)
+* Find me at Market workspace in Peckham
+* [Twitter](https://twitter.com/daryl_shaw) / [LinkedIn](https://www.linkedin.com/in/daryl-shaw/)
+
+Available for new projects **June 2022**.
