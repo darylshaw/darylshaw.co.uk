@@ -20,3 +20,8 @@
 
 [context.ga]
   environment = { JEKYLL_ENV = "ga" }
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy-Report-Only = "default-src darylshaw.co.uk;"
