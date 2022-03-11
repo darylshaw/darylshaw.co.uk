@@ -24,4 +24,4 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy-Report-Only = "default-src darylshaw.co.uk;"
+    Content-Security-Policy-Report-Only = "default-src darylshaw.co.uk *.darylshaw.co.uk;"
