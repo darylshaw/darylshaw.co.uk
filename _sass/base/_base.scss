@@ -42,6 +42,7 @@ body {
 
 body {
   background-color: var(--purple);
+  border-top: 0.5rem solid var(--purple);
   color: var(--text-color);
 }
 
@@ -95,6 +96,10 @@ a {
     border-color: inherit;
     transition: 0.2s ease-in;
   }
+}
+
+ul {
+  padding: 0 1em;
 }
 
 img {

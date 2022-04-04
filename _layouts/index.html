@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+{%- include head.html -%}
+{{ page.head }}
+<body>
+  <main>
+    <section class="layout index">
+      <div class="content-main">
+        <h1>{{ page.title }}</h1>
+        {{ content }}
+      </div>
+    </section>
+  </main>
+  <footer class="layout index">
+    <p>The source code of this site is available on <a href="https://github.com/darylshaw/darylshaw.co.uk">GitHub</a>. If you have any problems using the site, find an error or bug, you can <a href="https://github.com/darylshaw/darylshaw.co.uk/issues">file an issue</a>.</p>
+  </footer>
+  {{ page.foot }}
+</body>
+</html>

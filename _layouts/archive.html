@@ -4,9 +4,7 @@ layout: default
 
 <section class="layout">
   <h1 class="title">{{ page.title }}</h1>
-  <div class="page-intro h-card">
-    {{ content }}
-  </div>
+  {{ content }}
   <article class="posts">
     {%- for post in paginator.posts -%}
     {%- if post.collection == "posts" -%}

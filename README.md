@@ -1,7 +1,14 @@
 # darylshaw.co.uk
-My personal website
 
-Install the bundle:
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bd944125-1995-4ce0-9100-dd18e876bd40/deploy-status)](https://app.netlify.com/sites/darylshaw/deploys)
+
+This is my personal website. It is always going to be a [work in progress](https://darylshaw.co.uk/blog/work-in-progress-part-two/).
+
+Running [Jekyll](https://jekyllrb.com/) which provides built-in support for [Sass](https://sass-lang.com/). Grunt task to optimise images.
+
+## Development
+
+Get up and running with:
 ```
 bundle install
 ```
@@ -11,7 +18,7 @@ Run:
 npm install
 ```
 
-Start Jekyll server and Grunt watch task:
+Start Jekyll server:
 ```
 npm run dev
 ```

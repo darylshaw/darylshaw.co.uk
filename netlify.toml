@@ -2,21 +2,20 @@
   command = "npm run build"
   publish = "_site/"
 
-# Production context: all deploys from the Production branch set in your site's
-# deploy contexts will inherit these settings.
 [context.production]
   command = "npm run build"
   [context.production.environment]
     JEKYLL_ENV = "production"
     TZ = "Europe/London"
 
-# Specific branch context: all deploys from this specific branch will inherit
-# these settings.
-[context.staging] # 'staging' is a branch name
-  command = "npm run staging"
-  [context.staging.environment]
-    JEKYLL_ENV = "staging"
-    TZ = "Europe/London"
-
 [context.ga]
   environment = { JEKYLL_ENV = "ga" }
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src darylshaw.co.uk *.darylshaw.co.uk *.netlify.app;"
+    Referrer-Policy = "no-referrer-when-downgrade"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    X-XSS-Protection = "1; mode=block"

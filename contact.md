@@ -8,4 +8,3 @@ If you would like to hire me for your next project or say hello, get in touch us
 
 {% include form.html %}
 {% include slack.html %}
-{% include consultation.html %}

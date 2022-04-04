@@ -4,7 +4,6 @@
   "description": "My personal website",
   "scripts": {
     "dev": "bundle exec jekyll serve",
-    "staging": "grunt && bundle exec jekyll build --config _config.yml,_config_staging.yml",
     "build": "grunt && bundle exec jekyll build"
   },
   "repository": {

@@ -1,122 +1,39 @@
 .archive-item {
-  border-top: 1px solid var(--text-color--lighter);
   margin-bottom: 1.5em;
 
   h2 {
     margin-top: inherit;
-  }
-}
-
-.work {
-  background-color: var(--paper-white);
-  grid-column: full;
-}
-
-.latest {
-  grid-column: full;
-  background-image: url("/assets/uploads/fabric-samples-iphone.png"), url("/assets/uploads/fabric-samples-empty-iphone.png"), url("/assets/uploads/fabric-samples-ipad.png");
-  background-size: auto 50%, auto 50%, 0 0;
-  background-repeat: no-repeat;
-  background-position: left 10% bottom -5em, right 10% bottom -6em, right -50% bottom -5em;
-  @include bp(x-small) {
-    // 640px
-    background-size: auto 60%, auto 60%, 0 0;
-    background-position: left 20% bottom -5em, right 20% bottom -6em, right -50% bottom -5em;
-  }
-
-  @include bp(small) {
-    // 800px
-    background-size: auto 70%, auto 70%, auto 70%;
-    background-position: left 20% bottom -6em, right 50% bottom -5em, right -30% bottom -2em;
-  }
-
-  @include bp(medium) {
-    // 1000px
-    background-size: auto 70%, auto 70%, auto 70%;
-    background-position: left 50% bottom -8em, right 25% bottom -6em, right -70% bottom -1em;
-  }
-
-  @include bp(large) {
-    // 1200px
-    background-size: auto 80%, auto 80%, auto 80%;
-    background-position: left 30% bottom -7em, right 40% bottom -6em, right -30% bottom -1em;
-  }
-
-  @include bp(x-large) {
-    // 1400px
-    background-size: auto 80%, auto 80%, auto 90%;
-    background-position: left 25% bottom -8em, right 50% bottom -6em, right 5% bottom -1em;
-  }
-
-  h2 {
-    grid-column: full-content;
-    @include bp(medium) {
-      grid-column: full-content / span 6;
-    }
+    margin-bottom: 0;
   }
 
   p {
-    grid-column: full-content;
+    margin-top: inherit;
+  }
+}
+
+.index {
+  h1 {
     @include bp(medium) {
-      grid-column: full-content / span 4;
+      margin-top: 2.75rem;
     }
   }
 
-  .links {
+  .content-main {
     grid-column: full-content;
-    display: flex;
-    align-items: flex-end;
-    margin-bottom: 20em;
-    @include bp(small) {
-      grid-column: full-content;
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-      height: 100%;
-      padding-bottom: 1em;
-      // margin-bottom: 20em;
-    }
-
-    @include bp(x-large) {
-      align-items: inherit;
-      height: inherit;
-      justify-content: inherit;
-    }
-
-    a {
-      @include bp (small) {
-        color: var(--white);
-      }
-
-      @include bp (x-large) {
-        color: inherit;
-        align-self: flex-end;
-      }
-    }
-
-    .btn {
-      position: sticky;
-      top: 1em;
-      align-self: flex-start;
-      margin-right: 1em;
-      width: inherit;
-      color: var(--white);
-    }
-  }
-
-  img {
-    margin: 3em 0 -10em;
-    object-position: 40% 0;
     @include bp(medium) {
-      margin: 6em -20em -5em 5em;
-      object-position: 0 0;
+      grid-column: full-content / 8;
     }
   }
 }
 
-.home-intro {
-  .title {
-    padding: 6rem 0;
+footer.index {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-size: 0.75em;
+  position: inherit;
+
+  p {
+    grid-column: full-content;
   }
 }
 
@@ -149,5 +66,4 @@
       grid-row: inherit;
     }
   }
-  
 }
