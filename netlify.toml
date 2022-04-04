@@ -14,7 +14,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src darylshaw.co.uk *.darylshaw.co.uk;"
+    Content-Security-Policy = "default-src darylshaw.co.uk *.darylshaw.co.uk *.netlify.app;"
     Referrer-Policy = "no-referrer-when-downgrade"
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "SAMEORIGIN"
