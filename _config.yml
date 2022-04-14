@@ -45,7 +45,7 @@ defaults:
   scope:
     path: ""
   values:
-    image: /assets/uploads/profile-crop.jpg
+    image: /assets/uploads/headshot-crop.jpg
 url: https://darylshaw.co.uk
 permalink: pretty
 name: Daryl Shaw
