@@ -1,6 +1,8 @@
 <head>
   <meta charset="utf-8">
   <title>{{ page.title }}{% if page.url contains "tags" %}Tagged: {{ page.tag }}{% endif %}{% if page.collection == "notes" %}Note posted {{ page.date | date: "%-d %b %Y, %l:%M %P" }}{% endif %}{% if page.collection == "photos" %}Photo posted {{ page.date | date: "%-d %b %Y, %l:%M %P" }}{% endif %}{% if page.url != '/' %} - Daryl Shaw{% endif %}</title>
+  {% include meta-tags.html %}
+  
   {%- include icons.html -%}
 
   <!-- http://t.co/dKP3o1e -->

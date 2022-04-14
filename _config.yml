@@ -41,12 +41,18 @@ defaults:
     title: ""
     permalink: "/:collection/:title/"
     post_type: "Photo"
+-
+  scope:
+    path: ""
+  values:
+    image: /assets/uploads/profile-crop.jpg
 url: https://darylshaw.co.uk
 permalink: pretty
 name: Daryl Shaw
 email: daryl@darylshaw.co.uk
 twitter:
   username: daryl_shaw
+  card: summary
 markdown: kramdown
 sass:
   sass_dir: _sass

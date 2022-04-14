@@ -2,8 +2,7 @@
 title: Homepage of Daryl Shaw
 date: 2015-11-11 00:21:00 Z
 position: 0
-description: I'm Daryl. I help businesses manage their online presence. Welcome to
-  my website.
+description: Freelance technical marketer and web developer based in South East London. Available for new projects June 2022.
 layout: index
 ---
 
