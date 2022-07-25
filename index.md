@@ -31,4 +31,4 @@ Away from work you'll find me ~~supporting~~ suffering Newcastle. Out on a long-
 * Find me at Market workspace in Peckham
 * [Twitter](https://twitter.com/daryl_shaw) / [LinkedIn](https://www.linkedin.com/in/daryl-shaw/)
 
-Available for new projects **Q3 2022**.
+{% include availability.html %}.
