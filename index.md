@@ -2,11 +2,11 @@
 title: Homepage of Daryl Shaw
 date: 2015-11-11 00:21:00 Z
 position: 0
-description: Freelance technical marketer and web developer based in South East London. Available for new projects June 2022.
+description: Independent technical marketing consultant based in South East London. Available for new projects Q3 2022.
 layout: index
 ---
 
-Hey, I’m Daryl. I’m a freelance technical marketer and web developer based in South East London.
+Hey, I’m Daryl. I’m an independent technical marketing consultant based in South East London.
 
 ## About me
 
@@ -31,4 +31,4 @@ Away from work you'll find me ~~supporting~~ suffering Newcastle. Out on a long-
 * Find me at Market workspace in Peckham
 * [Twitter](https://twitter.com/daryl_shaw) / [LinkedIn](https://www.linkedin.com/in/daryl-shaw/)
 
-Available for new projects **June 2022**.
+Available for new projects **Q3 2022**.
