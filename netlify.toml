@@ -23,3 +23,11 @@
 [[redirects]]
   from = "/contact/"
   to = "/"
+
+[[redirects]]
+  from = "/about/"
+  to = "/"
+
+[[redirects]]
+  from = "/work/"
+  to = "/"
