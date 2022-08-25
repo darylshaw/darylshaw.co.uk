@@ -76,8 +76,6 @@ feed_items: 20
 jekyll-mentions:
   base_url: https://twitter.com
 exclude: [README.md, Gruntfile.js, package.json, package-lock.json, netlify.toml]
-redirect_from:
-  json: false
 tag_page_layout: tag
 tag_page_dir: blog/tags
 tag_page_data:

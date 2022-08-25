@@ -31,3 +31,43 @@
 [[redirects]]
   from = "/work/"
   to = "/"
+
+[[redirects]]
+  from = "/blog/79718/"
+  to = "/notes/79718/"
+
+[[redirects]]
+  from = "/blog/67326/"
+  to = "/notes/67326/"
+
+[[redirects]]
+  from = "/blog/41563/"
+  to = "/notes/41563/"
+
+[[redirects]]
+  from = "/blog/41081/"
+  to = "/notes/41563/"
+
+[[redirects]]
+  from = "/blog/70073/"
+  to = "/notes/70073/"
+
+[[redirects]]
+  from = "/blog/51254/"
+  to = "/notes/51254/"
+
+[[redirects]]
+  from = "/blog/49634/"
+  to = "/notes/49634/"
+
+[[redirects]]
+  from = "/blog/69012/"
+  to = "/notes/69012/"
+
+[[redirects]]
+  from = "/notes/qq6om/"
+  to = "/photos/qq6om/"
+
+[[redirects]]
+  from = "/notes/uy3io/"
+  to = "/photos/uy3io/"

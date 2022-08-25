@@ -22,13 +22,10 @@ Examples of areas where I'm probably not best placed to help:
 
 I can add value and offer guidance. But where I'm happiest is on-page.
 
-Away from work you'll find me ~~supporting~~ suffering Newcastle. Out on a long-run. Or hitting the trails. I get out to run with [GoodGym](https://www.goodgym.org/) as much as I can.
-
 ## Contact me
 
-* Email me at [daryl@darylshaw.co.uk](mailto:daryl@darylshaw.co.uk) or DM me on Slack using the same email
+* Email me at [daryl@darylshaw.co.uk](mailto:daryl@darylshaw.co.uk)
 * [Book a call](https://fantastical.app/darylshaw/15-min-call)
-* Find me at Market workspace in Peckham
 * [Twitter](https://twitter.com/daryl_shaw) / [LinkedIn](https://www.linkedin.com/in/daryl-shaw/)
 
 {% include availability.html %}.
