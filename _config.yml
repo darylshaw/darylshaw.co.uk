@@ -58,7 +58,6 @@ sass:
   sass_dir: _sass
   style: compressed
 plugins:
-- jekyll-redirect-from
 - jekyll-paginate-v2
 - jekyll-mentions
 - jekyll-last-modified-at
