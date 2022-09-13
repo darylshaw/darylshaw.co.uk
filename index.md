@@ -1,5 +1,5 @@
 ---
-title: Homepage of Daryl Shaw
+title: Homepage of Daryl Shaw - London-based Technical Marketing Consultant
 date: 2015-11-11 00:21:00 Z
 position: 0
 description: Independent technical marketing consultant based in South East London. Available for new projects Q3 2022.
