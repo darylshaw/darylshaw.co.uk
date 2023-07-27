@@ -26,6 +26,6 @@ I can add value and offer guidance. But where I'm happiest is on-page.
 
 * Email me at [daryl@darylshaw.co.uk](mailto:daryl@darylshaw.co.uk)
 * [Book a call](https://fantastical.app/darylshaw/15-min-call)
-* [Twitter](https://twitter.com/daryl_shaw) / [LinkedIn](https://www.linkedin.com/in/daryl-shaw/)
+* [LinkedIn](https://www.linkedin.com/in/daryl-shaw/)
 
 {% include availability.html %}.
