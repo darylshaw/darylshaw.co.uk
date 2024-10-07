@@ -1,26 +1,12 @@
 ---
-title: Homepage of Daryl Shaw - London-based Technical Marketing Consultant
+title: Homepage of Daryl Shaw - London-based Independent Consultant
 date: 2015-11-11 00:21:00 Z
 position: 0
-description: Independent technical marketing consultant based in South East London. Available for new projects Q3 2022.
+description: Independent consultant based in South East London. Limited availability for new projects.
 layout: index
 ---
 
-Hey, I’m Daryl. I’m an independent technical marketing consultant based in South East London.
-
-## About me
-
-The main focus of my work is around the technical side of marketing, PPC, and front-end development. For me technical marketing covers tech SEO, analytics and tag management through to conversion optimisation, migrations and replatforming.
-
-Whether you need transparent consultancy, a deep-dive audit or a best practices healthcheck. I can work with you to help you achieve your goals.
-
-Examples of areas where I'm probably not best placed to help:
-
-* Off-page SEO
-* Content production
-* Audience research
-
-I can add value and offer guidance. But where I'm happiest is on-page.
+Hey, I’m Daryl. I help businesses with fractional ecommerce leadership and technical marketing consulting.
 
 ## Contact me
 

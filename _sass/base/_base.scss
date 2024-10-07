@@ -52,14 +52,16 @@ body {
   background-color: var(--purple);
   border-top: 0.5rem solid var(--purple);
   color: var(--text-color);
+  display: flex;
+  flex-direction: column;
 }
 
 main {
-  min-height: 100vh;
   position: relative;
   z-index: 1;
   background: var(--bg-color);
   padding: 3rem 0;
+  flex-grow: 1;
 }
 
 iframe {
